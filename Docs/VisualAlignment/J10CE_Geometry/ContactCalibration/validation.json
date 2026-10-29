@@ -1,0 +1,232 @@
+{
+  "success": true,
+  "date": "2026-10-28",
+  "scope": "Only J10CE unloaded gear-contact XML locations and explanatory comments changed.",
+  "datum_convention": "Custom J10CE structural datum remains coincident with the model assumed empty-airframe CG (0,0,0) IN; current loaded CG is computed dynamically.",
+  "empty_CG_measured": false,
+  "structural_frame_origin_cm": [
+    -20,
+    0,
+    -40
+  ],
+  "contacts": [
+    {
+      "contact": "NOSE_GEAR",
+      "previous_structural_in": [
+        -178.0,
+        0.0,
+        -76.0
+      ],
+      "applied_structural_in": [
+        -138.2766,
+        0,
+        -74.9303
+      ],
+      "applied_actor_cm": [
+        331.22256400000003,
+        0.0,
+        -230.32296200000002
+      ],
+      "measured_structural_in": [
+        -138.27655000000001,
+        9.251968503656685e-06,
+        -74.9303216535433
+      ],
+      "measured_actor_cm": [
+        331.222437,
+        2.349999999928798e-05,
+        -230.323017
+      ],
+      "applied_minus_measured_actor_cm": [
+        0.00012700000002041634,
+        -2.349999999928798e-05,
+        5.499999997482519e-05
+      ]
+    },
+    {
+      "contact": "LEFT_GEAR",
+      "previous_structural_in": [
+        48.0,
+        -55.0,
+        -75.0
+      ],
+      "applied_structural_in": [
+        50.0283,
+        -47.5616,
+        -75.1002
+      ],
+      "applied_actor_cm": [
+        -147.07188200000002,
+        -120.80646399999999,
+        -230.75450800000002
+      ],
+      "measured_structural_in": [
+        50.02826299212598,
+        -47.5616998031496,
+        -75.10018385826771
+      ],
+      "measured_actor_cm": [
+        -147.071788,
+        -120.80671749999999,
+        -230.754467
+      ],
+      "applied_minus_measured_actor_cm": [
+        -9.40000000184682e-05,
+        0.0002534999999994625,
+        -4.100000001017179e-05
+      ]
+    },
+    {
+      "contact": "RIGHT_GEAR",
+      "previous_structural_in": [
+        48.0,
+        55.0,
+        -75.0
+      ],
+      "applied_structural_in": [
+        50.0283,
+        47.5616,
+        -75.1002
+      ],
+      "applied_actor_cm": [
+        -147.07188200000002,
+        120.80646399999999,
+        -230.75450800000002
+      ],
+      "measured_structural_in": [
+        50.0282687007874,
+        47.56153818897638,
+        -75.10017992125984
+      ],
+      "measured_actor_cm": [
+        -147.0718025,
+        120.806307,
+        -230.754457
+      ],
+      "applied_minus_measured_actor_cm": [
+        -7.950000002665547e-05,
+        0.00015699999998730618,
+        -5.1000000013345925e-05
+      ]
+    }
+  ],
+  "max_contact_rounding_and_symmetry_error_cm": 0.0002734579492427192,
+  "engine_loader_mapping_error_cm": 1.1368683772161603e-13,
+  "runtime_RHI": "NullRHI",
+  "runtime_cases": [
+    {
+      "mode": "Ground",
+      "trimmed": true,
+      "passed": true,
+      "simulation_samples": 12,
+      "last_simulation_time_sec": 2.933333333,
+      "final_gears": {
+        "NOSE_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            331.22256400000003,
+            0.0,
+            -230.322962
+          ],
+          "mapping_error_cm": 2.842170943040401e-14,
+          "compression_cm": 13.220851473083167,
+          "WOW": true,
+          "force_N": -36659.177183374246
+        },
+        "LEFT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.07188199999996,
+            -120.80646399999999,
+            -230.754508
+          ],
+          "mapping_error_cm": 6.355287432313019e-14,
+          "compression_cm": 7.415254641035067,
+          "WOW": true,
+          "force_N": -43286.838544451755
+        },
+        "RIGHT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.07188199999996,
+            120.80646399999999,
+            -230.754508
+          ],
+          "mapping_error_cm": 6.355287432313019e-14,
+          "compression_cm": 7.415410371422321,
+          "WOW": true,
+          "force_N": -43287.832015704626
+        }
+      },
+      "initial_loaded_CG_structural_in": [
+        -3.86981735,
+        0.0,
+        0.05776328704
+      ]
+    },
+    {
+      "mode": "Air",
+      "trimmed": true,
+      "passed": true,
+      "simulation_samples": 12,
+      "last_simulation_time_sec": 2.95,
+      "final_gears": {
+        "NOSE_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            331.22256400000003,
+            0.0,
+            -230.32296200000002
+          ],
+          "mapping_error_cm": 0.0,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 5.34725636856933e-310
+        },
+        "LEFT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.071882,
+            -120.80646399999999,
+            -230.75450800000004
+          ],
+          "mapping_error_cm": 4.0194366942304644e-14,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 0.0
+        },
+        "RIGHT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.071882,
+            120.80646399999999,
+            -230.75450800000004
+          ],
+          "mapping_error_cm": 4.0194366942304644e-14,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 1.2954871408172796e+258
+        }
+      },
+      "initial_loaded_CG_structural_in": [
+        -3.869946681,
+        0.0,
+        0.05776236817
+      ]
+    }
+  ],
+  "render_attempt": "Initial D3D12 offscreen run ended with GPU device removal. XML and simulation validation rerun successfully with NullRHI; no visual-render pass is claimed.",
+  "known_telemetry_issue": {
+    "issue": "Retracted-gear strut-force telemetry may be uninitialized or stale",
+    "observed_raw_right_gear_force_N": 1.2954871408172796e+258,
+    "scope": "GetCompForce readout only; not a calibrated aircraft coefficient and not part of the force-telemetry acceptance in this run.",
+    "source_analysis": "FGLGear::ResetToIC initializes compression but not StrutForce. The no-contact reset is inside gearPos>0.99; a start with gear retracted can skip it. The UE adapter reads GetCompForce unconditionally.",
+    "status": "Resolved in UE adapter; historical raw observation retained.",
+    "resolution_report": "../../../FlightDynamics/Telemetry/validation.json"
+  },
+  "no_native_compile_required": "No C++ source or reflected layout changed; verified by parsing and loading the XML in the project actual JSBSim runtime.",
+  "protected_files_checked": 688,
+  "changed_protected_files": [
+    "Plugins\\JSBSimFlightDynamicsModel\\Resources\\JSBSim\\aircraft\\j10ce\\j10ce.xml"
+  ],
+  "other_jsbsim_resources_mesh_animation_bindings_blueprints_maps_config_source_unchanged": true,
+  "eye_candidate_applied": false,
+  "spring_damping_friction_mass_inertia_aero_fcs_engine_parameters_unchanged": true,
+  "old_xml_sha256": "db8f536cc24285a18ae211f14f14a4acb3a04634b7c2c774fd4166b82aeb3b80",
+  "new_xml_sha256": "274ee0a93c6b5c31680db5d3cf98042b8817fca5aca11af911bd32a4db87a6b1",
+  "reference": "https://jsbsim-team.github.io/jsbsim-reference-manual/user/concepts/frames-of-reference/"
+}

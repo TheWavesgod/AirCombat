@@ -1,0 +1,251 @@
+{
+  "date": "2026-10-27",
+  "engine": "Unreal Engine 5.8.3",
+  "scope": "Fixed visual frame, F16 front-contact global alignment and authored camera anchor migration",
+  "build": {
+    "target": "AirCombatEditor Win64 Development",
+    "result": "Succeeded",
+    "live_coding": false
+  },
+  "automation": {
+    "succeeded": 21,
+    "succeededWithWarnings": 0,
+    "failed": 0,
+    "notRun": 0
+  },
+  "tests": [
+    {
+      "name": "AirCombat.Animation.ActualGearAndSuspension",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.F16BindingsAsset",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.PreviewAndInvalidation",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.SurfaceAvailabilityAndUnits",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.AircraftAttitude",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.LookConsumptionAndModes",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.RecenterAndLimits",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.SpringArmCollision",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.ModelOwnsYawFeedback",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.SpeedBrakeHoldRelease",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.TrimHandoffAndReset",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightDynamics.GroundMissReturnsEarthContact",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.DA_FighterInputConfig",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.ImcOppositeKeyMapping",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.PlayerMappableMappingNames",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.PushRate",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.Reset",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.ReturnToCenter",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Visual.F16ReferenceGeometry",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Visual.FixedFrameAndCameraAnchors",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    }
+  ],
+  "blueprint_compilation": {
+    "/Game/Blueprints/Pawns/Jets/BP_F16A": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/Pawns/Jets/BP_J16CE": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/Animation/F16C/ABP_F16C": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/Animation/J10CE/ABP_J10CE": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/BP_AirCombatGameMode": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/BP_AirCombatPlayerController": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/Input/WBP_FighterInputDebug": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+  },
+  "saved_parameter_verification": {
+    "/Game/Blueprints/Pawns/Jets/BP_F16A": {
+      "arm": 17,
+      "look": 12,
+      "camera_properties_including_postprocess": 18,
+      "structural_frame_origin": true,
+      "mesh_and_animation_assets": true
+    },
+    "/Game/Blueprints/Pawns/Jets/BP_J16CE": {
+      "arm": 17,
+      "look": 12,
+      "camera_properties_including_postprocess": 18,
+      "structural_frame_origin": true,
+      "mesh_and_animation_assets": true
+    }
+  },
+  "f16_physics_unchanged": true,
+  "f16_physics_file_hashes": {
+    "f16.xml": "8cbaf78e764030e8bc5253cf726f721f88a0e0261707f93e92569e3c7e0354a7",
+    "INSTALL": "709b479b224f85b02c5863162e3699bb3009f825ab0b05398c2fcb040d2ac889",
+    "README": "a53d5a3d5d41c349beddfc076f6f48041539742e26b3323c9416f92eeda6474c",
+    "reset00.xml": "dcbfa8da3c2f2d95c8093acb640f937935fc3037f49f8a90ae82e83386fa3e33",
+    "Systems\\hook.xml": "2fa5a5b2aee50fcf094c58b85f21c549c3834e5e323cf3c354093629abfdf46a",
+    "Systems\\pushback.xml": "022791e78a7af68f391f883392837288e4f4d4ed178d83cad63bb7ecaaffc0e7"
+  },
+  "structural_frame_origin_unchanged": true,
+  "j10ce_animation_binding_file_unchanged": true,
+  "j10ce_calibrated": false,
+  "placed_fighter_instances": {
+    "/Game/Levels/Tests/test_fighter": 0,
+    "/Game/Levels/Tests/L_InputTest": 0
+  },
+  "pie": {
+    "runs": [
+      {
+        "start": "ground",
+        "frames": 89,
+        "maximum_visual_origin_error_cm": 2.168404344971009e-19,
+        "maximum_cockpit_mesh_error_cm": 1.7975467359136326e-13,
+        "maximum_focus_mesh_error_cm": 5.684341886081165e-14,
+        "maximum_extended_nose_x_error_cm": 4.398543751449324e-10,
+        "gear_min": 1.0,
+        "gear_max": 1.0,
+        "camera_modes": [
+          "<FighterCameraMode.COCKPIT: 1>",
+          "<FighterCameraMode.CHASE: 0>"
+        ],
+        "wheel_rotation_min": 8.869803428649902,
+        "wheel_rotation_max": 117.70401763916016,
+        "final_cg_actor_cm": [
+          487.41043783021433,
+          0.0,
+          -9.081683749623437
+        ],
+        "final_visual_origin_actor_cm": [
+          550.521082429,
+          -2.168404344971009e-19,
+          -182.883547668
+        ],
+        "passed": true
+      },
+      {
+        "start": "air",
+        "frames": 412,
+        "maximum_visual_origin_error_cm": 3.1572492879474045e-11,
+        "maximum_cockpit_mesh_error_cm": 3.0803593469515147e-11,
+        "maximum_focus_mesh_error_cm": 3.163743482523102e-11,
+        "maximum_extended_nose_x_error_cm": 4.6406967157963663e-10,
+        "gear_min": 0.0,
+        "gear_max": 1.0,
+        "camera_modes": [
+          "<FighterCameraMode.CHASE: 0>",
+          "<FighterCameraMode.COCKPIT: 1>"
+        ],
+        "wheel_rotation_min": 0.0,
+        "wheel_rotation_max": 0.0,
+        "final_cg_actor_cm": [
+          487.41872415114346,
+          0.0,
+          -9.085745689657777
+        ],
+        "final_visual_origin_actor_cm": [
+          550.5210824289957,
+          -3.126839065448195e-14,
+          -182.88354766801268
+        ],
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "limitations": [
+    "F16 global alignment uses the fully extended uncompressed nose-tire contact as the reference",
+    "Main gear geometry residual is intentionally retained: about -39.245 cm longitudinal and 9.788 cm inboard per side",
+    "Final suspension deformation awaits the user-provided clips and measured travel",
+    "Camera positions retain the existing authored viewpoint and framing; PIE checks verify transforms and activation",
+    "Previously deferred aircraft/camera judder was not separately addressed"
+  ]
+}

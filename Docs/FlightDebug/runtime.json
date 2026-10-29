@@ -1,0 +1,2617 @@
+{
+  "date": "2026-10-29",
+  "success": true,
+  "map": "/Game/Levels/Tests/L_InputTest",
+  "air_start": "400 kt, gear initially up; temporary fixtures and map changes were never saved",
+  "timing": "t.OverrideFPS game-delta overrides; these are not claims about achieved rendering FPS",
+  "cases": [
+    {
+      "model": "f16",
+      "fps": 30,
+      "start_time": 0.0,
+      "zero_step_frames": 0,
+      "legacy_initial": false,
+      "input_passthrough": true,
+      "physics_samples_per_second": 120.00000001318682,
+      "refresh_count": 42,
+      "independent_toggles": true,
+      "hidden_stops_work": true,
+      "possession_resets_source": true,
+      "reload_invalidates_history": true,
+      "legacy_unchanged": true,
+      "passed": true,
+      "end_play_releases_widget": true
+    },
+    {
+      "model": "f16",
+      "fps": 60,
+      "start_time": 0.01666666667,
+      "zero_step_frames": 0,
+      "legacy_initial": false,
+      "input_passthrough": true,
+      "physics_samples_per_second": 119.9999999868,
+      "refresh_count": 42,
+      "independent_toggles": true,
+      "hidden_stops_work": true,
+      "possession_resets_source": true,
+      "reload_invalidates_history": true,
+      "legacy_unchanged": true,
+      "passed": true,
+      "end_play_releases_widget": true
+    },
+    {
+      "model": "f16",
+      "fps": 144,
+      "start_time": 0.0,
+      "zero_step_frames": 72,
+      "legacy_initial": false,
+      "input_passthrough": true,
+      "physics_samples_per_second": 120.0000000132964,
+      "refresh_count": 42,
+      "independent_toggles": true,
+      "hidden_stops_work": true,
+      "possession_resets_source": true,
+      "reload_invalidates_history": true,
+      "legacy_unchanged": true,
+      "passed": true,
+      "end_play_releases_widget": true
+    },
+    {
+      "model": "f16",
+      "fps": 240,
+      "start_time": 0.0,
+      "zero_step_frames": 360,
+      "legacy_initial": false,
+      "input_passthrough": true,
+      "physics_samples_per_second": 120.0000000132964,
+      "refresh_count": 42,
+      "independent_toggles": true,
+      "hidden_stops_work": true,
+      "possession_resets_source": true,
+      "reload_invalidates_history": true,
+      "legacy_unchanged": true,
+      "passed": true,
+      "end_play_releases_widget": true
+    },
+    {
+      "model": "j10ce",
+      "fps": 30,
+      "start_time": 0.03333333333,
+      "zero_step_frames": 0,
+      "legacy_initial": false,
+      "input_passthrough": true,
+      "physics_samples_per_second": 119.99999998668132,
+      "refresh_count": 42,
+      "independent_toggles": true,
+      "hidden_stops_work": true,
+      "possession_resets_source": true,
+      "reload_invalidates_history": true,
+      "legacy_unchanged": true,
+      "passed": true,
+      "end_play_releases_widget": true
+    },
+    {
+      "model": "j10ce",
+      "fps": 60,
+      "start_time": 0.01666666667,
+      "zero_step_frames": 0,
+      "legacy_initial": false,
+      "input_passthrough": true,
+      "physics_samples_per_second": 119.9999999868,
+      "refresh_count": 42,
+      "independent_toggles": true,
+      "hidden_stops_work": true,
+      "possession_resets_source": true,
+      "reload_invalidates_history": true,
+      "legacy_unchanged": true,
+      "passed": true,
+      "end_play_releases_widget": true
+    },
+    {
+      "model": "j10ce",
+      "fps": 144,
+      "start_time": 0.0,
+      "zero_step_frames": 72,
+      "legacy_initial": false,
+      "input_passthrough": true,
+      "physics_samples_per_second": 120.0000000132964,
+      "refresh_count": 42,
+      "independent_toggles": true,
+      "hidden_stops_work": true,
+      "possession_resets_source": true,
+      "reload_invalidates_history": true,
+      "legacy_unchanged": true,
+      "passed": true,
+      "end_play_releases_widget": true
+    },
+    {
+      "model": "j10ce",
+      "fps": 240,
+      "start_time": 0.0,
+      "zero_step_frames": 360,
+      "legacy_initial": false,
+      "input_passthrough": true,
+      "physics_samples_per_second": 120.0000000132964,
+      "refresh_count": 42,
+      "independent_toggles": true,
+      "hidden_stops_work": true,
+      "possession_resets_source": true,
+      "reload_invalidates_history": true,
+      "legacy_unchanged": true,
+      "passed": true,
+      "end_play_releases_widget": true
+    }
+  ],
+  "representative_pages": {
+    "f16": [
+      {
+        "page": "overview",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.9999914879357,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.2047377311467,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.2047377113895,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.7142701533346338,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 3001.829133216262,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 3001.8122123071284,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.0022554863894761407,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.9965421248770233,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.43466192730071096,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": 0.00017873643465838177,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.4352108048180448,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.1411220717043204,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00162119823972,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 1360.6732242565943,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 31.01394772529602,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 16.95267620365596,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "p": {
+            "available": true,
+            "value": 0.0002647567347854452,
+            "text": "",
+            "unit": "deg/s"
+          },
+          "q": {
+            "available": true,
+            "value": -1.8398118218871367e-05,
+            "text": "",
+            "unit": "deg/s"
+          },
+          "r": {
+            "available": true,
+            "value": 0.00010531984934018346,
+            "text": "",
+            "unit": "deg/s"
+          }
+        },
+        "samples": 30,
+        "refreshes": 5
+      },
+      {
+        "page": "response",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.9999257869137,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.2046819975446,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.20468191923817,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.7142700732737854,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 3001.8299672507915,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 3001.813046336888,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.004418677290037984,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.9965474784051388,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.4346525830123581,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": 0.00015806154886360528,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.4357296169097041,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.1410556759395229,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00217441466918,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 1360.5758313744082,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 31.01394772529602,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 16.952676035880508,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "p": {
+            "available": true,
+            "value": 0.00025310430808767916,
+            "text": "",
+            "unit": "deg/s"
+          },
+          "q": {
+            "available": true,
+            "value": -3.832557692185039e-05,
+            "text": "",
+            "unit": "deg/s"
+          },
+          "r": {
+            "available": true,
+            "value": 9.115339566994796e-05,
+            "text": "",
+            "unit": "deg/s"
+          },
+          "RollCmd": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "norm"
+          },
+          "PitchCmd": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "norm"
+          },
+          "YawCmd": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "norm"
+          },
+          "PitchTrim": {
+            "available": true,
+            "value": -0.04881840571761131,
+            "text": "",
+            "unit": "norm"
+          },
+          "RollTrim": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "norm"
+          },
+          "YawTrim": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "norm"
+          },
+          "Bindings": {
+            "available": true,
+            "value": 0.0,
+            "text": "MODEL MATCH",
+            "unit": ""
+          },
+          "Surface.StabilatorLeft": {
+            "available": true,
+            "value": 1.066189389880467,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.StabilatorRight": {
+            "available": true,
+            "value": -1.06611790004733,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.AileronLeft": {
+            "available": true,
+            "value": -3.57449165685721e-05,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.LeadingEdgeFlapLeft": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.TrailingEdgeFlapLeft": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.SpeedBrakeLeft": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.CanardLeft": {
+            "available": false,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.AileronRight": {
+            "available": true,
+            "value": 3.57449165685721e-05,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.LeadingEdgeFlapRight": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.TrailingEdgeFlapRight": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.SpeedBrakeRight": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.CanardRight": {
+            "available": false,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.Rudder": {
+            "available": true,
+            "value": 0.0004910028918460575,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.Canopy": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          },
+          "Surface.Hook": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          }
+        },
+        "samples": 60,
+        "refreshes": 10
+      },
+      {
+        "page": "power",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.9998125620835,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.20458470362905,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.2045845276752,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.7142699328199965,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 3001.8313430741073,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 3001.8144221517996,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.006588321049948265,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.9965487163328159,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.4346374039141358,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": 0.00014205821494404168,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.43624415815476786,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.14099568984568364,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.0027247957799,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 1360.4784384943966,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 31.01394772529602,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 16.952675894226076,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "E0 Running": {
+            "available": true,
+            "value": 0.0,
+            "text": "RUN / AB OFF",
+            "unit": ""
+          },
+          "E0 Throttle": {
+            "available": true,
+            "value": 31.01394772529602,
+            "text": "",
+            "unit": "%"
+          },
+          "E0 N1": {
+            "available": true,
+            "value": 77.21673727035522,
+            "text": "",
+            "unit": "%"
+          },
+          "E0 N2": {
+            "available": true,
+            "value": 82.15311086177826,
+            "text": "",
+            "unit": "%"
+          },
+          "E0 Thrust": {
+            "available": true,
+            "value": 16.952675894226076,
+            "text": "",
+            "unit": "kN"
+          },
+          "E0 Nozzle": {
+            "available": true,
+            "value": 37.97210454940796,
+            "text": "",
+            "unit": "%"
+          },
+          "E0 FuelFlow": {
+            "available": true,
+            "value": 0.389571515147169,
+            "text": "",
+            "unit": "kg/s"
+          },
+          "Tank 0Mass": {
+            "available": true,
+            "value": 680.2392192471983,
+            "text": "",
+            "unit": "kg"
+          },
+          "Tank 0Fill": {
+            "available": true,
+            "value": 43.01981557719801,
+            "text": "",
+            "unit": "%"
+          },
+          "Tank 1Mass": {
+            "available": true,
+            "value": 680.2392192471983,
+            "text": "",
+            "unit": "kg"
+          },
+          "Tank 1Fill": {
+            "available": true,
+            "value": 43.01981557719801,
+            "text": "",
+            "unit": "%"
+          },
+          "Tank 2Mass": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kg"
+          },
+          "Tank 2Fill": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          },
+          "Tank 3Mass": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kg"
+          },
+          "Tank 3Fill": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          }
+        },
+        "samples": 90,
+        "refreshes": 14
+      },
+      {
+        "page": "gear",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.9996524779793,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.2044466003549,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.2044462877177,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.714269733155956,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 3001.8332614901215,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 3001.8163405559053,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.008758735741601886,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.996548317851426,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.4346186058480977,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": 0.00012964744656892565,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.43675526006988086,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.1409418599435547,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00327309725554,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 1360.3810456171284,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 31.01394772529602,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 16.952675758231248,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "NOSE_LGState": {
+            "available": true,
+            "value": 0.0,
+            "text": "WHEEL | UP | WOW NO",
+            "unit": ""
+          },
+          "NOSE_LGExtension": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          },
+          "NOSE_LGCompression": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm"
+          },
+          "NOSE_LGCompressionRate": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm/s"
+          },
+          "NOSE_LGStrut": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "NOSE_LGContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "NOSE_LGSpin": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "m/s"
+          },
+          "NOSE_LGSteer": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "LEFT_MLGState": {
+            "available": true,
+            "value": 0.0,
+            "text": "WHEEL | UP | WOW NO",
+            "unit": ""
+          },
+          "LEFT_MLGExtension": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          },
+          "LEFT_MLGCompression": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm"
+          },
+          "LEFT_MLGCompressionRate": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm/s"
+          },
+          "LEFT_MLGStrut": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "LEFT_MLGContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "LEFT_MLGSpin": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "m/s"
+          },
+          "LEFT_MLGSteer": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "RIGHT_MLGState": {
+            "available": true,
+            "value": 0.0,
+            "text": "WHEEL | UP | WOW NO",
+            "unit": ""
+          },
+          "RIGHT_MLGExtension": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          },
+          "RIGHT_MLGCompression": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm"
+          },
+          "RIGHT_MLGCompressionRate": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm/s"
+          },
+          "RIGHT_MLGStrut": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "RIGHT_MLGContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "RIGHT_MLGSpin": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "m/s"
+          },
+          "RIGHT_MLGSteer": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "LEFT_WTState": {
+            "available": true,
+            "value": 0.0,
+            "text": "STRUCTURE | DOWN | WOW NO",
+            "unit": ""
+          },
+          "LEFT_WTContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "RIGHT_WTState": {
+            "available": true,
+            "value": 0.0,
+            "text": "STRUCTURE | DOWN | WOW NO",
+            "unit": ""
+          },
+          "RIGHT_WTContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "TOP_VSState": {
+            "available": true,
+            "value": 0.0,
+            "text": "STRUCTURE | DOWN | WOW NO",
+            "unit": ""
+          },
+          "TOP_VSContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "LEFT_VFTState": {
+            "available": true,
+            "value": 0.0,
+            "text": "STRUCTURE | DOWN | WOW NO",
+            "unit": ""
+          },
+          "LEFT_VFTContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "RIGHT_VFTState": {
+            "available": true,
+            "value": 0.0,
+            "text": "STRUCTURE | DOWN | WOW NO",
+            "unit": ""
+          },
+          "RIGHT_VFTContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "INTAKEState": {
+            "available": true,
+            "value": 0.0,
+            "text": "STRUCTURE | DOWN | WOW NO",
+            "unit": ""
+          },
+          "INTAKEContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "RADOMEState": {
+            "available": true,
+            "value": 0.0,
+            "text": "STRUCTURE | DOWN | WOW NO",
+            "unit": ""
+          },
+          "RADOMEContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "samples": 120,
+        "refreshes": 19
+      },
+      {
+        "page": "aero",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.9994458350323,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.2042680149643,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.20426752685853,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.7142694747919343,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 3001.835722258115,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 3001.8188013127365,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.01092667153893885,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.9965468223568215,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.4345974380125916,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": 0.00012009059083063536,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.43726338046218227,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.14089281437657236,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00381979221027,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 1360.2836527432316,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 31.01394772529602,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 16.95267562009443,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "Qbar": {
+            "available": true,
+            "value": 25.036396644738065,
+            "text": "",
+            "unit": "kPa"
+          },
+          "Weight": {
+            "available": true,
+            "value": 9357.120382272302,
+            "text": "",
+            "unit": "kg"
+          },
+          "CGx": {
+            "available": true,
+            "value": -63.11380821399922,
+            "text": "",
+            "unit": "cm"
+          },
+          "Fax": {
+            "available": true,
+            "value": -16.258595148441692,
+            "text": "",
+            "unit": "kN"
+          },
+          "CGy": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm"
+          },
+          "Fay": {
+            "available": true,
+            "value": -0.0012654472414431231,
+            "text": "",
+            "unit": "kN"
+          },
+          "CGz": {
+            "available": true,
+            "value": 173.80341525931902,
+            "text": "",
+            "unit": "cm"
+          },
+          "Faz": {
+            "available": true,
+            "value": -91.44512692634872,
+            "text": "",
+            "unit": "kN"
+          },
+          "Momentl": {
+            "available": true,
+            "value": -1.6351696306672223e-05,
+            "text": "",
+            "unit": "kNm"
+          },
+          "Momentm": {
+            "available": true,
+            "value": 1.539267765329127,
+            "text": "",
+            "unit": "kNm"
+          },
+          "Momentn": {
+            "available": true,
+            "value": -2.9556105490880733e-05,
+            "text": "",
+            "unit": "kNm"
+          },
+          "Windnorth": {
+            "available": true,
+            "value": -5.787840207105433e-14,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Windeast": {
+            "available": true,
+            "value": -5.197762220632285e-13,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Winddown": {
+            "available": true,
+            "value": -1.6415499249624807e-14,
+            "text": "",
+            "unit": "m/s"
+          }
+        },
+        "samples": 150,
+        "refreshes": 23
+      },
+      {
+        "page": "sim",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.9991929210493,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.2040492470924,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.2040485451056,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.7142691581891628,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 3001.8387244640353,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 3001.8218035009686,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.013089911962819173,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.9965445713891767,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.4345747341688667,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": 0.00011280357411607941,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.4377688135826733,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.14084745605180463,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00436525462476,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 1360.1862598733765,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 31.01394772529602,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 16.952675473980793,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "Pawn": {
+            "available": true,
+            "value": 0.0,
+            "text": "BP_F16A_C_0",
+            "unit": ""
+          },
+          "Generation": {
+            "available": true,
+            "value": 1.0,
+            "text": "",
+            "unit": ""
+          },
+          "EngineFPS": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "fps"
+          },
+          "GameFPS": {
+            "available": true,
+            "value": 59.99999687075631,
+            "text": "",
+            "unit": "fps"
+          },
+          "GameFrame": {
+            "available": true,
+            "value": 16.66666753590107,
+            "text": "",
+            "unit": "ms"
+          },
+          "SolverHz": {
+            "available": true,
+            "value": 120.0,
+            "text": "",
+            "unit": "Hz"
+          },
+          "Steps": {
+            "available": true,
+            "value": 2.0,
+            "text": "",
+            "unit": ""
+          },
+          "Alpha": {
+            "available": true,
+            "value": 9.492039683006714e-06,
+            "text": "",
+            "unit": ""
+          },
+          "Dropped": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "s"
+          },
+          "Time": {
+            "available": true,
+            "value": 1.5166666666666637,
+            "text": "",
+            "unit": "s"
+          },
+          "Legacy": {
+            "available": true,
+            "value": 0.0,
+            "text": "OFF (unchanged)",
+            "unit": ""
+          }
+        },
+        "samples": 180,
+        "refreshes": 28
+      }
+    ],
+    "j10ce": [
+      {
+        "page": "overview",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.9999712936057,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.1595496160537,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.1595495954033,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.7141801648316778,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 2999.600305005902,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 2999.583396653779,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.002303989425554892,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.9965592598417785,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.4106084340343426,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": 1.5594415487055443e-05,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.4111696601358645,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.14240191359553617,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00345488680983,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 2721.362024772123,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 30.798515677452087,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 28.913805926543315,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "p": {
+            "available": true,
+            "value": -1.751161849237277e-05,
+            "text": "",
+            "unit": "deg/s"
+          },
+          "q": {
+            "available": true,
+            "value": 1.0834045221699728e-05,
+            "text": "",
+            "unit": "deg/s"
+          },
+          "r": {
+            "available": true,
+            "value": 3.931971251017601e-05,
+            "text": "",
+            "unit": "deg/s"
+          }
+        },
+        "samples": 30,
+        "refreshes": 5
+      },
+      {
+        "page": "response",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.99989392685023,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.15948132161617,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.1594812401956,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.7141800652476255,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 2999.601155427513,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 2999.584247071051,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.0045033813956677875,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.9965691813100009,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.41060175845579816,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": 6.468510174332182e-06,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.4117000022698786,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.1424049302879962,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00399312221958,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 2721.1818417583418,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 30.798515677452087,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 28.913803387761448,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "p": {
+            "available": true,
+            "value": -7.169970519822374e-06,
+            "text": "",
+            "unit": "deg/s"
+          },
+          "q": {
+            "available": true,
+            "value": 2.540795219460233e-05,
+            "text": "",
+            "unit": "deg/s"
+          },
+          "r": {
+            "available": true,
+            "value": 3.287389988883656e-05,
+            "text": "",
+            "unit": "deg/s"
+          },
+          "RollCmd": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "norm"
+          },
+          "PitchCmd": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "norm"
+          },
+          "YawCmd": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "norm"
+          },
+          "PitchTrim": {
+            "available": true,
+            "value": 0.010652560740709305,
+            "text": "",
+            "unit": "norm"
+          },
+          "RollTrim": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "norm"
+          },
+          "YawTrim": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "norm"
+          },
+          "Bindings": {
+            "available": true,
+            "value": 0.0,
+            "text": "MODEL MATCH",
+            "unit": ""
+          },
+          "Surface.CanardLeft": {
+            "available": true,
+            "value": 0.21303846855579583,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.AileronLeft": {
+            "available": true,
+            "value": 1.1978412107050736e-06,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.TrailingEdgeFlapLeft": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.SpeedBrakeLeft": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          },
+          "Surface.LeadingEdgeFlapLeft": {
+            "available": false,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.CanardRight": {
+            "available": true,
+            "value": 0.21303875603768643,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.AileronRight": {
+            "available": true,
+            "value": -1.1978412107050736e-06,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.TrailingEdgeFlapRight": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.SpeedBrakeRight": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          },
+          "Surface.LeadingEdgeFlapRight": {
+            "available": false,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.ElevonPitch": {
+            "available": true,
+            "value": 0.0719004259843487,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.Rudder": {
+            "available": true,
+            "value": 1.6024001025275802e-05,
+            "text": "",
+            "unit": "deg"
+          },
+          "Surface.Canopy": {
+            "available": false,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          }
+        },
+        "samples": 60,
+        "refreshes": 10
+      },
+      {
+        "page": "power",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.9997679349146,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.1593704735931,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.1593702900774,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.714179903810911,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 2999.6025585826906,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 2999.5856502184574,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.006725336571933261,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.996577846526927,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.4105933769371018,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": 1.0521356955604682e-06,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.41223413854712265,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.1424058464280846,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00452801713192,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 2721.0016587681052,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 30.798515677452087,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 28.913799216236043,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "E0 Running": {
+            "available": true,
+            "value": 0.0,
+            "text": "RUN / AB OFF",
+            "unit": ""
+          },
+          "E0 Throttle": {
+            "available": true,
+            "value": 30.798515677452087,
+            "text": "",
+            "unit": "%"
+          },
+          "E0 N1": {
+            "available": true,
+            "value": 75.03807038068771,
+            "text": "",
+            "unit": "%"
+          },
+          "E0 N2": {
+            "available": true,
+            "value": 80.79851567745209,
+            "text": "",
+            "unit": "%"
+          },
+          "E0 Thrust": {
+            "available": true,
+            "value": 28.913799216236043,
+            "text": "",
+            "unit": "kN"
+          },
+          "E0 Nozzle": {
+            "available": true,
+            "value": 38.402968645095825,
+            "text": "",
+            "unit": "%"
+          },
+          "E0 FuelFlow": {
+            "available": true,
+            "value": 0.7207319009802525,
+            "text": "",
+            "unit": "kg/s"
+          },
+          "Tank 0Mass": {
+            "available": true,
+            "value": 1360.5008293840526,
+            "text": "",
+            "unit": "kg"
+          },
+          "Tank 0Fill": {
+            "available": true,
+            "value": 88.21737957365012,
+            "text": "",
+            "unit": "%"
+          },
+          "Tank 1Mass": {
+            "available": true,
+            "value": 1360.5008293840526,
+            "text": "",
+            "unit": "kg"
+          },
+          "Tank 1Fill": {
+            "available": true,
+            "value": 88.21737957365012,
+            "text": "",
+            "unit": "%"
+          }
+        },
+        "samples": 90,
+        "refreshes": 14
+      },
+      {
+        "page": "gear",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.9995933510346,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.1592172165255,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.159216888522,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.7141796807937526,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 2999.604519792241,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 2999.5876114179027,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.008967461778309564,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.9965857421209707,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.410584099321123,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": -5.653610029850314e-07,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.4127722944108577,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.14240581985459583,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00505923682755,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 2720.821475812832,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 30.798515677452087,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 28.913793401489155,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "NOSE_GEARState": {
+            "available": true,
+            "value": 0.0,
+            "text": "WHEEL | UP | WOW NO",
+            "unit": ""
+          },
+          "NOSE_GEARExtension": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          },
+          "NOSE_GEARCompression": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm"
+          },
+          "NOSE_GEARCompressionRate": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm/s"
+          },
+          "NOSE_GEARStrut": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "NOSE_GEARContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "NOSE_GEARSpin": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "m/s"
+          },
+          "NOSE_GEARSteer": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "LEFT_GEARState": {
+            "available": true,
+            "value": 0.0,
+            "text": "WHEEL | UP | WOW NO",
+            "unit": ""
+          },
+          "LEFT_GEARExtension": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          },
+          "LEFT_GEARCompression": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm"
+          },
+          "LEFT_GEARCompressionRate": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm/s"
+          },
+          "LEFT_GEARStrut": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "LEFT_GEARContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "LEFT_GEARSpin": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "m/s"
+          },
+          "LEFT_GEARSteer": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          },
+          "RIGHT_GEARState": {
+            "available": true,
+            "value": 0.0,
+            "text": "WHEEL | UP | WOW NO",
+            "unit": ""
+          },
+          "RIGHT_GEARExtension": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "%"
+          },
+          "RIGHT_GEARCompression": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm"
+          },
+          "RIGHT_GEARCompressionRate": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm/s"
+          },
+          "RIGHT_GEARStrut": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "RIGHT_GEARContact": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "kN"
+          },
+          "RIGHT_GEARSpin": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "m/s"
+          },
+          "RIGHT_GEARSteer": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "deg"
+          }
+        },
+        "samples": 120,
+        "refreshes": 19
+      },
+      {
+        "page": "aero",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.999370126142,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.1590215942092,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.1590210783357,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.7141793963064795,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 2999.6070438955308,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 2999.590135507461,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.011228276859416797,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.9965931562374416,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.4105744057814464,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": -2.2852314868192092e-07,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.41331459337100607,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.14240566796591295,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00558848313875,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 2720.641292904016,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 30.798515677452087,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 28.913785933162057,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "Qbar": {
+            "available": true,
+            "value": 25.037170280278335,
+            "text": "",
+            "unit": "kPa"
+          },
+          "Weight": {
+            "available": true,
+            "value": 12563.601728000107,
+            "text": "",
+            "unit": "kg"
+          },
+          "CGx": {
+            "available": true,
+            "value": -10.171598959931455,
+            "text": "",
+            "unit": "cm"
+          },
+          "Fax": {
+            "available": true,
+            "value": -28.03360943395643,
+            "text": "",
+            "unit": "kN"
+          },
+          "CGy": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "cm"
+          },
+          "Fay": {
+            "available": true,
+            "value": 3.506077569903448e-06,
+            "text": "",
+            "unit": "kN"
+          },
+          "CGz": {
+            "available": true,
+            "value": -39.853274607744716,
+            "text": "",
+            "unit": "cm"
+          },
+          "Faz": {
+            "available": true,
+            "value": -122.78712642394278,
+            "text": "",
+            "unit": "kN"
+          },
+          "Momentl": {
+            "available": true,
+            "value": -8.497773240285379e-07,
+            "text": "",
+            "unit": "kNm"
+          },
+          "Momentm": {
+            "available": true,
+            "value": -5.917588158479889,
+            "text": "",
+            "unit": "kNm"
+          },
+          "Momentn": {
+            "available": true,
+            "value": -1.1399815079016656e-05,
+            "text": "",
+            "unit": "kNm"
+          },
+          "Windnorth": {
+            "available": true,
+            "value": -6.0297933313080425e-15,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Windeast": {
+            "available": true,
+            "value": 2.4256223696283995e-13,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Winddown": {
+            "available": true,
+            "value": -6.96885332318424e-14,
+            "text": "",
+            "unit": "m/s"
+          }
+        },
+        "samples": 150,
+        "refreshes": 23
+      },
+      {
+        "page": "sim",
+        "overview": {
+          "CAS": {
+            "available": true,
+            "value": 399.99909816381825,
+            "text": "",
+            "unit": "kt"
+          },
+          "TAS": {
+            "available": true,
+            "value": 456.15878359222063,
+            "text": "",
+            "unit": "kt"
+          },
+          "GS": {
+            "available": true,
+            "value": 456.1587828441473,
+            "text": "",
+            "unit": "kt"
+          },
+          "Mach": {
+            "available": true,
+            "value": 0.7141790503657698,
+            "text": "",
+            "unit": ""
+          },
+          "ASL": {
+            "available": true,
+            "value": 2999.610135442382,
+            "text": "",
+            "unit": "m"
+          },
+          "AGL": {
+            "available": true,
+            "value": 2999.593227035518,
+            "text": "",
+            "unit": "m"
+          },
+          "VS": {
+            "available": true,
+            "value": 0.013506842776521859,
+            "text": "",
+            "unit": "m/s"
+          },
+          "Nz": {
+            "available": true,
+            "value": 0.9966002595162575,
+            "text": "",
+            "unit": "g"
+          },
+          "Alpha": {
+            "available": true,
+            "value": 0.4105645812444347,
+            "text": "",
+            "unit": "deg"
+          },
+          "Beta": {
+            "available": true,
+            "value": 5.365649128840792e-07,
+            "text": "",
+            "unit": "deg"
+          },
+          "Pitch": {
+            "available": true,
+            "value": 0.4138610950278734,
+            "text": "",
+            "unit": "deg"
+          },
+          "Roll": {
+            "available": true,
+            "value": -0.1424057014591648,
+            "text": "",
+            "unit": "deg"
+          },
+          "HDG": {
+            "available": true,
+            "value": 90.00611724094233,
+            "text": "",
+            "unit": "deg"
+          },
+          "Fuel": {
+            "available": true,
+            "value": 2720.4611100532275,
+            "text": "",
+            "unit": "kg"
+          },
+          "Throttle": {
+            "available": true,
+            "value": 30.798515677452087,
+            "text": "",
+            "unit": "%"
+          },
+          "Thrust": {
+            "available": true,
+            "value": 28.91377680099037,
+            "text": "",
+            "unit": "kN"
+          }
+        },
+        "details": {
+          "Pawn": {
+            "available": true,
+            "value": 0.0,
+            "text": "BP_J16CE_C_0",
+            "unit": ""
+          },
+          "Generation": {
+            "available": true,
+            "value": 1.0,
+            "text": "",
+            "unit": ""
+          },
+          "EngineFPS": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "fps"
+          },
+          "GameFPS": {
+            "available": true,
+            "value": 59.99999687075631,
+            "text": "",
+            "unit": "fps"
+          },
+          "GameFrame": {
+            "available": true,
+            "value": 16.66666753590107,
+            "text": "",
+            "unit": "ms"
+          },
+          "SolverHz": {
+            "available": true,
+            "value": 120.0,
+            "text": "",
+            "unit": "Hz"
+          },
+          "Steps": {
+            "available": true,
+            "value": 2.0,
+            "text": "",
+            "unit": ""
+          },
+          "Alpha": {
+            "available": true,
+            "value": 9.492039683006714e-06,
+            "text": "",
+            "unit": ""
+          },
+          "Dropped": {
+            "available": true,
+            "value": 0.0,
+            "text": "",
+            "unit": "s"
+          },
+          "Time": {
+            "available": true,
+            "value": 1.5166666666666637,
+            "text": "",
+            "unit": "s"
+          },
+          "Legacy": {
+            "available": true,
+            "value": 0.0,
+            "text": "OFF (unchanged)",
+            "unit": ""
+          }
+        },
+        "samples": 180,
+        "refreshes": 28
+      }
+    ]
+  },
+  "ground": {
+    "cases": [
+      {
+        "model": "f16",
+        "contacts": [
+          {
+            "name": "NOSE_LG",
+            "WOW": true,
+            "strut_kN": -22.82600961781163,
+            "compression_cm": 9.067121660733712
+          },
+          {
+            "name": "LEFT_MLG",
+            "WOW": true,
+            "strut_kN": -34.47368187356431,
+            "compression_cm": 6.299193486831735
+          },
+          {
+            "name": "RIGHT_MLG",
+            "WOW": true,
+            "strut_kN": -34.473681363884694,
+            "compression_cm": 6.299193393700674
+          }
+        ],
+        "passed": true
+      },
+      {
+        "model": "j10ce",
+        "contacts": [
+          {
+            "name": "NOSE_GEAR",
+            "WOW": true,
+            "strut_kN": -36.66060074159854,
+            "compression_cm": 13.221555113199933
+          },
+          {
+            "name": "LEFT_GEAR",
+            "WOW": true,
+            "strut_kN": -43.28847054301466,
+            "compression_cm": 7.41559534559665
+          },
+          {
+            "name": "RIGHT_GEAR",
+            "WOW": true,
+            "strut_kN": -43.28897810735437,
+            "compression_cm": 7.415675353052656
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "success": true,
+    "error": null
+  }
+}

@@ -1,0 +1,1359 @@
+{
+  "cases": [
+    {
+      "mode": "Ground",
+      "loaded_gear_mapping": {
+        "NOSE_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            331.222564,
+            0.0,
+            -230.322962
+          ],
+          "mapping_error_cm": 6.355287432313019e-14,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 0.0
+        },
+        "LEFT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.071882,
+            -120.80646399999999,
+            -230.75450800000002
+          ],
+          "mapping_error_cm": 2.842170943040401e-14,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 1.1367874797481326e+162
+        },
+        "RIGHT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.071882,
+            120.80646399999999,
+            -230.75450800000002
+          ],
+          "mapping_error_cm": 2.842170943040401e-14,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 1.469501960625874e+258
+        }
+      },
+      "samples": [
+        {
+          "sim_time_sec": 0.1833333333,
+          "actor_position_cm": [
+            17304.738225747074,
+            -18785.809879047516,
+            221.40175656408485
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.86981735,
+            0.0,
+            0.05776328704
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.22256400000003,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 13.222006160522175,
+              "WOW": true,
+              "force_N": -36665.48915816302
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415884947938141,
+              "WOW": true,
+              "force_N": -43293.4444593018
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415897614954596,
+              "WOW": true,
+              "force_N": -43293.65526149707
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 0.4333333333,
+          "actor_position_cm": [
+            17305.262339977446,
+            -18786.37880849295,
+            221.40147264637005
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.869548144,
+            0.0,
+            0.05776519969
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.22256400000003,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 13.222540823608867,
+              "WOW": true,
+              "force_N": -36663.96809080125
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.416039075635183,
+              "WOW": true,
+              "force_N": -43291.13835973687
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.416082106334001,
+              "WOW": true,
+              "force_N": -43291.52127385584
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 0.6833333333,
+          "actor_position_cm": [
+            17306.211378164884,
+            -18787.409044964625,
+            221.40165165653042
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.869329885,
+            0.0,
+            0.05776675037
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 5.684341886080802e-14,
+              "compression_cm": 13.222278683536326,
+              "WOW": true,
+              "force_N": -36662.28127917061
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 7.415887977737276,
+              "WOW": true,
+              "force_N": -43289.93289877143
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 7.415950940558312,
+              "WOW": true,
+              "force_N": -43290.36192189803
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 0.9333333333,
+          "actor_position_cm": [
+            17307.585398315354,
+            -18788.900649260002,
+            221.40188428460982
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.86916258,
+            0.0,
+            0.05776793904
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 5.684341886080802e-14,
+              "compression_cm": 13.221878092585865,
+              "WOW": true,
+              "force_N": -36661.23748004486
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 7.415727540912269,
+              "WOW": true,
+              "force_N": -43289.07752776625
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 7.41579963139622,
+              "WOW": true,
+              "force_N": -43289.546723073916
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 1.183333333,
+          "actor_position_cm": [
+            17309.38443841565,
+            -18790.853652978145,
+            221.40207351235154
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.869046237,
+            0.0,
+            0.05776876564
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.22256400000003,
+                0.0,
+                -230.322962
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 13.221555012256033,
+              "WOW": true,
+              "force_N": -36660.60023475346
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415595521839689,
+              "WOW": true,
+              "force_N": -43288.48350444322
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415675343020535,
+              "WOW": true,
+              "force_N": -43288.965297707015
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 1.433333333,
+          "actor_position_cm": [
+            17311.608515463828,
+            -18793.26806945277,
+            221.40220373245916
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.868980858,
+            0.0,
+            0.05776923014
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 5.684341886080802e-14,
+              "compression_cm": 13.221335806618297,
+              "WOW": true,
+              "force_N": -36660.247304868135
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415501796581639,
+              "WOW": true,
+              "force_N": -43288.10927077456
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415590000435203,
+              "WOW": true,
+              "force_N": -43288.67150400068
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 1.683333333,
+          "actor_position_cm": [
+            17314.257632678484,
+            -18796.143901183725,
+            221.4022765761211
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.86895067,
+            0.0,
+            0.05776944462
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.322962
+              ],
+              "mapping_error_cm": 6.355287432313019e-14,
+              "compression_cm": 13.221212182943459,
+              "WOW": true,
+              "force_N": -36660.1099717734
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415447108355486,
+              "WOW": true,
+              "force_N": -43287.96240826171
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415545371239324,
+              "WOW": true,
+              "force_N": -43288.534528000164
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 1.933333333,
+          "actor_position_cm": [
+            17317.331785879327,
+            -18799.481146110993,
+            221.4023201058655
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.868921634,
+            0.0,
+            0.05776965091
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.322962
+              ],
+              "mapping_error_cm": 6.355287432313019e-14,
+              "compression_cm": 13.221141941080553,
+              "WOW": true,
+              "force_N": -36659.97943300193
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415410868953587,
+              "WOW": true,
+              "force_N": -43287.75772020058
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415518911618178,
+              "WOW": true,
+              "force_N": -43288.44137716052
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 2.183333333,
+          "actor_position_cm": [
+            17320.830969261606,
+            -18803.279797897805,
+            221.4023576844844
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.868892598,
+            0.0,
+            0.05776985721
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.22256400000003,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 13.221083065479053,
+              "WOW": true,
+              "force_N": -36659.82328368763
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.4153781704816915,
+              "WOW": true,
+              "force_N": -43287.60920128435
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415496272223396,
+              "WOW": true,
+              "force_N": -43288.28326707431
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 2.433333333,
+          "actor_position_cm": [
+            17324.755177236624,
+            -18807.539850184177,
+            221.402394158239
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.868863561,
+            0.0,
+            0.05777006351
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 5.684341886080802e-14,
+              "compression_cm": 13.221024934408913,
+              "WOW": true,
+              "force_N": -36659.66000076814
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415346869000696,
+              "WOW": true,
+              "force_N": -43287.380675970744
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 7.415474191619207,
+              "WOW": true,
+              "force_N": -43288.202101237606
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 2.683333333,
+          "actor_position_cm": [
+            17329.104402611854,
+            -18812.261296935958,
+            221.40243074152676
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.868834525,
+            0.0,
+            0.05777026981
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.22256400000003,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 13.220966058148912,
+              "WOW": true,
+              "force_N": -36659.495807492625
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 7.415315194875996,
+              "WOW": true,
+              "force_N": -43287.20721456545
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 7.4154526698087375,
+              "WOW": true,
+              "force_N": -43288.06525950522
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 2.933333333,
+          "actor_position_cm": [
+            17333.878638447157,
+            -18817.444129074003,
+            221.40246760929077
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.868805488,
+            0.0,
+            0.05777047611
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.22256400000003,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 0.0,
+              "compression_cm": 13.220906809331861,
+              "WOW": true,
+              "force_N": -36659.33104067865
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 7.415283800005076,
+              "WOW": true,
+              "force_N": -43287.0244600645
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 7.415431054620634,
+              "WOW": true,
+              "force_N": -43287.93800885602
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        }
+      ],
+      "trimmed": true,
+      "final_gears": {
+        "NOSE_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            331.22256400000003,
+            0.0,
+            -230.322962
+          ],
+          "mapping_error_cm": 2.842170943040401e-14,
+          "compression_cm": 13.220851473083167,
+          "WOW": true,
+          "force_N": -36659.177183374246
+        },
+        "LEFT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.07188199999996,
+            -120.80646399999999,
+            -230.754508
+          ],
+          "mapping_error_cm": 6.355287432313019e-14,
+          "compression_cm": 7.415254641035067,
+          "WOW": true,
+          "force_N": -43286.838544451755
+        },
+        "RIGHT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.07188199999996,
+            120.80646399999999,
+            -230.754508
+          ],
+          "mapping_error_cm": 6.355287432313019e-14,
+          "compression_cm": 7.415410371422321,
+          "WOW": true,
+          "force_N": -43287.832015704626
+        }
+      },
+      "passed": true
+    },
+    {
+      "mode": "Air",
+      "loaded_gear_mapping": {
+        "NOSE_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            331.222564,
+            0.0,
+            -230.322962
+          ],
+          "mapping_error_cm": 6.355287432313019e-14,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 0.0
+        },
+        "LEFT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.071882,
+            -120.80646399999999,
+            -230.75450800000002
+          ],
+          "mapping_error_cm": 2.842170943040401e-14,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 1.1367874797481326e+162
+        },
+        "RIGHT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.071882,
+            120.80646399999999,
+            -230.75450800000002
+          ],
+          "mapping_error_cm": 2.842170943040401e-14,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 1.469501960625874e+258
+        }
+      },
+      "samples": [
+        {
+          "sim_time_sec": 0.2,
+          "actor_position_cm": [
+            20486.616575530956,
+            -22240.03843779619,
+            299998.226867141
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.869946681,
+            0.0,
+            0.05776236817
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.322962
+              ],
+              "mapping_error_cm": 6.355287432313019e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 0.45,
+          "actor_position_cm": [
+            24464.861806993154,
+            -26558.614439983947,
+            299998.2345780949
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.869830042,
+            0.0,
+            0.05776319686
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.2225639999999,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 1.1368683772161603e-13,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 0.7,
+          "actor_position_cm": [
+            28443.106393934693,
+            -30877.18966235939,
+            299998.24354101403
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.8697134,
+            0.0,
+            0.05776402557
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 5.684341886080802e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 0.95,
+          "actor_position_cm": [
+            32421.349986526875,
+            -35195.76368132396,
+            299998.25429703854
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.869596755,
+            0.0,
+            0.05776485431
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.322962
+              ],
+              "mapping_error_cm": 6.355287432313019e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 1.2,
+          "actor_position_cm": [
+            36399.592220605504,
+            -39514.33608930557,
+            299998.26733476296
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.869480107,
+            0.0,
+            0.05776568308
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.22256400000003,
+                0.0,
+                -230.32296199999996
+              ],
+              "mapping_error_cm": 5.684341886080802e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 1.45,
+          "actor_position_cm": [
+            40377.83272415722,
+            -43832.906486138185,
+            299998.2831095224
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.869363455,
+            0.0,
+            0.05776651186
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.322962
+              ],
+              "mapping_error_cm": 6.355287432313019e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 1.7,
+          "actor_position_cm": [
+            44356.07112325711,
+            -48151.47447326672,
+            299998.30205690104
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.8692468,
+            0.0,
+            0.05776734067
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 5.684341886080802e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 1.95,
+          "actor_position_cm": [
+            48334.30704451564,
+            -52470.039650902516,
+            299998.3245974843
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.869130142,
+            0.0,
+            0.0577681695
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.322962
+              ],
+              "mapping_error_cm": 6.355287432313019e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.07188200000002,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 2.2,
+          "actor_position_cm": [
+            52312.54011537329,
+            -56788.601616738815,
+            299998.35114310076
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.869013481,
+            0.0,
+            0.05776899836
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.322962
+              ],
+              "mapping_error_cm": 6.355287432313019e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 2.45,
+          "actor_position_cm": [
+            56290.769963666186,
+            -61107.159967800304,
+            299998.38209682266
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.868896816,
+            0.0,
+            0.05776982724
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.32296200000002
+              ],
+              "mapping_error_cm": 5.684341886080802e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 2.7,
+          "actor_position_cm": [
+            60268.99621659359,
+            -65425.7142998204,
+            299998.4178568786
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.868780148,
+            0.0,
+            0.05777065614
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.322962
+              ],
+              "mapping_error_cm": 6.355287432313019e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.75450800000002
+              ],
+              "mapping_error_cm": 2.842170943040401e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        },
+        {
+          "sim_time_sec": 2.95,
+          "actor_position_cm": [
+            64247.21850058766,
+            -69744.26420774279,
+            299998.45881609485
+          ],
+          "current_loaded_cg_structural_in": [
+            -3.868663477,
+            0.0,
+            0.05777148507
+          ],
+          "gears": {
+            "NOSE_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                331.222564,
+                0.0,
+                -230.322962
+              ],
+              "mapping_error_cm": 6.355287432313019e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 5.34725636856933e-310
+            },
+            "LEFT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                -120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 0.0
+            },
+            "RIGHT_GEAR": {
+              "uncompressed_contact_actor_cm": [
+                -147.071882,
+                120.80646399999999,
+                -230.754508
+              ],
+              "mapping_error_cm": 4.0194366942304644e-14,
+              "compression_cm": 0.0,
+              "WOW": false,
+              "force_N": 1.2954871408172796e+258
+            }
+          },
+          "steps": 2,
+          "dropped": 0.0
+        }
+      ],
+      "trimmed": true,
+      "final_gears": {
+        "NOSE_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            331.22256400000003,
+            0.0,
+            -230.32296200000002
+          ],
+          "mapping_error_cm": 0.0,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 5.34725636856933e-310
+        },
+        "LEFT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.071882,
+            -120.80646399999999,
+            -230.75450800000004
+          ],
+          "mapping_error_cm": 4.0194366942304644e-14,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 0.0
+        },
+        "RIGHT_GEAR": {
+          "uncompressed_contact_actor_cm": [
+            -147.071882,
+            120.80646399999999,
+            -230.75450800000004
+          ],
+          "mapping_error_cm": 4.0194366942304644e-14,
+          "compression_cm": 0.0,
+          "WOW": false,
+          "force_N": 1.2954871408172796e+258
+        }
+      },
+      "passed": true
+    }
+  ],
+  "success": true
+}

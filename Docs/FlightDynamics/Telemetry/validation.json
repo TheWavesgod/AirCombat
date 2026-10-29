@@ -1,0 +1,370 @@
+{
+  "success": true,
+  "date": "2026-10-28",
+  "build": "AirCombatEditor Win64 Development Succeeded; full rebuild after reflected default changes, Live Coding not used.",
+  "automation": {
+    "succeeded": 31,
+    "succeededWithWarnings": 0,
+    "failed": 0,
+    "notRun": 0
+  },
+  "tests": [
+    {
+      "name": "AirCombat.Animation.ActualGearAndSuspension",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Animation.F16BindingsAsset",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Animation.PreviewAndInvalidation",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Animation.SurfaceAvailabilityAndUnits",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Camera.AircraftAttitude",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Camera.LookConsumptionAndModes",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Camera.PresentationHeading",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Camera.RecenterAndLimits",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Camera.SpringArmCollision",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.ModelOwnsYawFeedback",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.SpeedBrakeHoldRelease",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.TrimHandoffAndReset",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.FlightDynamics.Telemetry.ColdAirStartAndModelReset",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.FlightDynamics.Telemetry.ContactLifecycleAndReadPurity",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.FlightDynamics.Telemetry.EngineTypeAndQueryReset",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.FlightDynamics.Telemetry.FullAircraftStateReset",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.FlightDynamics.GroundMissReturnsEarthContact",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.DA_FighterInputConfig",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.ImcOppositeKeyMapping",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.PlayerMappableMappingNames",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.PushRate",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.Reset",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.ReturnToCenter",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Presentation.FixedClockCadence",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Presentation.HitchInvalidTimeAndReset",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Presentation.LastSubstepAndQuaternionInterpolation",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Presentation.RenderMotionAcrossCadences",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Presentation.UnavailableSourcePreservesStructuralMapping",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Visual.F16ReferenceGeometry",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "AirCombat.Visual.FixedFrameAndCameraAnchors",
+      "state": "Success",
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "runtime": {
+    "cases": [
+      {
+        "configuration": {
+          "model": "f16",
+          "mode": "ground",
+          "fps": 60
+        },
+        "trimmed": true,
+        "frames": 157,
+        "max_contact_force_N": 34477.73046465476,
+        "extension_min": 1.0,
+        "extension_max": 1.0,
+        "zero_solver_step_frames": 6,
+        "passed": true
+      },
+      {
+        "configuration": {
+          "model": "f16",
+          "mode": "cold_up",
+          "fps": 60
+        },
+        "trimmed": true,
+        "frames": 150,
+        "max_contact_force_N": 0.0,
+        "extension_min": 0.0,
+        "extension_max": 0.0,
+        "zero_solver_step_frames": 0,
+        "reload_clears_runtime_outputs": true,
+        "passed": true
+      },
+      {
+        "configuration": {
+          "model": "f16",
+          "mode": "air_down",
+          "fps": 144
+        },
+        "trimmed": true,
+        "frames": 361,
+        "max_contact_force_N": 0.0,
+        "extension_min": 1.0,
+        "extension_max": 1.0,
+        "zero_solver_step_frames": 60,
+        "passed": true
+      },
+      {
+        "configuration": {
+          "model": "f16",
+          "mode": "cycle",
+          "fps": 240
+        },
+        "trimmed": true,
+        "frames": 2521,
+        "max_contact_force_N": 0.0,
+        "extension_min": 0.0,
+        "extension_max": 1.0,
+        "zero_solver_step_frames": 1260,
+        "cycle_events": {
+          "down_request": 0.2083333333,
+          "fully_down": 5.208333333,
+          "up_request": 5.508333333
+        },
+        "passed": true
+      },
+      {
+        "configuration": {
+          "model": "j10ce",
+          "mode": "ground",
+          "fps": 60
+        },
+        "trimmed": true,
+        "frames": 150,
+        "max_contact_force_N": 43293.98587662461,
+        "extension_min": 1.0,
+        "extension_max": 1.0,
+        "zero_solver_step_frames": 0,
+        "passed": true
+      },
+      {
+        "configuration": {
+          "model": "j10ce",
+          "mode": "cold_up",
+          "fps": 60
+        },
+        "trimmed": true,
+        "frames": 150,
+        "max_contact_force_N": 0.0,
+        "extension_min": 0.0,
+        "extension_max": 0.0,
+        "zero_solver_step_frames": 0,
+        "reload_clears_runtime_outputs": true,
+        "passed": true
+      },
+      {
+        "configuration": {
+          "model": "j10ce",
+          "mode": "air_down",
+          "fps": 144
+        },
+        "trimmed": true,
+        "frames": 1040,
+        "max_contact_force_N": 0.0,
+        "extension_min": 0.0,
+        "extension_max": 1.0,
+        "zero_solver_step_frames": 174,
+        "events": {
+          "down_request": 0.2083333333,
+          "fully_down": 4.708333333
+        },
+        "passed": true
+      },
+      {
+        "configuration": {
+          "model": "j10ce",
+          "mode": "cycle",
+          "fps": 240
+        },
+        "trimmed": true,
+        "frames": 2281,
+        "max_contact_force_N": 0.0,
+        "extension_min": 0.0,
+        "extension_max": 1.0,
+        "zero_solver_step_frames": 1140,
+        "cycle_events": {
+          "down_request": 0.2083333333,
+          "fully_down": 4.708333333,
+          "up_request": 5.008333333
+        },
+        "events": {
+          "down_request": 0.2083333333,
+          "fully_down": 4.708333333,
+          "up_request": 5.008333333
+        },
+        "passed": true
+      }
+    ],
+    "frames": 6810,
+    "RHI": "NullRHI",
+    "details": "runtime.json",
+    "J10CE_direct_gear_down_air_trim": "Failed at 400kt; separate model initialization limitation recorded, no aerodynamic or FCS tuning performed.",
+    "release_fixed_gear_patch": "The final fixed-gear normalization branch is separately covered by the native c172p regression; F16 and J10CE runtime cases use the unchanged retractable branch."
+  },
+  "safe_snapshot_contract": {
+    "strut_force": "Signed axial newtons; only a ready, fully extended, loaded bogey can read GetCompForce. Otherwise exactly zero without calling the unsafe getter.",
+    "contact_force": "Actor-axis vector in newtons; vector transform includes body-axis reflection, excludes coordinate-origin translation.",
+    "contact_calculation": "No virtual FGLGear::GetBodyForces call in the telemetry sampler. Axis force accessors only refresh solved-force cache. Ground callback, time and spin-down are not advanced by sampling.",
+    "wheel_spin": "Legitimate airborne spin is retained; only contact-dependent values are cleared.",
+    "reset": "Gears, engines, navigation, speeds, crash flag, reference points and property cache invalidated at teardown; tank editable input and gear editor labels preserved on LoadAircraft(false)."
+  },
+  "configuration_unchanged": {
+    "Content_Config": true,
+    "SourceAirCombat_semantics": true,
+    "concurrent_formatting_changes_preserved": [
+      "Source\\AirCombat\\Animation\\FighterAnimationStateBuilder.h",
+      "Source\\AirCombat\\Animation\\FighterAnimInstance.h"
+    ],
+    "JSBSim_resource_files": 419,
+    "all_XML_including_geometric_contact_calibration": true,
+    "aerodynamics_FCS_mass_engine_settings": true,
+    "blueprint_asset_migration_required": false
+  },
+  "changed_existing_files": [
+    "Plugins\\JSBSimFlightDynamicsModel\\Source\\JSBSimFlightDynamicsModel\\Private\\JSBSimMovementComponent.cpp",
+    "Plugins\\JSBSimFlightDynamicsModel\\Source\\JSBSimFlightDynamicsModel\\Public\\FDMTypes.h",
+    "Plugins\\JSBSimFlightDynamicsModel\\Source\\JSBSimFlightDynamicsModel\\Public\\JSBSimMovementComponent.h"
+  ],
+  "new_source_files": [
+    "Plugins\\JSBSimFlightDynamicsModel\\Source\\JSBSimFlightDynamicsModel\\Private\\Tests\\JSBSimTelemetryTests.cpp"
+  ],
+  "unchanged_protected_files": 755,
+  "binary_library_patched": false
+}

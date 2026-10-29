@@ -1,0 +1,52 @@
+{
+  "runs": [
+    {
+      "rig": "F16C",
+      "passed": true,
+      "frames": 352,
+      "saved_profile": "/Game/Data/Animation/DA_F16_AnimationBindings.DA_F16_AnimationBindings",
+      "anim_class": "/Game/Blueprints/Animation/F16C/ABP_F16C.ABP_F16C_C",
+      "pose_quaternion_change": 0.01752665037795209,
+      "gear_extension_range": [
+        1.0,
+        1.0
+      ],
+      "gear_intermediate_frames": 0,
+      "maximum_compression_cm": [
+        9.963830947875977,
+        6.30502986907959,
+        6.305017471313477
+      ],
+      "maximum_snapshot_gear_error": 0.0,
+      "maximum_snapshot_compression_error_cm": 4.7664864588625733e-07,
+      "maximum_snapshot_surface_error_deg": 9.545154178169923e-07,
+      "reload_invalidates_snapshot": true,
+      "temporary_test_calibration_cm": 20.0,
+      "test_calibration_saved_to_assets": false
+    },
+    {
+      "rig": "J10CE",
+      "passed": true,
+      "frames": 412,
+      "saved_profile": "/Game/Data/Animation/DA_J10CE_F16_AnimationBindings.DA_J10CE_F16_AnimationBindings",
+      "anim_class": "/Game/Blueprints/Animation/J10CE/ABP_J10CE.ABP_J10CE_C",
+      "pose_quaternion_change": 0.0027013276902605465,
+      "gear_extension_range": [
+        0.0,
+        1.0
+      ],
+      "gear_intermediate_frames": 299,
+      "maximum_compression_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_snapshot_gear_error": 2.9404964019263957e-08,
+      "maximum_snapshot_compression_error_cm": 0.0,
+      "maximum_snapshot_surface_error_deg": 4.677800813368549e-07,
+      "reload_invalidates_snapshot": true,
+      "temporary_test_calibration_cm": 20.0,
+      "test_calibration_saved_to_assets": false
+    }
+  ]
+}

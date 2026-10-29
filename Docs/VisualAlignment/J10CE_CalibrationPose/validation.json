@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-28",
+  "status": "passed",
+  "editor_build": "AirCombatEditor Win64 Development succeeded",
+  "existing_files_checked": 680,
+  "existing_files_changed": [],
+  "scope": "Independent gear/suspension calibration assets only. No JSBSim, skeleton reference, gameplay AnimBP, visual/camera configuration, contact-point or eye-point changes.",
+  "source_reference_adaptation": "CurrentReferenceWorld * inverse(SourceReferenceWorld) * SourcePoseWorld; original skeleton reference is not edited.",
+  "validation": {
+    "gear": {
+      "Deploy": {
+        "raw": {
+          "samples": 258,
+          "position_cm": 5.2105369598442465e-05,
+          "rotation_deg": 9.195423586105976e-06
+        },
+        "compressed": {
+          "samples": 258,
+          "position_cm": 5.603466565758642e-05,
+          "rotation_deg": 2.774435956405617e-05
+        }
+      },
+      "Retract": {
+        "raw": {
+          "samples": 258,
+          "position_cm": 5.2105369598442465e-05,
+          "rotation_deg": 9.195423586105976e-06
+        },
+        "compressed": {
+          "samples": 258,
+          "position_cm": 6.060664856304759e-05,
+          "rotation_deg": 1.7745352001653195e-05
+        }
+      }
+    },
+    "zero": {
+      "Nose": {
+        "raw": {
+          "position_cm": 2.8811653547004047e-05,
+          "rotation_deg": 5.663293681020316e-06,
+          "scale": 1.032382500425218e-07,
+          "position_bone": "b_J10C_LandGear_L_link_01",
+          "rotation_bone": "b_J10C_LandGear_R_01_link_01",
+          "other_bones_position_cm": 2.8811653547004047e-05
+        },
+        "compressed": {
+          "position_cm": 2.8811653547004047e-05,
+          "rotation_deg": 8.365239156607494e-06,
+          "scale": 1.3921525354493043e-06,
+          "position_bone": "b_J10C_LandGear_L_link_01",
+          "rotation_bone": "b_J10C_LandGear_R_01_link_01",
+          "other_bones_position_cm": 2.8811653547004047e-05
+        }
+      },
+      "Left": {
+        "raw": {
+          "position_cm": 2.8811653547004047e-05,
+          "rotation_deg": 5.663293681020316e-06,
+          "scale": 1.032382500425218e-07,
+          "position_bone": "b_J10C_LandGear_L_link_01",
+          "rotation_bone": "b_J10C_LandGear_R_01_link_01",
+          "other_bones_position_cm": 2.8811653547004047e-05
+        },
+        "compressed": {
+          "position_cm": 2.8811653547004047e-05,
+          "rotation_deg": 8.365239156607494e-06,
+          "scale": 1.3921525354493043e-06,
+          "position_bone": "b_J10C_LandGear_L_link_01",
+          "rotation_bone": "b_J10C_LandGear_R_01_link_01",
+          "other_bones_position_cm": 2.8811653547004047e-05
+        }
+      },
+      "Right": {
+        "raw": {
+          "position_cm": 2.8811653547004047e-05,
+          "rotation_deg": 5.122641877509564e-06,
+          "scale": 1.032382500425218e-07,
+          "position_bone": "b_J10C_LandGear_L_link_01",
+          "rotation_bone": "b_J10C_LandGear_R_01_link_02",
+          "other_bones_position_cm": 2.8811653547004047e-05
+        },
+        "compressed": {
+          "position_cm": 2.8811653547004047e-05,
+          "rotation_deg": 7.636383641665691e-06,
+          "scale": 1.3921525354493043e-06,
+          "position_bone": "b_J10C_LandGear_L_link_01",
+          "rotation_bone": "b_J10C_LandGear_R_01_link_02",
+          "other_bones_position_cm": 2.8811653547004047e-05
+        }
+      }
+    },
+    "fixed_pose": {
+      "raw": {
+        "position_cm": 2.8811653547004047e-05,
+        "rotation_deg": 5.663293681020316e-06,
+        "scale": 1.032382500425218e-07,
+        "position_bone": "b_J10C_LandGear_L_link_01",
+        "rotation_bone": "b_J10C_LandGear_R_01_link_01"
+      },
+      "compressed": {
+        "position_cm": 2.8811653547004047e-05,
+        "rotation_deg": 8.365239156607494e-06,
+        "scale": 1.3921525354493043e-06,
+        "position_bone": "b_J10C_LandGear_L_link_01",
+        "rotation_bone": "b_J10C_LandGear_R_01_link_01"
+      }
+    },
+    "nose_steering_angle_deg": 1.3518552254594785e-05,
+    "placed_preview": {
+      "position_cm": 1.5258789545669074e-05,
+      "rotation_deg": 8.87267600082659e-06,
+      "scale": 1.3921525354493043e-06,
+      "position_bone": "b_J10C_LandGate_F_R",
+      "rotation_bone": "b_J10C_LandGear_R_01_link_01"
+    },
+    "preview_animation": "(AnimToPlay=\"/Script/Engine.AnimSequence'/Game/Assets/Models/Jets/J10CE/Calibration/AN_J10CE_Calibration_GearDown_Unloaded.AN_J10CE_Calibration_GearDown_Unloaded'\",bSavedLooping=False,bSavedPlaying=False,SavedPosition=0.000000,SavedPlayRate=0.000000)",
+    "preview_has_fdm": false,
+    "placed_preview_matches": true,
+    "success": true
+  },
+  "render": {
+    "success": true,
+    "images": [
+      "calibration_pose.png",
+      "nose_gear_zero.png"
+    ]
+  },
+  "automation": {
+    "succeeded": 27,
+    "succeededWithWarnings": 0,
+    "failed": 0,
+    "notRun": 0
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-27",
+  "engine": "Unreal Engine 5.8.3",
+  "build": {
+    "target": "AirCombatEditor Win64 Development",
+    "result": "Succeeded",
+    "live_coding": false
+  },
+  "automation": {
+    "succeeded": 27,
+    "succeededWithWarnings": 0,
+    "failed": 0,
+    "notRun": 0
+  },
+  "tests": [
+    {
+      "name": "AirCombat.Animation.ActualGearAndSuspension",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.F16BindingsAsset",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.PreviewAndInvalidation",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.SurfaceAvailabilityAndUnits",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.AircraftAttitude",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.LookConsumptionAndModes",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.PresentationHeading",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.RecenterAndLimits",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.SpringArmCollision",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.ModelOwnsYawFeedback",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.SpeedBrakeHoldRelease",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.TrimHandoffAndReset",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightDynamics.GroundMissReturnsEarthContact",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.DA_FighterInputConfig",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.ImcOppositeKeyMapping",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.PlayerMappableMappingNames",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.PushRate",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.Reset",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.ReturnToCenter",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Presentation.FixedClockCadence",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Presentation.HitchInvalidTimeAndReset",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Presentation.LastSubstepAndQuaternionInterpolation",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Presentation.RenderMotionAcrossCadences",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Presentation.UnavailableSourcePreservesCalibration",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Visual.F16ReferenceGeometry",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Visual.FixedFrameAndCameraAnchors",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    }
+  ],
+  "blueprints": {
+    "/Game/Blueprints/Pawns/Jets/F16A/BP_F16A": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/Pawns/Jets/J16CE/BP_J16CE": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/BP_AirCombatGameMode": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/BP_AirCombatPlayerController": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/Input/WBP_FighterInputDebug": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/Pawns/Jets/F16A/ABP_F16C": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/Pawns/Jets/J16CE/ABP_J10CE": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+  },
+  "saved_parameters": {
+    "/Game/Blueprints/Pawns/Jets/F16A/BP_F16A": {
+      "component_transforms": 8,
+      "spring_arm_settings_except_position_lag": 16,
+      "look_settings": 12,
+      "camera_optics_and_postprocess_settings": 18,
+      "model_and_calibration_unchanged": true
+    },
+    "/Game/Blueprints/Pawns/Jets/J16CE/BP_J16CE": {
+      "component_transforms": 8,
+      "spring_arm_settings_except_position_lag": 16,
+      "look_settings": 12,
+      "camera_optics_and_postprocess_settings": 18,
+      "model_and_calibration_unchanged": true
+    }
+  },
+  "f16_physics_unchanged": true,
+  "f16_physics_hashes": {
+    "f16.xml": "8cbaf78e764030e8bc5253cf726f721f88a0e0261707f93e92569e3c7e0354a7",
+    "INSTALL": "709b479b224f85b02c5863162e3699bb3009f825ab0b05398c2fcb040d2ac889",
+    "README": "a53d5a3d5d41c349beddfc076f6f48041539742e26b3323c9416f92eeda6474c",
+    "reset00.xml": "dcbfa8da3c2f2d95c8093acb640f937935fc3037f49f8a90ae82e83386fa3e33",
+    "Systems\\hook.xml": "2fa5a5b2aee50fcf094c58b85f21c549c3834e5e323cf3c354093629abfdf46a",
+    "Systems\\pushback.xml": "022791e78a7af68f391f883392837288e4f4d4ed178d83cad63bb7ecaaffc0e7"
+  },
+  "solver_hz": 120,
+  "maximum_steps_per_frame": 32,
+  "interpolation": "Final two solver substeps, ECEF position + quaternion rotation + local CG; shared mesh/camera frame",
+  "translation_lag_enabled": false,
+  "f16_calibration_and_other_camera_parameters_preserved": true,
+  "j10ce_recalibrated": false,
+  "frame_rate_tests": {
+    "passed": true,
+    "cases": 13,
+    "report": "frame_rates.json",
+    "rhi": "NullRHI",
+    "controlled_game_frame_time": true,
+    "gpu_performance_or_subjective_visual_review": false
+  },
+  "comparison_144_fps": {
+    "before_lag_enabled_depth_range_cm": 158.01010411960215,
+    "after_depth_range_cm": 1.77351466845721e-11,
+    "after_physical_speed_std_mps": 104.84525357932644,
+    "after_display_speed_std_mps": 0.0010488186661225622,
+    "zero_step_display_frames_advancing": 48
+  },
+  "model_reload": {
+    "passed": true,
+    "display_transform_after_reset": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+    "calibration_preserved": true,
+    "checked_after_game_world_tick": true
+  },
+  "preserved_geometry_limitations": [
+    "Main gear longitudinal difference about 39.25 cm remains as requested",
+    "Final suspension deformation still awaits animation assets"
+  ]
+}

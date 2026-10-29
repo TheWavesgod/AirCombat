@@ -1,0 +1,88 @@
+{
+  "verified_on": "2026-10-27",
+  "class": "FFighterCommandProcessor",
+  "member": "AFighter::CommandProcessor",
+  "change": "Native C++ rename and responsibility documentation; existing control behavior preserved",
+  "auto_trim_switch_added": false,
+  "manual_trim_retained": true,
+  "behavior_equivalence_check": true,
+  "old_files_and_references_removed": true,
+  "build": {
+    "target": "AirCombatEditor Win64 Development",
+    "result": "Succeeded"
+  },
+  "automation": {
+    "passed": 15,
+    "failed": 0,
+    "warnings": 0,
+    "not_run": 0,
+    "tests": [
+      {
+        "name": "AirCombat.Camera.AircraftAttitude",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Camera.LookConsumptionAndModes",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Camera.RecenterAndLimits",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Camera.SpringArmCollision",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.FlightControls.ModelOwnsYawFeedback",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.FlightControls.SpeedBrakeHoldRelease",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.FlightControls.TrimHandoffAndReset",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.FlightDynamics.GroundMissReturnsEarthContact",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.Config.DA_FighterInputConfig",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.Config.ImcOppositeKeyMapping",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.Config.PlayerMappableMappingNames",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.KeyboardVirtualStick.PushRate",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.KeyboardVirtualStick.Reset",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.KeyboardVirtualStick.ReturnToCenter",
+        "result": "Success"
+      }
+    ]
+  },
+  "blueprints": {
+    "/Game/Blueprints/Pawns/Jets/BP_F16A": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/Pawns/Jets/BP_J16CE": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/BP_AirCombatGameMode": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/BP_AirCombatPlayerController": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+  }
+}

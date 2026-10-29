@@ -1,0 +1,23 @@
+{
+  "CameraController": {
+    "cameraMode": "Chase",
+    "cameraYawSensitivity": 0.25,
+    "cameraPitchSensitivity": 0.25
+  },
+  "ChaseArm": {
+    "targetArmLength": 2500,
+    "socketOffset": {
+      "x": 0,
+      "y": 0,
+      "z": 250
+    },
+    "cameraLagSpeed": 8
+  },
+  "ChaseCamera": {
+    "fieldOfView": 90
+  },
+  "CockpitCamera": {
+    "fieldOfView": 90
+  },
+  "status": "PIE initialized; real pawn camera components and settings verified via MCP"
+}

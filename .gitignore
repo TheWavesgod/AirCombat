@@ -1,0 +1,45 @@
+# Unreal Engine generated files (project and source plugins)
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+
+# Local IDE settings and generated project files
+.vs/
+.idea/
+.vscode/
+..claude/
+*.sln
+*.slnx
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserstate
+xcuserdata/
+
+# Machine-local development tool configuration
+/.claude/settings.local.json
+/.mcp.json
+
+# Python bytecode caches
+__pycache__/
+*.pyc
+*.pyo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Keep Source/, Config/, Content/, Docs/, Build/ and *.uproject.
+# Keep plugin descriptors, source, content and resources.
+# Do not ignore *.dll or *.lib globally: JSBSim's required libraries live in
+# Plugins/JSBSimFlightDynamicsModel/Source/ThirdParty/JSBSim/Lib/.
+# The copy staged into a Binaries/ directory is generated and remains ignored.

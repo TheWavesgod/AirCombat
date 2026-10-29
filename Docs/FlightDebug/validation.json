@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-29",
+  "success": true,
+  "engine": "Unreal Engine 5.8.3",
+  "build": "AirCombatEditor Win64 Development: Succeeded; full build, no Live Coding",
+  "automation": {
+    "succeeded": 34,
+    "succeededWithWarnings": 0,
+    "failed": 0,
+    "notRun": 0
+  },
+  "flight_debug_tests": [
+    {
+      "fullTestPath": "AirCombat.FlightDebug.AvailabilityAndFormatting",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightDebug.PhysicsWindowAndReset",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightDebug.UnitsActualStateAndModelBindings",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    }
+  ],
+  "PIE": {
+    "air_cases": 8,
+    "ground_cases": 2,
+    "models": [
+      "f16",
+      "j10ce"
+    ],
+    "fixed_game_delta_fps": [
+      30,
+      60,
+      144,
+      240
+    ],
+    "verified": [
+      "all six pages and unit conversions",
+      "actual body rates and model surface bindings",
+      "read-only telemetry and input passthrough",
+      "independent input / flight panel toggles",
+      "hidden panel stops sampling and timer refresh",
+      "unpossess / possess / model reload clear snapshots and history",
+      "EndPlay releases widgets",
+      "120 Hz sampling including frames with no solver step",
+      "ground WOW, compression and signed strut loads",
+      "legacy DrawDebug flags preserved from current saved assets"
+    ]
+  },
+  "visual_QA": {
+    "method": "D3D12 RenderOffscreen PIE, Shot SHOWUI; screenshots verify UMG layout, not 3D scene appearance",
+    "screenshots": [
+      "Screenshots/f16_overview.png",
+      "Screenshots/f16_gear.png",
+      "Screenshots/f16_aero.png",
+      "Screenshots/j10ce_response.png",
+      "Screenshots/j10ce_gear.png",
+      "Screenshots/j10ce_aero.png"
+    ],
+    "review": "All six images inspected; text, N/A, units, page content and trend lines visible; F16 contact rows fit within viewport."
+  },
+  "preservation": {
+    "XML_Config_other_Content_unchanged": true,
+    "input_debug_implementation_unchanged": true,
+    "legacy_green_function_unchanged": true,
+    "baseline_exception": {
+      "path": "Content/Blueprints/Pawns/Jets/J16CE/BP_J16CE.uasset",
+      "reason": "File changed between the pre-save baseline and the user saving/closing the editor (last write 2026-10-29 00:46:46). Preserved as saved; no asset save or migration was performed by this implementation.",
+      "current_sha256": "4313994d8ce6d8b687afd473bcbeb41f0a76985646ebcc723f2369262af94bc3"
+    },
+    "changed_existing_files": [
+      "Content\\Blueprints\\Pawns\\Jets\\J16CE\\BP_J16CE.uasset",
+      "Source\\AirCombat\\Input\\AirCombatPlayerController.cpp",
+      "Source\\AirCombat\\Input\\AirCombatPlayerController.h",
+      "Source\\AirCombat\\Pawns\\Fighter\\Fighter.h",
+      "Docs\\FlightDynamics\\README.md",
+      "Docs\\Input\\README.md",
+      "Plugins\\JSBSimFlightDynamicsModel\\Source\\JSBSimFlightDynamicsModel\\Private\\JSBSimMovementComponent.cpp",
+      "Plugins\\JSBSimFlightDynamicsModel\\Source\\JSBSimFlightDynamicsModel\\Public\\JSBSimMovementComponent.h"
+    ]
+  }
+}

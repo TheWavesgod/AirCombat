@@ -1,0 +1,115 @@
+{
+  "reference": "Fully extended, unloaded F16C reference-pose tire bottom; front contact defines global translation",
+  "visual_translation_cm": [
+    550.521082429,
+    0.0,
+    -182.883547668
+  ],
+  "visual_adjustment_cm": [
+    0.5210824289999891,
+    0.0,
+    7.116452331999994
+  ],
+  "rotation_deg": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "physics_origin_cm": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "physics_model": "f16",
+  "physics_xml_sha256": "8cbaf78e764030e8bc5253cf726f721f88a0e0261707f93e92569e3c7e0354a7",
+  "physics_changed": false,
+  "geometry_residuals_intentionally_retained": true,
+  "wheels": {
+    "Nose": {
+      "bone": "front_wheel_jnt",
+      "vertices": 295,
+      "center_mesh_cm": [
+        210.462917571,
+        -7.629e-06,
+        22.407078586
+      ],
+      "tire_bottom_mesh_z_cm": 0.003547668,
+      "rolling_radius_cm": 22.403539658,
+      "radius_source": "Half vertical extent of LOD0 vertices with at least 50% influence from the wheel bone",
+      "unloaded_tire_bottom_actor_cm": [
+        760.9839999999999,
+        -7.629e-06,
+        -182.88
+      ],
+      "physics_uncompressed_contact_actor_cm": [
+        760.984,
+        0.0,
+        -182.88
+      ],
+      "residual_visual_minus_physics_cm": [
+        -1.1368683772161603e-13,
+        -7.629e-06,
+        0.0
+      ]
+    },
+    "LeftMain": {
+      "bone": "lf_wheel_jnt",
+      "vertices": 314,
+      "center_mesh_cm": [
+        -186.921625815,
+        -112.132235571,
+        30.003488802
+      ],
+      "tire_bottom_mesh_z_cm": 0.005443573,
+      "rolling_radius_cm": 30.0315914155,
+      "radius_source": "Half vertical extent of LOD0 vertices with at least 50% influence from the wheel bone",
+      "unloaded_tire_bottom_actor_cm": [
+        363.599456614,
+        -112.132235571,
+        -182.878104095
+      ],
+      "physics_uncompressed_contact_actor_cm": [
+        402.844,
+        -121.92,
+        -181.86399999999998
+      ],
+      "residual_visual_minus_physics_cm": [
+        -39.244543385999975,
+        9.787764429000006,
+        -1.0141040950000217
+      ]
+    },
+    "RightMain": {
+      "bone": "rt_wheel_jnt",
+      "vertices": 314,
+      "center_mesh_cm": [
+        -186.922003018,
+        112.132002552,
+        30.003492025
+      ],
+      "tire_bottom_mesh_z_cm": 0.005443573,
+      "rolling_radius_cm": 30.0315914155,
+      "radius_source": "Half vertical extent of LOD0 vertices with at least 50% influence from the wheel bone",
+      "unloaded_tire_bottom_actor_cm": [
+        363.599079411,
+        112.132002552,
+        -182.878104095
+      ],
+      "physics_uncompressed_contact_actor_cm": [
+        402.844,
+        121.92,
+        -181.86399999999998
+      ],
+      "residual_visual_minus_physics_cm": [
+        -39.244920589,
+        -9.787997447999999,
+        -1.0141040950000217
+      ]
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "succeeded": 11,
+  "succeededWithWarnings": 0,
+  "failed": 0,
+  "notRun": 0,
+  "tests": [
+    {
+      "fullTestPath": "AirCombat.Camera.AircraftAttitude",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Camera.LookConsumptionAndModes",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Camera.RecenterAndLimits",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Camera.SpringArmCollision",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.Config.DA_FighterInputConfig",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.Config.ImcOppositeKeyMapping",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.Config.PlayerMappableMappingNames",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.KeyboardVirtualStick.PushRate",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.KeyboardVirtualStick.Reset",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.KeyboardVirtualStick.ReturnToCenter",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    }
+  ]
+}

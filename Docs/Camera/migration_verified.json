@@ -1,0 +1,42 @@
+{
+  "blueprints": {
+    "/Game/Blueprints/Pawns/Jets/BP_F16A.BP_F16A": {
+      "camera_mode": "<FighterCameraMode.CHASE: 0>",
+      "chase_distance": 2500.0,
+      "chase_height": 250.0,
+      "chase_interp_speed": 8.0,
+      "camera_yaw_sensitivity": 0.25,
+      "camera_pitch_sensitivity": 0.25,
+      "invert_camera_yaw": false,
+      "invert_camera_pitch": false,
+      "chase_pitch_min": -55.0,
+      "chase_pitch_max": 45.0,
+      "cockpit_pitch_limit": 85.0,
+      "cockpit_yaw_limit": 170.0,
+      "chase_auto_recenter": true,
+      "chase_recenter_speed": 60.0,
+      "chase_recenter_delay": 0.5
+    },
+    "/Game/Blueprints/Pawns/Jets/BP_J16CE.BP_J16CE": {
+      "camera_mode": "<FighterCameraMode.CHASE: 0>",
+      "chase_distance": 2500.0,
+      "chase_height": 250.0,
+      "chase_interp_speed": 8.0,
+      "camera_yaw_sensitivity": 0.25,
+      "camera_pitch_sensitivity": 0.25,
+      "invert_camera_yaw": false,
+      "invert_camera_pitch": false,
+      "chase_pitch_min": -55.0,
+      "chase_pitch_max": 45.0,
+      "cockpit_pitch_limit": 85.0,
+      "cockpit_yaw_limit": 170.0,
+      "chase_auto_recenter": true,
+      "chase_recenter_speed": 60.0,
+      "chase_recenter_delay": 0.5
+    }
+  },
+  "levels": {
+    "/Game/Levels/Tests/L_InputTest": {},
+    "/Game/Levels/Tests/test_fighter": {}
+  }
+}

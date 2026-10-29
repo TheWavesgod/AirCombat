@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdm_config name="J-10CE-inspired AirCombat Game Approximation V0.2 candidate" version="2.0" release="ALPHA">
+  <fileheader>
+    <author>AirCombat prototype (original estimated game data)</author>
+    <description>Original generic canard-delta fighter approximation. NOT real J-10CE data.</description>
+    <note>All coefficients, inertia, FCS and engine performance are placeholders for iterative tuning. Not validated for flight safety or real aircraft performance.</note>
+  </fileheader>
+  <metrics>
+    <wingarea unit="FT2">400.0</wingarea>
+    <wingspan unit="FT">32.0</wingspan>
+    <chord unit="FT">12.5</chord>
+    <!-- Area/arm reference, forward canards modeled through empirical coefficients. -->
+    <htailarea unit="FT2">75.0</htailarea><htailarm unit="FT">9.0</htailarm>
+    <vtailarea unit="FT2">55.0</vtailarea><vtailarm unit="FT">15.0</vtailarm>
+    <location name="AERORP" unit="IN"><x>0</x><y>0</y><z>0</z></location>
+    <location name="EYEPOINT" unit="IN"><x>-176</x><y>0</y><z>28</z></location>
+    <location name="VRP" unit="IN"><x>0</x><y>0</y><z>0</z></location>
+  </metrics>
+  <mass_balance negated_crossproduct_inertia="true">
+    <ixx unit="SLUG*FT2">10500</ixx><iyy unit="SLUG*FT2">72000</iyy><izz unit="SLUG*FT2">80000</izz>
+    <ixy unit="SLUG*FT2">0</ixy><ixz unit="SLUG*FT2">0</ixz><iyz unit="SLUG*FT2">0</iyz>
+    <emptywt unit="LBS">21500</emptywt>
+    <location name="CG" unit="IN"><x>0</x><y>0</y><z>0</z></location>
+    <pointmass name="Pilot"><weight unit="LBS">200</weight><location unit="IN"><x>-176</x><y>0</y><z>8</z></location></pointmass>
+  </mass_balance>
+  <ground_reactions>
+    <contact type="BOGEY" name="NOSE_GEAR">
+      <location unit="IN"><x>-178</x><y>0</y><z>-76</z></location>
+      <static_friction>0.8</static_friction><dynamic_friction>0.5</dynamic_friction><rolling_friction>0.02</rolling_friction>
+      <spring_coeff unit="LBS/FT">19000</spring_coeff><damping_coeff unit="LBS/FT/SEC">4300</damping_coeff>
+      <max_steer unit="DEG">30</max_steer><brake_group>NONE</brake_group><retractable>1</retractable>
+    </contact>
+    <contact type="BOGEY" name="LEFT_GEAR">
+      <location unit="IN"><x>48</x><y>-55</y><z>-75</z></location>
+      <static_friction>0.8</static_friction><dynamic_friction>0.5</dynamic_friction><rolling_friction>0.02</rolling_friction>
+      <spring_coeff unit="LBS/FT">40000</spring_coeff><damping_coeff unit="LBS/FT/SEC">7800</damping_coeff>
+      <max_steer unit="DEG">0</max_steer><brake_group>LEFT</brake_group><retractable>1</retractable>
+    </contact>
+    <contact type="BOGEY" name="RIGHT_GEAR">
+      <location unit="IN"><x>48</x><y>55</y><z>-75</z></location>
+      <static_friction>0.8</static_friction><dynamic_friction>0.5</dynamic_friction><rolling_friction>0.02</rolling_friction>
+      <spring_coeff unit="LBS/FT">40000</spring_coeff><damping_coeff unit="LBS/FT/SEC">7800</damping_coeff>
+      <max_steer unit="DEG">0</max_steer><brake_group>RIGHT</brake_group><retractable>1</retractable>
+    </contact>
+  </ground_reactions>
+  <propulsion>
+    <engine file="j10ce_game_engine">
+      <location unit="IN"><x>110</x><y>0</y><z>-8</z></location>
+      <orient unit="DEG"><roll>0</roll><pitch>0</pitch><yaw>0</yaw></orient>
+      <feed>0</feed><feed>1</feed>
+      <thruster file="direct"><location unit="IN"><x>230</x><y>0</y><z>-8</z></location><orient unit="DEG"><roll>0</roll><pitch>0</pitch><yaw>0</yaw></orient></thruster>
+    </engine>
+    <tank type="FUEL"><location unit="IN"><x>-12</x><y>-18</y><z>0</z></location><capacity unit="LBS">3400</capacity><contents unit="LBS">3000</contents></tank>
+    <tank type="FUEL"><location unit="IN"><x>-12</x><y>18</y><z>0</z></location><capacity unit="LBS">3400</capacity><contents unit="LBS">3000</contents></tank>
+  </propulsion>
+
+<flight_control name="J10CE V0.2 simplified game FCS">
+  <property>fcs/canard-pos-norm</property>
+  <property>fcs/canard-left-pos-deg</property>
+  <property>fcs/canard-right-pos-deg</property>
+  <channel name="Pitch and canards">
+    <!-- Sign chosen for initial controller prototype; verify UE pitch axis physically. -->
+    <pure_gain name="fcs/j10-pitch-rate-feedback">
+      <input>velocities/q-aero-rad_sec</input><gain>-1.45</gain>
+    </pure_gain>
+    <summer name="fcs/j10-pitch-sum">
+      <input>-fcs/elevator-cmd-norm</input>
+      <input>fcs/pitch-trim-cmd-norm</input>
+      <input>fcs/j10-pitch-rate-feedback</input>
+      <clipto><min>-1</min><max>1</max></clipto>
+    </summer>
+    <kinematic name="fcs/j10-canard-actuator">
+      <input>fcs/j10-pitch-sum</input>
+      <traverse><setting><position>-1</position><time>0.22</time></setting><setting><position>1</position><time>0.22</time></setting></traverse>
+      <output>fcs/canard-pos-norm</output>
+    </kinematic>
+    <aerosurface_scale name="fcs/j10-canard-mean-angle">
+      <input>fcs/canard-pos-norm</input><range><min>-0.349066</min><max>0.349066</max></range>
+      <output>fcs/canard-pos-rad</output>
+    </aerosurface_scale>
+    <!-- Generic elevator properties retained for existing UE plugin telemetry. -->
+    <pure_gain name="fcs/j10-elevator-norm"><input>fcs/canard-pos-norm</input><gain>0.45</gain><output>fcs/elevator-pos-norm</output></pure_gain>
+    <aerosurface_scale name="fcs/j10-elevator-angle"><input>fcs/elevator-pos-norm</input><range><min>-0.261799</min><max>0.261799</max></range><output>fcs/elevator-pos-rad</output></aerosurface_scale>
+  </channel>
+  <channel name="Roll and trailing edge surfaces">
+    <pure_gain name="fcs/j10-roll-rate-feedback"><input>velocities/p-aero-rad_sec</input><gain>-0.46</gain></pure_gain>
+    <summer name="fcs/j10-roll-sum">
+      <input>fcs/aileron-cmd-norm</input><input>fcs/roll-trim-cmd-norm</input><input>fcs/j10-roll-rate-feedback</input>
+      <clipto><min>-1</min><max>1</max></clipto>
+    </summer>
+    <kinematic name="fcs/j10-roll-actuator">
+      <input>fcs/j10-roll-sum</input>
+      <traverse><setting><position>-1</position><time>0.17</time></setting><setting><position>1</position><time>0.17</time></setting></traverse>
+      <output>fcs/aileron-pos-norm</output>
+    </kinematic>
+    <aerosurface_scale name="fcs/j10-aileron-angle"><input>fcs/aileron-pos-norm</input><range><min>-0.349066</min><max>0.349066</max></range><output>fcs/aileron-pos-rad</output></aerosurface_scale>
+    <aerosurface_scale name="fcs/j10-left-aileron"><input>fcs/aileron-pos-norm</input><range><min>-0.349066</min><max>0.349066</max></range><output>fcs/left-aileron-pos-rad</output></aerosurface_scale>
+    <aerosurface_scale name="fcs/j10-right-aileron"><input>-fcs/aileron-pos-norm</input><range><min>-0.349066</min><max>0.349066</max></range><output>fcs/right-aileron-pos-rad</output></aerosurface_scale>
+    <aerosurface_scale name="fcs/j10-left-aileron-deg"><input>fcs/aileron-pos-norm</input><range><min>-20</min><max>20</max></range><output>fcs/left-aileron-pos-deg</output></aerosurface_scale>
+    <aerosurface_scale name="fcs/j10-right-aileron-deg"><input>-fcs/aileron-pos-norm</input><range><min>-20</min><max>20</max></range><output>fcs/right-aileron-pos-deg</output></aerosurface_scale>
+  </channel>
+  <channel name="Individual canard animation surfaces">
+    <pure_gain name="fcs/j10-canard-roll-mix"><input>fcs/aileron-pos-norm</input><gain>0.12</gain></pure_gain>
+    <summer name="fcs/j10-left-canard-sum"><input>fcs/canard-pos-norm</input><input>-fcs/j10-canard-roll-mix</input><clipto><min>-1</min><max>1</max></clipto></summer>
+    <summer name="fcs/j10-right-canard-sum"><input>fcs/canard-pos-norm</input><input>fcs/j10-canard-roll-mix</input><clipto><min>-1</min><max>1</max></clipto></summer>
+    <aerosurface_scale name="fcs/j10-left-canard-deg"><input>fcs/j10-left-canard-sum</input><range><min>-20</min><max>20</max></range><output>fcs/canard-left-pos-deg</output></aerosurface_scale>
+    <aerosurface_scale name="fcs/j10-right-canard-deg"><input>fcs/j10-right-canard-sum</input><range><min>-20</min><max>20</max></range><output>fcs/canard-right-pos-deg</output></aerosurface_scale>
+  </channel>
+  <channel name="Yaw">
+    <pure_gain name="fcs/j10-yaw-rate-feedback"><input>velocities/r-aero-rad_sec</input><gain>1.1</gain></pure_gain>
+    <summer name="fcs/j10-yaw-sum"><input>fcs/rudder-cmd-norm</input><input>fcs/yaw-trim-cmd-norm</input><input>fcs/j10-yaw-rate-feedback</input><clipto><min>-1</min><max>1</max></clipto></summer>
+    <kinematic name="fcs/j10-rudder-actuator"><input>fcs/j10-yaw-sum</input><traverse><setting><position>-1</position><time>0.3</time></setting><setting><position>1</position><time>0.3</time></setting></traverse><output>fcs/rudder-pos-norm</output></kinematic>
+    <aerosurface_scale name="fcs/j10-rudder-angle"><input>fcs/rudder-pos-norm</input><range><min>-0.436332</min><max>0.436332</max></range><output>fcs/rudder-pos-rad</output></aerosurface_scale>
+    <aerosurface_scale name="fcs/j10-rudder-deg"><input>fcs/rudder-pos-norm</input><range><min>-25</min><max>25</max></range><output>fcs/rudder-pos-deg</output></aerosurface_scale>
+  </channel>
+  <channel name="Throttle and afterburner">
+    <!-- Match the stock JSBSim fighter convention: throttle command [0,1] drives position [0,2] for afterburner. -->
+    <pure_gain name="fcs/j10-throttle-position">
+      <input>fcs/throttle-cmd-norm</input><gain>2</gain><output>fcs/throttle-pos-norm</output>
+    </pure_gain>
+  </channel>
+  <channel name="Flaps speedbrake gear">
+    <kinematic name="fcs/j10-flaps"><input>fcs/flap-cmd-norm</input><traverse><setting><position>0</position><time>0</time></setting><setting><position>1</position><time>2.5</time></setting></traverse><output>fcs/flap-pos-norm</output></kinematic>
+    <aerosurface_scale name="fcs/j10-flap-deg"><input>fcs/flap-pos-norm</input><domain><min>0</min><max>1</max></domain><range><min>0</min><max>22</max></range><output>fcs/flap-pos-deg</output></aerosurface_scale>
+    <kinematic name="fcs/j10-brake"><input>fcs/speedbrake-cmd-norm</input><traverse><setting><position>0</position><time>0</time></setting><setting><position>1</position><time>1</time></setting></traverse><output>fcs/speedbrake-pos-norm</output></kinematic>
+    <kinematic name="fcs/j10-gear"><input>gear/gear-cmd-norm</input><traverse><setting><position>0</position><time>0</time></setting><setting><position>1</position><time>4.5</time></setting></traverse><output>gear/gear-pos-norm</output></kinematic>
+    <aerosurface_scale name="fcs/j10-nose-steer"><input>fcs/steer-cmd-norm</input><range><min>-30</min><max>30</max></range><output>fcs/steer-pos-deg</output></aerosurface_scale>
+  </channel>
+</flight_control>
+
+<aerodynamics>
+<axis name="LIFT">
+<function name="aero/lift/alpha">
+<description>Game approximation of CL(alpha,M), stall falloff</description>
+<product>
+<property>aero/qbar-area</property>
+<product>
+<table><independentVar>aero/alpha-rad</independentVar><tableData>
+-0.30 -0.84
+-0.20 -0.75
+-0.10 -0.34
+0.00 0.10
+0.10 0.54
+0.20 0.99
+0.30 1.30
+0.40 1.30
+0.55 0.97
+0.70 0.70
+</tableData></table>
+<table><independentVar>velocities/mach</independentVar><tableData>
+0.0 1.00
+0.7 1.00
+0.95 0.94
+1.2 0.86
+1.8 0.76
+2.3 0.70
+</tableData></table>
+</product>
+</product>
+</function>
+<function name="aero/lift/canard">
+<product>
+<property>aero/qbar-area</property>
+<product>
+<property>fcs/canard-pos-rad</property>
+<value>0.18</value>
+</product>
+</product>
+</function>
+<function name="aero/lift/flap">
+<product>
+<property>aero/qbar-area</property>
+<product>
+<property>fcs/flap-pos-norm</property>
+<value>0.3</value>
+</product>
+</product>
+</function>
+</axis>
+<axis name="DRAG">
+<function name="aero/drag/alpha">
+<product>
+<property>aero/qbar-area</property>
+<table><independentVar>aero/alpha-rad</independentVar><tableData>
+-0.40 0.46
+-0.30 0.31
+-0.20 0.16
+-0.10 0.059
+0.00 0.026
+0.10 0.061
+0.20 0.16
+0.30 0.32
+0.40 0.50
+0.55 0.72
+0.70 0.95
+</tableData></table>
+</product>
+</function>
+<function name="aero/drag/wave">
+<product>
+<property>aero/qbar-area</property>
+<table><independentVar>velocities/mach</independentVar><tableData>
+0.0 0.00
+0.65 0.00
+0.85 0.008
+0.98 0.055
+1.10 0.080
+1.30 0.065
+1.60 0.055
+2.20 0.055
+</tableData></table>
+</product>
+</function>
+<function name="aero/drag/speedbrake">
+<product>
+<property>aero/qbar-area</property>
+<product>
+<property>fcs/speedbrake-pos-norm</property>
+<value>0.13</value>
+</product>
+</product>
+</function>
+<function name="aero/drag/flaps">
+<product>
+<property>aero/qbar-area</property>
+<product>
+<property>fcs/flap-pos-norm</property>
+<value>0.065</value>
+</product>
+</product>
+</function>
+<function name="aero/drag/gear">
+<product>
+<property>aero/qbar-area</property>
+<product>
+<property>gear/gear-pos-norm</property>
+<value>0.09</value>
+</product>
+</product>
+</function>
+</axis>
+<axis name="SIDE">
+<function name="aero/side/beta">
+<product>
+<property>aero/qbar-area</property>
+<product>
+<property>aero/beta-rad</property>
+<value>-0.73</value>
+</product>
+</product>
+</function>
+<function name="aero/side/rudder">
+<product>
+<property>aero/qbar-area</property>
+<product>
+<property>fcs/rudder-pos-rad</property>
+<value>0.13</value>
+</product>
+</product>
+</function>
+</axis>
+<axis name="ROLL">
+<function name="aero/roll/beta">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/bw-ft</property>
+<product>
+<property>aero/beta-rad</property>
+<value>-0.075</value>
+</product>
+</product>
+</function>
+<function name="aero/roll/aileron">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/bw-ft</property>
+<product>
+<property>fcs/aileron-pos-norm</property>
+<value>0.12</value>
+</product>
+</product>
+</function>
+<function name="aero/roll/p">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/bw-ft</property>
+<product>
+<property>velocities/p-aero-rad_sec</property>
+<property>aero/bi2vel</property>
+<value>-0.54</value>
+</product>
+</product>
+</function>
+<function name="aero/roll/r">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/bw-ft</property>
+<product>
+<property>velocities/r-aero-rad_sec</property>
+<property>aero/bi2vel</property>
+<value>0.07</value>
+</product>
+</product>
+</function>
+</axis>
+<axis name="PITCH">
+<function name="aero/pitch/alpha">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/cbarw-ft</property>
+<product>
+<property>aero/alpha-rad</property>
+<value>-0.22</value>
+</product>
+</product>
+</function>
+<function name="aero/pitch/canard">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/cbarw-ft</property>
+<product>
+<property>fcs/canard-pos-rad</property>
+<value>0.85</value>
+</product>
+</product>
+</function>
+<function name="aero/pitch/elevon">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/cbarw-ft</property>
+<product>
+<property>fcs/elevator-pos-rad</property>
+<value>0.13</value>
+</product>
+</product>
+</function>
+<function name="aero/pitch/q">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/cbarw-ft</property>
+<product>
+<property>velocities/q-aero-rad_sec</property>
+<property>aero/ci2vel</property>
+<value>-12.0</value>
+</product>
+</product>
+</function>
+</axis>
+<axis name="YAW">
+<function name="aero/yaw/beta">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/bw-ft</property>
+<product>
+<property>aero/beta-rad</property>
+<value>0.15</value>
+</product>
+</product>
+</function>
+<function name="aero/yaw/rudder">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/bw-ft</property>
+<product>
+<property>fcs/rudder-pos-rad</property>
+<value>-0.1</value>
+</product>
+</product>
+</function>
+<function name="aero/yaw/r">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/bw-ft</property>
+<product>
+<property>velocities/r-aero-rad_sec</property>
+<property>aero/bi2vel</property>
+<value>-0.24</value>
+</product>
+</product>
+</function>
+<function name="aero/yaw/p">
+<product>
+<property>aero/qbar-area</property>
+<property>metrics/bw-ft</property>
+<product>
+<property>velocities/p-aero-rad_sec</property>
+<property>aero/bi2vel</property>
+<value>-0.02</value>
+</product>
+</product>
+</function>
+</axis>
+</aerodynamics>
+</fdm_config>

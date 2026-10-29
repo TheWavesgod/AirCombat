@@ -1,0 +1,102 @@
+{
+  "pilot_eye_observable": false,
+  "reason": "No pilot/head/eye bone or eye locator in current component socket list; an empty seat does not determine an anatomical eye.",
+  "seat_bounds_mesh_cm": [
+    [
+      361.8022766113281,
+      458.75018310546875
+    ],
+    [
+      -30.699073791503906,
+      30.696199417114258
+    ],
+    [
+      -22.081268310546875,
+      89.38093566894531
+    ]
+  ],
+  "seat_top_z_mesh_cm": 89.38093566894531,
+  "seat_centerline_at_z80_intersections_x_cm": [
+    365.627304,
+    374.579988,
+    374.667305,
+    375.647331,
+    375.660158,
+    390.85514,
+    396.129514
+  ],
+  "headrest_front_section_reference": {
+    "mesh_cm": [
+      396.129514,
+      0,
+      80
+    ],
+    "actor_cm": [
+      396.129514,
+      0,
+      80
+    ],
+    "jsbsim_structural_in": [
+      -163.83051732283462,
+      0.0,
+      47.24409448818898
+    ]
+  },
+  "eye_candidate_only": {
+    "mesh_cm": [
+      415,
+      0,
+      80
+    ],
+    "actor_cm": [
+      415,
+      0,
+      80
+    ],
+    "jsbsim_structural_in": [
+      -171.25984251968504,
+      0.0,
+      47.24409448818898
+    ]
+  },
+  "candidate_definition": "Mesh (415,0,80) cm; centerline, 80cm height, approximately 18.87cm ahead of measured seat/headrest front section; visual preview proposal, not anthropometric measurement.",
+  "current_cockpit_camera": {
+    "mesh_cm": [
+      10,
+      0,
+      0
+    ],
+    "actor_cm": [
+      10,
+      0,
+      0
+    ],
+    "jsbsim_structural_in": [
+      -11.811023622047244,
+      0.0,
+      15.748031496062993
+    ]
+  },
+  "current_xml_eye": {
+    "mesh_cm": [
+      427.04,
+      0,
+      31.12
+    ],
+    "actor_cm": [
+      427.04,
+      0,
+      31.12
+    ],
+    "jsbsim_structural_in": [
+      -176.0,
+      0.0,
+      28.0
+    ]
+  },
+  "proposed_cockpit_anchor_relative_presentation_root_cm": [
+    415,
+    0,
+    80
+  ]
+}

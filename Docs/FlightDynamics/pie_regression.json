@@ -1,0 +1,132 @@
+{
+  "build_target": "AirCombatEditor Win64 Development",
+  "blueprints": {
+    "/Game/Blueprints/Pawns/Jets/BP_F16A.BP_F16A": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/Pawns/Jets/BP_J16CE.BP_J16CE": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/BP_AirCombatGameMode": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Blueprints/BP_AirCombatPlayerController": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+  },
+  "ground_contact_regression": "AirCombat.FlightDynamics.GroundMissReturnsEarthContact",
+  "runs": [
+    {
+      "mode": "ground",
+      "trimmed": true,
+      "initial_throttle": 0.0,
+      "initial_gear": 1.0,
+      "speed_brake_rate": 0.5,
+      "maximum_command_error": 4.979250345371611e-11,
+      "passed": true,
+      "frames": 340,
+      "max_speed_brake": 1.0,
+      "final_speed_brake": 0.0,
+      "final_speed_brake_degrees": 0.0
+    },
+    {
+      "mode": "air",
+      "trimmed": true,
+      "initial_throttle": 0.3101149797439575,
+      "initial_gear": 0.0,
+      "speed_brake_rate": 0.5,
+      "maximum_command_error": 4.9841297755648384e-11,
+      "passed": true,
+      "frames": 369,
+      "max_speed_brake": 1.0,
+      "final_speed_brake": 0.0,
+      "final_speed_brake_degrees": 0.0
+    }
+  ],
+  "current_mappings": [
+    {
+      "action": "IA_CameraYaw",
+      "key": "MouseX"
+    },
+    {
+      "action": "IA_CameraPitch",
+      "key": "MouseY"
+    },
+    {
+      "action": "IA_Roll",
+      "key": "D"
+    },
+    {
+      "action": "IA_Roll",
+      "key": "A"
+    },
+    {
+      "action": "IA_Pitch",
+      "key": "W"
+    },
+    {
+      "action": "IA_Pitch",
+      "key": "S"
+    },
+    {
+      "action": "IA_Yaw",
+      "key": "E"
+    },
+    {
+      "action": "IA_Yaw",
+      "key": "Q"
+    },
+    {
+      "action": "IA_TrimPitch",
+      "key": "I"
+    },
+    {
+      "action": "IA_TrimPitch",
+      "key": "K"
+    },
+    {
+      "action": "IA_TrimYaw",
+      "key": "U"
+    },
+    {
+      "action": "IA_TrimYaw",
+      "key": "O"
+    },
+    {
+      "action": "IA_TrimRoll",
+      "key": "J"
+    },
+    {
+      "action": "IA_TrimRoll",
+      "key": "L"
+    },
+    {
+      "action": "IA_Flap",
+      "key": "Z"
+    },
+    {
+      "action": "IA_Flap",
+      "key": "X"
+    },
+    {
+      "action": "IA_ThrottleUp",
+      "key": "LeftShift"
+    },
+    {
+      "action": "IA_ThrottleDown",
+      "key": "LeftControl"
+    },
+    {
+      "action": "IA_SpeedBrake",
+      "key": "C"
+    },
+    {
+      "action": "IA_Brake",
+      "key": "C"
+    },
+    {
+      "action": "IA_Gear",
+      "key": "G"
+    },
+    {
+      "action": "IA_Camera",
+      "key": "V"
+    },
+    {
+      "action": "IA_ResetTrim",
+      "key": "P"
+    }
+  ]
+}

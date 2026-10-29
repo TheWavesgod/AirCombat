@@ -1,0 +1,327 @@
+{
+  "cases": [
+    {
+      "name": "air_30",
+      "passed": true,
+      "samples": 61,
+      "dt_values": [
+        0.03333334
+      ],
+      "solver_steps_per_frame": {
+        "4": 61
+      },
+      "display_speed_mean_mps": 234.46780697431058,
+      "display_speed_std_mps": 0.00023885753535165448,
+      "physical_speed_std_mps": 0.00023962025389137056,
+      "zero_solver_step_frames": 0,
+      "minimum_display_motion_on_zero_step_cm": null,
+      "maximum_physical_motion_on_zero_step_cm": null,
+      "focus_view_depth_range_cm": 7.275957614183426e-12,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 9.791632749056589e-05,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 0.0
+    },
+    {
+      "name": "air_60",
+      "passed": true,
+      "samples": 121,
+      "dt_values": [
+        0.01666667
+      ],
+      "solver_steps_per_frame": {
+        "2": 121
+      },
+      "display_speed_mean_mps": 234.464231499886,
+      "display_speed_std_mps": 0.0004855832894759147,
+      "physical_speed_std_mps": 0.0004862688103108719,
+      "zero_solver_step_frames": 0,
+      "minimum_display_motion_on_zero_step_cm": null,
+      "maximum_physical_motion_on_zero_step_cm": null,
+      "focus_view_depth_range_cm": 0.0,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 9.638448577220515e-05,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 0.0
+    },
+    {
+      "name": "air_90",
+      "passed": true,
+      "samples": 181,
+      "dt_values": [
+        0.01111111
+      ],
+      "solver_steps_per_frame": {
+        "1": 120,
+        "2": 61
+      },
+      "display_speed_mean_mps": 234.45840982507156,
+      "display_speed_std_mps": 0.0007030754535196452,
+      "physical_speed_std_mps": 82.89353502243158,
+      "zero_solver_step_frames": 0,
+      "minimum_display_motion_on_zero_step_cm": null,
+      "maximum_physical_motion_on_zero_step_cm": null,
+      "focus_view_depth_range_cm": 5.4569682106375694e-12,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 9.81020401980004e-05,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 0.0
+    },
+    {
+      "name": "air_120",
+      "passed": true,
+      "samples": 241,
+      "dt_values": [
+        0.00833333
+      ],
+      "solver_steps_per_frame": {
+        "1": 241
+      },
+      "display_speed_mean_mps": 234.45062475730745,
+      "display_speed_std_mps": 0.0008920066699648374,
+      "physical_speed_std_mps": 0.0008913204264121541,
+      "zero_solver_step_frames": 0,
+      "minimum_display_motion_on_zero_step_cm": null,
+      "maximum_physical_motion_on_zero_step_cm": null,
+      "focus_view_depth_range_cm": 1.2278178473934531e-11,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 9.718740960806826e-05,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 0.0
+    },
+    {
+      "name": "air_144",
+      "passed": true,
+      "samples": 289,
+      "dt_values": [
+        0.00694444
+      ],
+      "solver_steps_per_frame": {
+        "0": 48,
+        "1": 241
+      },
+      "display_speed_mean_mps": 234.44114613514054,
+      "display_speed_std_mps": 0.0010488186661225622,
+      "physical_speed_std_mps": 104.84525357932644,
+      "zero_solver_step_frames": 48,
+      "minimum_display_motion_on_zero_step_cm": 162.80517776532938,
+      "maximum_physical_motion_on_zero_step_cm": 0.0,
+      "focus_view_depth_range_cm": 1.77351466845721e-11,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 9.99143685760373e-05,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 0.0
+    },
+    {
+      "name": "air_240",
+      "passed": true,
+      "samples": 481,
+      "dt_values": [
+        0.00416667
+      ],
+      "solver_steps_per_frame": {
+        "0": 241,
+        "1": 240
+      },
+      "display_speed_mean_mps": 234.43030543216594,
+      "display_speed_std_mps": 0.0011759128589465095,
+      "physical_speed_std_mps": 234.43028755739724,
+      "zero_solver_step_frames": 240,
+      "minimum_display_motion_on_zero_step_cm": 97.67845042392292,
+      "maximum_physical_motion_on_zero_step_cm": 0.0,
+      "focus_view_depth_range_cm": 9.094947017729282e-13,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 9.286685977372144e-05,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 0.0
+    },
+    {
+      "name": "air_varying_60_30_144_90_240",
+      "passed": true,
+      "samples": 139,
+      "dt_values": [
+        0.00416667,
+        0.00694444,
+        0.01111111,
+        0.01666667,
+        0.03333334
+      ],
+      "solver_steps_per_frame": {
+        "0": 19,
+        "1": 54,
+        "2": 38,
+        "4": 28
+      },
+      "display_speed_mean_mps": 234.41841426628451,
+      "display_speed_std_mps": 0.0012851482109974227,
+      "physical_speed_std_mps": 128.8745826475962,
+      "zero_solver_step_frames": 19,
+      "minimum_display_motion_on_zero_step_cm": 97.67348740065921,
+      "maximum_physical_motion_on_zero_step_cm": 0.0,
+      "focus_view_depth_range_cm": 1.6825651982799172e-11,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 9.937272287174892e-05,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 0.0
+    },
+    {
+      "name": "cockpit_144",
+      "passed": true,
+      "samples": 289,
+      "dt_values": [
+        0.00694444
+      ],
+      "solver_steps_per_frame": {
+        "0": 48,
+        "1": 241
+      },
+      "display_speed_mean_mps": 234.40559475864737,
+      "display_speed_std_mps": 0.0013389775016288653,
+      "physical_speed_std_mps": 104.82935366285074,
+      "zero_solver_step_frames": 48,
+      "minimum_display_motion_on_zero_step_cm": 162.78014912467384,
+      "maximum_physical_motion_on_zero_step_cm": 0.0,
+      "focus_view_depth_range_cm": 1.3358203432289883e-10,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 0.0,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 0.0
+    },
+    {
+      "name": "roll_144",
+      "passed": true,
+      "samples": 289,
+      "dt_values": [
+        0.00694444
+      ],
+      "solver_steps_per_frame": {
+        "0": 48,
+        "1": 241
+      },
+      "display_speed_mean_mps": 236.18551901268143,
+      "display_speed_std_mps": 0.04099634328097778,
+      "physical_speed_std_mps": 105.62517291262434,
+      "zero_solver_step_frames": 48,
+      "minimum_display_motion_on_zero_step_cm": 162.77606972401477,
+      "maximum_physical_motion_on_zero_step_cm": 0.0,
+      "focus_view_depth_range_cm": 2.15550244320184e-10,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 8.229035552176356e-05,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 4.666747543957683e-11
+    },
+    {
+      "name": "pitch_240",
+      "passed": true,
+      "samples": 481,
+      "dt_values": [
+        0.00416667
+      ],
+      "solver_steps_per_frame": {
+        "0": 241,
+        "1": 240
+      },
+      "display_speed_mean_mps": 235.53344236004259,
+      "display_speed_std_mps": 0.042229871069006136,
+      "physical_speed_std_mps": 235.53311651335414,
+      "zero_solver_step_frames": 240,
+      "minimum_display_motion_on_zero_step_cm": 98.1207675276155,
+      "maximum_physical_motion_on_zero_step_cm": 0.0,
+      "focus_view_depth_range_cm": 2.1782398107461631e-10,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 5.951858383923536e-08,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 4.8904436056318445e-11
+    },
+    {
+      "name": "hitch_budget",
+      "passed": true,
+      "samples": 6,
+      "dt_values": [
+        0.40000001
+      ],
+      "solver_steps_per_frame": {
+        "32": 6
+      },
+      "display_speed_mean_mps": 157.6231220884735,
+      "display_speed_std_mps": 0.05323235044782848,
+      "physical_speed_std_mps": 0.05324436025854595,
+      "zero_solver_step_frames": 0,
+      "minimum_display_motion_on_zero_step_cm": null,
+      "maximum_physical_motion_on_zero_step_cm": null,
+      "focus_view_depth_range_cm": 7.366907084360719e-11,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 4.1756322843866656e-08,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.6666666964689894,
+      "command_error": 0.0
+    },
+    {
+      "name": "ground_60",
+      "passed": true,
+      "samples": 121,
+      "dt_values": [
+        0.01666667
+      ],
+      "solver_steps_per_frame": {
+        "2": 121
+      },
+      "display_speed_mean_mps": 0.5545180022386297,
+      "display_speed_std_mps": 0.06257326264154721,
+      "physical_speed_std_mps": 0.0625733067461824,
+      "zero_solver_step_frames": 0,
+      "minimum_display_motion_on_zero_step_cm": null,
+      "maximum_physical_motion_on_zero_step_cm": null,
+      "focus_view_depth_range_cm": 0.0,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 3.077634573855903e-07,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 0.0
+    },
+    {
+      "name": "ground_144",
+      "passed": true,
+      "samples": 289,
+      "dt_values": [
+        0.00694444
+      ],
+      "solver_steps_per_frame": {
+        "0": 48,
+        "1": 241
+      },
+      "display_speed_mean_mps": 1.1664001130951094,
+      "display_speed_std_mps": 0.0625896199168085,
+      "physical_speed_std_mps": 0.5263834101214023,
+      "zero_solver_step_frames": 48,
+      "minimum_display_motion_on_zero_step_cm": 0.588960591616497,
+      "maximum_physical_motion_on_zero_step_cm": 0.0,
+      "focus_view_depth_range_cm": 0.0,
+      "max_camera_cache_error_cm": 0.0,
+      "max_heading_error_deg": 3.077634573855903e-07,
+      "collision_fix_frames": 0,
+      "dropped_seconds_during_samples": 0.0,
+      "command_error": 0.0
+    }
+  ],
+  "controlled_frame_time": true,
+  "units": "cm, seconds, degrees",
+  "full_flight_cases_passed": true,
+  "reload_check": "separate reset_check/raw.json",
+  "model_reload": {
+    "passed": true,
+    "display_transform_after_reset": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+    "calibration_preserved": true,
+    "checked_after_game_world_tick": true
+  }
+}

@@ -1,0 +1,709 @@
+{
+  "success": true,
+  "date": "2026-10-28",
+  "build": "AirCombatEditor Win64 Development: Succeeded",
+  "live_coding": false,
+  "automation": {
+    "succeeded": 27,
+    "succeededWithWarnings": 0,
+    "failed": 0,
+    "notRun": 0
+  },
+  "blueprints": {
+    "/Game/Blueprints/Pawns/Jets/F16A/BP_F16A": {
+      "class": "/Game/Blueprints/Pawns/Jets/F16A/BP_F16A.BP_F16A_C",
+      "transform": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+      "components": {
+        "aircraft_root": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=-0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": null
+        },
+        "presentation_root": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "AircraftRoot"
+        },
+        "aircraft_cg": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "AircraftRoot"
+        },
+        "airframe": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "PresentationRoot"
+        },
+        "cockpit_anchor": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=320.000000,Y=0.000000,Z=260.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=320.000000,Y=0.000000,Z=260.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "PresentationRoot"
+        },
+        "chase_focus": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=-200.000000,Y=0.000000,Z=190.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=-200.000000,Y=0.000000,Z=190.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "PresentationRoot"
+        },
+        "chase_arm": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=-200.000000,Y=0.000000,Z=190.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "ChaseFocus"
+        },
+        "cockpit_camera": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=320.000000,Y=0.000000,Z=260.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "CockpitAnchor"
+        },
+        "chase_camera": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=-200.000000,Y=0.000000,Z=190.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "ChaseArm"
+        }
+      },
+      "arm": {
+        "target_arm_length": 2500.0,
+        "socket_offset": {
+          "struct": "Vector",
+          "text": "(X=0.000000,Y=0.000000,Z=250.000000)"
+        },
+        "target_offset": {
+          "struct": "Vector",
+          "text": "(X=0.000000,Y=0.000000,Z=0.000000)"
+        },
+        "enable_camera_lag": false,
+        "camera_lag_speed": 8.0,
+        "enable_camera_rotation_lag": false,
+        "camera_rotation_lag_speed": 10.0,
+        "do_collision_test": true,
+        "probe_size": 12.0,
+        "probe_channel": {
+          "enum": "<CollisionChannel.ECC_CAMERA: 4>"
+        },
+        "use_camera_lag_substepping": true,
+        "camera_lag_max_time_step": 0.01666666753590107,
+        "camera_lag_max_distance": 0.0,
+        "inherit_pitch": true,
+        "inherit_yaw": true,
+        "inherit_roll": true,
+        "use_pawn_control_rotation": false,
+        "absolute_rotation": true,
+        "relative_rotation": {
+          "struct": "Rotator",
+          "text": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+        },
+        "relative_scale3d": {
+          "struct": "Vector",
+          "text": "(X=1.000000,Y=1.000000,Z=1.000000)"
+        }
+      },
+      "look": {
+        "camera_mode": {
+          "enum": "<FighterCameraMode.CHASE: 0>"
+        },
+        "camera_yaw_sensitivity": 0.25,
+        "camera_pitch_sensitivity": 0.25,
+        "invert_camera_yaw": false,
+        "invert_camera_pitch": false,
+        "chase_pitch_min": -55.0,
+        "chase_pitch_max": 45.0,
+        "cockpit_pitch_limit": 85.0,
+        "cockpit_yaw_limit": 170.0,
+        "chase_auto_recenter": true,
+        "chase_recenter_speed": 60.0,
+        "chase_recenter_delay": 0.5
+      },
+      "cameras": {
+        "chase_camera": {
+          "field_of_view": 90.0,
+          "aspect_ratio": 1.7777780294418335,
+          "constrain_aspect_ratio": false,
+          "post_process_blend_weight": 1.0,
+          "projection_mode": {
+            "enum": "<CameraProjectionMode.PERSPECTIVE: 0>"
+          },
+          "ortho_width": 1536.0,
+          "use_pawn_control_rotation": false,
+          "lock_to_hmd": false,
+          "post_process_settings": {
+            "struct": "PostProcessSettings",
+            "text": "(bOverride_TemperatureType=False,bOverride_WhiteTemp=False,bOverride_WhiteTint=False,bOverride_ColorSaturation=False,bOverride_ColorContrast=False,bOverride_ColorGamma=False,bOverride_ColorGain=False,bOverride_ColorOffset=False,bOverride_ColorSaturationShadows=False,bOverride_ColorContrastShadows=False,bOverride_ColorGammaShadows=False,bOverride_ColorGainShadows=False,bOverride_ColorOffsetShadows=False,bOverride_ColorSaturationMidtones=False,bOverride_ColorContrastMidtones=False,bOverride_ColorGammaMidtones=False,bOverride_ColorGainMidtones=False,bOverride_ColorOffsetMidtones=False,bOverride_ColorSaturationHighlights=False,bOverride_ColorContrastHighlights=False,bOverride_ColorGammaHighlights=False,bOverride_ColorGainHighlights=False,bOverride_ColorOffsetHighlights=False,bOverride_ColorCorrectionShadowsMax=False,bOverride_ColorCorrectionHighlightsMin=False,bOverride_ColorCorrectionHighlightsMax=False,bOverride_BlueCorrection=False,bOverride_ExpandGamut=False,bOverride_ToneCurveAmount=False,bOverride_TonemappingMethod=False,bOverride_FilmSlope=False,bOverride_FilmToe=False,bOverride_FilmShoulder=False,bOverride_FilmBlackClip=False,bOverride_FilmWhiteClip=False,bOverride_SceneColorTint=False,bOverride_SceneFringeIntensity=False,bOverride_ChromaticAberrationStartOffset=False,bOverride_bMegaLights=False,bOverride_MegaLightsFrontLayerTranslucency=False,bOverride_AmbientCubemapTint=False,bOverride_AmbientCubemapIntensity=False,bOverride_BloomMethod=False,bOverride_BloomIntensity=False,bOverride_BloomGaussianIntensity=False,bOverride_BloomThreshold=False,bOverride_Bloom1Tint=False,bOverride_Bloom1Size=False,bOverride_Bloom2Size=False,bOverride_Bloom2Tint=False,bOverride_Bloom3Tint=False,bOverride_Bloom3Size=False,bOverride_Bloom4Tint=False,bOverride_Bloom4Size=False,bOverride_Bloom5Tint=False,bOverride_Bloom5Size=False,bOverride_Bloom6Tint=False,bOverride_Bloom6Size=False,bOverride_BloomSizeScale=False,bOverride_BloomConvolutionIntensity=False,bOverride_BloomConvolutionTexture=False,bOverride_BloomConvolutionScatterDispersion=False,bOverride_BloomConvolutionSize=False,bOverride_BloomConvolutionCenterUV=False,bOverride_BloomConvolutionPreFilterMin=False,bOverride_BloomConvolutionPreFilterMax=False,bOverride_BloomConvolutionPreFilterMult=False,bOverride_BloomConvolutionBufferScale=False,bOverride_BloomDirtMaskIntensity=False,bOverride_BloomDirtMaskTint=False,bOverride_BloomDirtMask=False,bOverride_CameraShutterSpeed=False,bOverride_CameraISO=False,bOverride_AutoExposureMethod=False,bOverride_AutoExposureLowPercent=False,bOverride_AutoExposureHighPercent=False,bOverride_AutoExposureMinBrightness=False,bOverride_AutoExposureMaxBrightness=False,bOverride_AutoExposureSpeedUp=False,bOverride_AutoExposureSpeedDown=False,bOverride_AutoExposureBias=False,bOverride_AutoExposureBiasCurve=False,bOverride_AutoExposureMeterMask=False,bOverride_AutoExposureApplyPhysicalCameraExposure=False,bOverride_HistogramLogMin=False,bOverride_HistogramLogMax=False,bOverride_LocalExposureMethod=False,bOverride_LocalExposureHighlightContrastScale=False,bOverride_LocalExposureShadowContrastScale=False,bOverride_LocalExposureHighlightContrastCurve=False,bOverride_LocalExposureShadowContrastCurve=False,bOverride_LocalExposureHighlightThreshold=False,bOverride_LocalExposureShadowThreshold=False,bOverride_LocalExposureDetailStrength=False,bOverride_LocalExposureBlurredLuminanceBlend=False,bOverride_LocalExposureBlurredLuminanceKernelSizePercent=False,bOverride_LocalExposureHighlightThresholdStrength=False,bOverride_LocalExposureShadowThresholdStrength=False,bOverride_LocalExposureMiddleGreyBias=False,bOverride_LensFlareIntensity=False,bOverride_LensFlareTint=False,bOverride_LensFlareTints=False,bOverride_LensFlareBokehSize=False,bOverride_LensFlareBokehShape=False,bOverride_LensFlareThreshold=False,bOverride_VignetteIntensity=False,bOverride_VignetteType=False,bOverride_VignetteCenter=False,bOverride_VignetteColor=False,bOverride_VignetteSize=False,bOverride_VignetteSoftness=False,bOverride_VignetteTexture=False,bOverride_Sharpen=False,bOverride_FilmGrainIntensity=False,bOverride_FilmGrainIntensityShadows=False,bOverride_FilmGrainIntensityMidtones=False,bOverride_FilmGrainIntensityHighlights=False,bOverride_FilmGrainShadowsMax=False,bOverride_FilmGrainHighlightsMin=False,bOverride_FilmGrainHighlightsMax=False,bOverride_FilmGrainScale=False,bOverride_FilmGrainTexture=False,bOverride_AmbientOcclusionIntensity=False,bOverride_AmbientOcclusionStaticFraction=False,bOverride_AmbientOcclusionRadius=False,bOverride_AmbientOcclusionFadeDistance=False,bOverride_AmbientOcclusionFadeRadius=False,bOverride_AmbientOcclusionRadiusInWS=False,bOverride_AmbientOcclusionPower=False,bOverride_AmbientOcclusionBias=False,bOverride_AmbientOcclusionQuality=False,bOverride_AmbientOcclusionMipBlend=False,bOverride_AmbientOcclusionMipScale=False,bOverride_AmbientOcclusionMipThreshold=False,bOverride_AmbientOcclusionTemporalBlendWeight=False,bOverride_RayTracingAO=False,bOverride_RayTracingAOSamplesPerPixel=False,bOverride_RayTracingAOIntensity=False,bOverride_RayTracingAORadius=False,bOverride_IndirectLightingColor=False,bOverride_IndirectLightingIntensity=False,bOverride_ColorGradingIntensity=False,bOverride_ColorGradingLUT=False,bOverride_DepthOfFieldEnabled=False,bOverride_DepthOfFieldFocalDistance=False,bOverride_DepthOfFieldFstop=False,bOverride_DepthOfFieldMinFstop=False,bOverride_DepthOfFieldBladeCount=False,bOverride_DepthOfFieldSensorWidth=False,bOverride_DepthOfFieldSqueezeFactor=False,bOverride_DepthOfFieldDepthBlurRadius=False,bOverride_DepthOfFieldUseHairDepth=False,bOverride_DepthOfFieldPetzvalBokeh=False,bOverride_DepthOfFieldPetzvalBokehFalloff=False,bOverride_DepthOfFieldPetzvalExclusionBoxExtents=False,bOverride_DepthOfFieldPetzvalExclusionBoxRadius=False,bOverride_DepthOfFieldAspectRatioScalar=False,bOverride_DepthOfFieldMatteBoxFlags=False,bOverride_DepthOfFieldBarrelRadius=False,bOverride_DepthOfFieldBarrelLength=False,bOverride_DepthOfFieldDepthBlurAmount=False,bOverride_DepthOfFieldFocalRegion=False,bOverride_DepthOfFieldNearTransitionRegion=False,bOverride_DepthOfFieldFarTransitionRegion=False,bOverride_DepthOfFieldScale=False,bOverride_DepthOfFieldNearBlurSize=False,bOverride_DepthOfFieldFarBlurSize=False,bOverride_MobileHQGaussian=False,bOverride_DepthOfFieldOcclusion=False,bOverride_DepthOfFieldSkyFocusDistance=False,bOverride_DepthOfFieldVignetteSize=False,bOverride_MotionBlurAmount=False,bOverride_MotionBlurMax=False,bOverride_MotionBlurTargetFPS=False,bOverride_MotionBlurPerObjectSize=False,bOverride_ReflectionMethod=False,bOverride_LumenReflectionQuality=False,bOverride_ScreenSpaceReflectionIntensity=False,bOverride_ScreenSpaceReflectionQuality=False,bOverride_ScreenSpaceReflectionMaxRoughness=False,bOverride_ScreenSpaceReflectionRoughnessScale=False,bOverride_UserFlags=False,bOverride_RayTracingReflectionsMaxRoughness=False,bOverride_RayTracingReflectionsMaxBounces=False,bOverride_RayTracingReflectionsSamplesPerPixel=False,bOverride_RayTracingReflectionsShadows=False,bOverride_RayTracingReflectionsTranslucency=False,bOverride_TranslucencyType=False,bOverride_RayTracingTranslucencyMaxRoughness=False,bOverride_RayTracingTranslucencyRefractionRays=False,bOverride_RayTracingTranslucencySamplesPerPixel=False,bOverride_RayTracingTranslucencyShadows=False,bOverride_RayTracingTranslucencyRefraction=False,bOverride_RayTracingTranslucencyMaxPrimaryHitEvents=False,bOverride_RayTracingTranslucencyMaxSecondaryHitEvents=False,bOverride_RayTracingTranslucencyUseRayTracedRefraction=False,bOverride_DynamicGlobalIlluminationMethod=False,bOverride_LumenSceneLightingQuality=False,bOverride_LumenSceneDetail=False,bOverride_LumenSceneViewDistance=False,bOverride_LumenSceneLightingUpdateSpeed=False,bOverride_LumenFinalGatherQuality=False,bOverride_LumenFinalGatherLightingUpdateSpeed=False,bOverride_LumenFinalGatherScreenTraces=False,bOverride_LumenMaxTraceDistance=False,bOverride_LumenDiffuseColorBoost=False,bOverride_LumenAmbientOcclusionIntensity=False,bOverride_LumenSkylightLeaking=False,bOverride_LumenSkylightLeakingTint=False,bOverride_LumenFullSkylightLeakingDistance=False,bOverride_LumenRayLightingMode=False,bOverride_LumenReflectionsScreenTraces=False,bOverride_LumenFrontLayerTranslucencyReflections=False,bOverride_LumenMaxRoughnessToTraceReflections=False,bOverride_LumenMaxReflectionBounces=False,bOverride_LumenMaxRefractionBounces=False,bOverride_LumenSurfaceCacheResolution=False,bOverride_RayTracingGI=False,bOverride_RayTracingGIMaxBounces=False,bOverride_RayTracingGISamplesPerPixel=False,bOverride_PathTracingMaxBounces=False,bOverride_PathTracingSamplesPerPixel=False,bOverride_PathTracingMaxPathIntensity=False,bOverride_PathTracingEnableEmissiveMaterials=False,bOverride_PathTracingEnableReferenceDOF=False,bOverride_PathTracingEnableReferenceAtmosphere=False,bOverride_PathTracingEnableDenoiser=False,bOverride_PathTracingIncludeEmissive=False,bOverride_PathTracingIncludeDiffuse=False,bOverride_PathTracingIncludeIndirectDiffuse=False,bOverride_PathTracingIncludeSpecular=False,bOverride_PathTracingIncludeIndirectSpecular=False,bOverride_PathTracingIncludeVolume=False,bOverride_PathTracingIncludeIndirectVolume=False,bMobileHQGaussian=False,BloomMethod=BM_SOG,AutoExposureMethod=AEM_Histogram,TemperatureType=TEMP_WhiteBalance,WhiteTemp=6500.000000,WhiteTint=0.000000,ColorSaturation=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrast=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGamma=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGain=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffset=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetShadows=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetMidtones=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetHighlights=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorCorrectionHighlightsMin=0.500000,ColorCorrectionHighlightsMax=1.000000,ColorCorrectionShadowsMax=0.090000,BlueCorrection=0.600000,ExpandGamut=1.000000,ToneCurveAmount=1.000000,TonemappingMethod=Filmic,FilmSlope=0.880000,FilmToe=0.550000,FilmShoulder=0.260000,FilmBlackClip=0.000000,FilmWhiteClip=0.040000,SceneColorTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),SceneFringeIntensity=0.000000,ChromaticAberrationStartOffset=0.000000,BloomIntensity=0.675000,BloomGaussianIntensity=1.000000,BloomThreshold=-1.000000,BloomSizeScale=4.000000,Bloom1Size=0.300000,Bloom2Size=1.000000,Bloom3Size=2.000000,Bloom4Size=10.000000,Bloom5Size=30.000000,Bloom6Size=64.000000,Bloom1Tint=(R=0.346500,G=0.346500,B=0.346500,A=1.000000),Bloom2Tint=(R=0.138000,G=0.138000,B=0.138000,A=1.000000),Bloom3Tint=(R=0.117600,G=0.117600,B=0.117600,A=1.000000),Bloom4Tint=(R=0.066000,G=0.066000,B=0.066000,A=1.000000),Bloom5Tint=(R=0.066000,G=0.066000,B=0.066000,A=1.000000),Bloom6Tint=(R=0.061000,G=0.061000,B=0.061000,A=1.000000),BloomConvolutionIntensity=1.000000,BloomConvolutionScatterDispersion=1.000000,BloomConvolutionSize=1.000000,BloomConvolutionTexture=None,BloomConvolutionCenterUV=(X=0.500000,Y=0.500000),BloomConvolutionPreFilterMin=7.000000,BloomConvolutionPreFilterMax=15000.000000,BloomConvolutionPreFilterMult=15.000000,BloomConvolutionBufferScale=0.133000,BloomDirtMask=None,BloomDirtMaskIntensity=0.000000,BloomDirtMaskTint=(R=0.500000,G=0.500000,B=0.500000,A=1.000000),DynamicGlobalIlluminationMethod=Lumen,IndirectLightingColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),IndirectLightingIntensity=1.000000,LumenRayLightingMode=Default,LumenSceneLightingQuality=1.000000,LumenSceneDetail=1.000000,LumenSceneViewDistance=20000.000000,LumenSceneLightingUpdateSpeed=1.000000,LumenFinalGatherQuality=1.000000,LumenFinalGatherLightingUpdateSpeed=1.000000,LumenFinalGatherScreenTraces=True,LumenMaxTraceDistance=20000.000000,LumenDiffuseColorBoost=1.000000,LumenAmbientOcclusionIntensity=1.000000,LumenSkylightLeaking=0.000000,LumenSkylightLeakingTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),LumenFullSkylightLeakingDistance=1000.000000,LumenSurfaceCacheResolution=1.000000,ReflectionMethod=Lumen,LumenReflectionQuality=1.000000,LumenReflectionsScreenTraces=True,LumenFrontLayerTranslucencyReflections=False,LumenMaxRoughnessToTraceReflections=0.400000,LumenMaxReflectionBounces=1,LumenMaxRefractionBounces=0,ScreenSpaceReflectionIntensity=100.000000,ScreenSpaceReflectionQuality=50.000000,ScreenSpaceReflectionMaxRoughness=0.600000,bMegaLights=True,MegaLightsFrontLayerTranslucency=False,AmbientCubemapTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),AmbientCubemapIntensity=1.000000,AmbientCubemap=None,CameraShutterSpeed=60.000000,CameraISO=100.000000,DepthOfFieldFstop=4.000000,DepthOfFieldMinFstop=1.200000,DepthOfFieldBladeCount=5,AutoExposureBias=1.000000,AutoExposureBiasBackup=0.000000,bOverride_AutoExposureBiasBackup=False,AutoExposureApplyPhysicalCameraExposure=True,AutoExposureBiasCurve=None,AutoExposureMeterMask=None,AutoExposureLowPercent=10.000000,AutoExposureHighPercent=90.000000,AutoExposureMinBrightness=-10.000000,AutoExposureMaxBrightness=20.000000,AutoExposureSpeedUp=3.000000,AutoExposureSpeedDown=1.000000,HistogramLogMin=-10.000000,HistogramLogMax=20.000000,LocalExposureMethod=Bilateral,LocalExposureHighlightContrastScale=1.000000,LocalExposureShadowContrastScale=1.000000,LocalExposureHighlightContrastCurve=None,LocalExposureShadowContrastCurve=None,LocalExposureHighlightThreshold=0.000000,LocalExposureShadowThreshold=0.000000,LocalExposureDetailStrength=1.000000,LocalExposureBlurredLuminanceBlend=0.600000,LocalExposureBlurredLuminanceKernelSizePercent=50.000000,LocalExposureHighlightThresholdStrength=1.000000,LocalExposureShadowThresholdStrength=1.000000,LocalExposureMiddleGreyBias=0.000000,LensFlareIntensity=1.000000,LensFlareTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),LensFlareBokehSize=3.000000,LensFlareThreshold=8.000000,LensFlareBokehShape=None,LensFlareTints[0]=(R=1.000000,G=0.800000,B=0.400000,A=0.600000),LensFlareTints[1]=(R=1.000000,G=1.000000,B=0.600000,A=0.530000),LensFlareTints[2]=(R=0.800000,G=0.800000,B=1.000000,A=0.460000),LensFlareTints[3]=(R=0.500000,G=1.000000,B=0.400000,A=0.390000),LensFlareTints[4]=(R=0.500000,G=0.800000,B=1.000000,A=0.310000),LensFlareTints[5]=(R=0.900000,G=1.000000,B=0.800000,A=0.270000),LensFlareTints[6]=(R=1.000000,G=0.800000,B=0.400000,A=0.220000),LensFlareTints[7]=(R=0.900000,G=0.700000,B=0.700000,A=0.150000),VignetteIntensity=0.400000,VignetteType=CosineFourthLaw,VignetteCenter=(X=0.500000,Y=0.500000),VignetteColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000),VignetteSize=(X=1.000000,Y=1.000000),VignetteSoftness=5.000000,VignetteTexture=None,Sharpen=0.000000,FilmGrainIntensity=0.000000,FilmGrainIntensityShadows=1.000000,FilmGrainIntensityMidtones=1.000000,FilmGrainIntensityHighlights=1.000000,FilmGrainShadowsMax=0.090000,FilmGrainHighlightsMin=0.500000,FilmGrainHighlightsMax=1.000000,FilmGrainScale=(X=1.000000,Y=1.000000),FilmGrainTexture=None,AmbientOcclusionIntensity=0.500000,AmbientOcclusionStaticFraction=1.000000,AmbientOcclusionRadius=200.000000,AmbientOcclusionRadiusInWS=False,AmbientOcclusionFadeDistance=8000.000000,AmbientOcclusionFadeRadius=5000.000000,AmbientOcclusionPower=2.000000,AmbientOcclusionBias=3.000000,AmbientOcclusionQuality=50.000000,AmbientOcclusionMipBlend=0.600000,AmbientOcclusionMipScale=1.700000,AmbientOcclusionMipThreshold=0.010000,AmbientOcclusionTemporalBlendWeight=0.100000,RayTracingAO=False,RayTracingAOSamplesPerPixel=1,RayTracingAOIntensity=1.000000,RayTracingAORadius=200.000000,ColorGradingIntensity=1.000000,ColorGradingLUT=None,DepthOfFieldEnabled=True,DepthOfFieldSensorWidth=24.576000,DepthOfFieldSqueezeFactor=1.000000,DepthOfFieldFocalDistance=0.000000,DepthOfFieldDepthBlurAmount=1.000000,DepthOfFieldDepthBlurRadius=0.000000,DepthOfFieldUseHairDepth=False,DepthOfFieldPetzvalBokeh=0.000000,DepthOfFieldPetzvalBokehFalloff=1.000000,DepthOfFieldPetzvalExclusionBoxExtents=(X=0.000000,Y=0.000000),DepthOfFieldPetzvalExclusionBoxRadius=0.000000,DepthOfFieldAspectRatioScalar=1.000000,DepthOfFieldBarrelRadius=5.000000,DepthOfFieldBarrelLength=0.000000,DepthOfFieldMatteBoxFlags[0]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldMatteBoxFlags[1]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldMatteBoxFlags[2]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldFocalRegion=0.000000,DepthOfFieldNearTransitionRegion=300.000000,DepthOfFieldFarTransitionRegion=500.000000,DepthOfFieldScale=0.000000,DepthOfFieldNearBlurSize=15.000000,DepthOfFieldFarBlurSize=15.000000,DepthOfFieldOcclusion=0.400000,DepthOfFieldSkyFocusDistance=0.000000,DepthOfFieldVignetteSize=200.000000,MotionBlurAmount=0.500000,MotionBlurMax=5.000000,MotionBlurTargetFPS=30,MotionBlurPerObjectSize=0.000000,TranslucencyType=Raster,RayTracingTranslucencyMaxRoughness=0.600000,RayTracingTranslucencyRefractionRays=3,RayTracingTranslucencySamplesPerPixel=1,RayTracingTranslucencyMaxPrimaryHitEvents=4,RayTracingTranslucencyMaxSecondaryHitEvents=2,RayTracingTranslucencyShadows=Hard_shadows,RayTracingTranslucencyRefraction=True,RayTracingTranslucencyUseRayTracedRefraction=False,PathTracingMaxBounces=32,PathTracingSamplesPerPixel=2048,PathTracingMaxPathIntensity=24.000000,PathTracingEnableEmissiveMaterials=True,PathTracingEnableReferenceDOF=False,PathTracingEnableReferenceAtmosphere=False,PathTracingEnableDenoiser=True,PathTracingIncludeEmissive=True,PathTracingIncludeDiffuse=True,PathTracingIncludeIndirectDiffuse=True,PathTracingIncludeSpecular=True,PathTracingIncludeIndirectSpecular=True,PathTracingIncludeVolume=True,PathTracingIncludeIndirectVolume=True,UserFlags=0,WeightedBlendables=(Array=))"
+          }
+        },
+        "cockpit_camera": {
+          "field_of_view": 90.0,
+          "aspect_ratio": 1.7777780294418335,
+          "constrain_aspect_ratio": false,
+          "post_process_blend_weight": 1.0,
+          "projection_mode": {
+            "enum": "<CameraProjectionMode.PERSPECTIVE: 0>"
+          },
+          "ortho_width": 1536.0,
+          "use_pawn_control_rotation": false,
+          "lock_to_hmd": false,
+          "post_process_settings": {
+            "struct": "PostProcessSettings",
+            "text": "(bOverride_TemperatureType=False,bOverride_WhiteTemp=False,bOverride_WhiteTint=False,bOverride_ColorSaturation=False,bOverride_ColorContrast=False,bOverride_ColorGamma=False,bOverride_ColorGain=False,bOverride_ColorOffset=False,bOverride_ColorSaturationShadows=False,bOverride_ColorContrastShadows=False,bOverride_ColorGammaShadows=False,bOverride_ColorGainShadows=False,bOverride_ColorOffsetShadows=False,bOverride_ColorSaturationMidtones=False,bOverride_ColorContrastMidtones=False,bOverride_ColorGammaMidtones=False,bOverride_ColorGainMidtones=False,bOverride_ColorOffsetMidtones=False,bOverride_ColorSaturationHighlights=False,bOverride_ColorContrastHighlights=False,bOverride_ColorGammaHighlights=False,bOverride_ColorGainHighlights=False,bOverride_ColorOffsetHighlights=False,bOverride_ColorCorrectionShadowsMax=False,bOverride_ColorCorrectionHighlightsMin=False,bOverride_ColorCorrectionHighlightsMax=False,bOverride_BlueCorrection=False,bOverride_ExpandGamut=False,bOverride_ToneCurveAmount=False,bOverride_TonemappingMethod=False,bOverride_FilmSlope=False,bOverride_FilmToe=False,bOverride_FilmShoulder=False,bOverride_FilmBlackClip=False,bOverride_FilmWhiteClip=False,bOverride_SceneColorTint=False,bOverride_SceneFringeIntensity=False,bOverride_ChromaticAberrationStartOffset=False,bOverride_bMegaLights=False,bOverride_MegaLightsFrontLayerTranslucency=False,bOverride_AmbientCubemapTint=False,bOverride_AmbientCubemapIntensity=False,bOverride_BloomMethod=False,bOverride_BloomIntensity=False,bOverride_BloomGaussianIntensity=False,bOverride_BloomThreshold=False,bOverride_Bloom1Tint=False,bOverride_Bloom1Size=False,bOverride_Bloom2Size=False,bOverride_Bloom2Tint=False,bOverride_Bloom3Tint=False,bOverride_Bloom3Size=False,bOverride_Bloom4Tint=False,bOverride_Bloom4Size=False,bOverride_Bloom5Tint=False,bOverride_Bloom5Size=False,bOverride_Bloom6Tint=False,bOverride_Bloom6Size=False,bOverride_BloomSizeScale=False,bOverride_BloomConvolutionIntensity=False,bOverride_BloomConvolutionTexture=False,bOverride_BloomConvolutionScatterDispersion=False,bOverride_BloomConvolutionSize=False,bOverride_BloomConvolutionCenterUV=False,bOverride_BloomConvolutionPreFilterMin=False,bOverride_BloomConvolutionPreFilterMax=False,bOverride_BloomConvolutionPreFilterMult=False,bOverride_BloomConvolutionBufferScale=False,bOverride_BloomDirtMaskIntensity=False,bOverride_BloomDirtMaskTint=False,bOverride_BloomDirtMask=False,bOverride_CameraShutterSpeed=False,bOverride_CameraISO=False,bOverride_AutoExposureMethod=False,bOverride_AutoExposureLowPercent=False,bOverride_AutoExposureHighPercent=False,bOverride_AutoExposureMinBrightness=False,bOverride_AutoExposureMaxBrightness=False,bOverride_AutoExposureSpeedUp=False,bOverride_AutoExposureSpeedDown=False,bOverride_AutoExposureBias=False,bOverride_AutoExposureBiasCurve=False,bOverride_AutoExposureMeterMask=False,bOverride_AutoExposureApplyPhysicalCameraExposure=False,bOverride_HistogramLogMin=False,bOverride_HistogramLogMax=False,bOverride_LocalExposureMethod=False,bOverride_LocalExposureHighlightContrastScale=False,bOverride_LocalExposureShadowContrastScale=False,bOverride_LocalExposureHighlightContrastCurve=False,bOverride_LocalExposureShadowContrastCurve=False,bOverride_LocalExposureHighlightThreshold=False,bOverride_LocalExposureShadowThreshold=False,bOverride_LocalExposureDetailStrength=False,bOverride_LocalExposureBlurredLuminanceBlend=False,bOverride_LocalExposureBlurredLuminanceKernelSizePercent=False,bOverride_LocalExposureHighlightThresholdStrength=False,bOverride_LocalExposureShadowThresholdStrength=False,bOverride_LocalExposureMiddleGreyBias=False,bOverride_LensFlareIntensity=False,bOverride_LensFlareTint=False,bOverride_LensFlareTints=False,bOverride_LensFlareBokehSize=False,bOverride_LensFlareBokehShape=False,bOverride_LensFlareThreshold=False,bOverride_VignetteIntensity=False,bOverride_VignetteType=False,bOverride_VignetteCenter=False,bOverride_VignetteColor=False,bOverride_VignetteSize=False,bOverride_VignetteSoftness=False,bOverride_VignetteTexture=False,bOverride_Sharpen=False,bOverride_FilmGrainIntensity=False,bOverride_FilmGrainIntensityShadows=False,bOverride_FilmGrainIntensityMidtones=False,bOverride_FilmGrainIntensityHighlights=False,bOverride_FilmGrainShadowsMax=False,bOverride_FilmGrainHighlightsMin=False,bOverride_FilmGrainHighlightsMax=False,bOverride_FilmGrainScale=False,bOverride_FilmGrainTexture=False,bOverride_AmbientOcclusionIntensity=False,bOverride_AmbientOcclusionStaticFraction=False,bOverride_AmbientOcclusionRadius=False,bOverride_AmbientOcclusionFadeDistance=False,bOverride_AmbientOcclusionFadeRadius=False,bOverride_AmbientOcclusionRadiusInWS=False,bOverride_AmbientOcclusionPower=False,bOverride_AmbientOcclusionBias=False,bOverride_AmbientOcclusionQuality=False,bOverride_AmbientOcclusionMipBlend=False,bOverride_AmbientOcclusionMipScale=False,bOverride_AmbientOcclusionMipThreshold=False,bOverride_AmbientOcclusionTemporalBlendWeight=False,bOverride_RayTracingAO=False,bOverride_RayTracingAOSamplesPerPixel=False,bOverride_RayTracingAOIntensity=False,bOverride_RayTracingAORadius=False,bOverride_IndirectLightingColor=False,bOverride_IndirectLightingIntensity=False,bOverride_ColorGradingIntensity=False,bOverride_ColorGradingLUT=False,bOverride_DepthOfFieldEnabled=False,bOverride_DepthOfFieldFocalDistance=False,bOverride_DepthOfFieldFstop=False,bOverride_DepthOfFieldMinFstop=False,bOverride_DepthOfFieldBladeCount=False,bOverride_DepthOfFieldSensorWidth=False,bOverride_DepthOfFieldSqueezeFactor=False,bOverride_DepthOfFieldDepthBlurRadius=False,bOverride_DepthOfFieldUseHairDepth=False,bOverride_DepthOfFieldPetzvalBokeh=False,bOverride_DepthOfFieldPetzvalBokehFalloff=False,bOverride_DepthOfFieldPetzvalExclusionBoxExtents=False,bOverride_DepthOfFieldPetzvalExclusionBoxRadius=False,bOverride_DepthOfFieldAspectRatioScalar=False,bOverride_DepthOfFieldMatteBoxFlags=False,bOverride_DepthOfFieldBarrelRadius=False,bOverride_DepthOfFieldBarrelLength=False,bOverride_DepthOfFieldDepthBlurAmount=False,bOverride_DepthOfFieldFocalRegion=False,bOverride_DepthOfFieldNearTransitionRegion=False,bOverride_DepthOfFieldFarTransitionRegion=False,bOverride_DepthOfFieldScale=False,bOverride_DepthOfFieldNearBlurSize=False,bOverride_DepthOfFieldFarBlurSize=False,bOverride_MobileHQGaussian=False,bOverride_DepthOfFieldOcclusion=False,bOverride_DepthOfFieldSkyFocusDistance=False,bOverride_DepthOfFieldVignetteSize=False,bOverride_MotionBlurAmount=False,bOverride_MotionBlurMax=False,bOverride_MotionBlurTargetFPS=False,bOverride_MotionBlurPerObjectSize=False,bOverride_ReflectionMethod=False,bOverride_LumenReflectionQuality=False,bOverride_ScreenSpaceReflectionIntensity=False,bOverride_ScreenSpaceReflectionQuality=False,bOverride_ScreenSpaceReflectionMaxRoughness=False,bOverride_ScreenSpaceReflectionRoughnessScale=False,bOverride_UserFlags=False,bOverride_RayTracingReflectionsMaxRoughness=False,bOverride_RayTracingReflectionsMaxBounces=False,bOverride_RayTracingReflectionsSamplesPerPixel=False,bOverride_RayTracingReflectionsShadows=False,bOverride_RayTracingReflectionsTranslucency=False,bOverride_TranslucencyType=False,bOverride_RayTracingTranslucencyMaxRoughness=False,bOverride_RayTracingTranslucencyRefractionRays=False,bOverride_RayTracingTranslucencySamplesPerPixel=False,bOverride_RayTracingTranslucencyShadows=False,bOverride_RayTracingTranslucencyRefraction=False,bOverride_RayTracingTranslucencyMaxPrimaryHitEvents=False,bOverride_RayTracingTranslucencyMaxSecondaryHitEvents=False,bOverride_RayTracingTranslucencyUseRayTracedRefraction=False,bOverride_DynamicGlobalIlluminationMethod=False,bOverride_LumenSceneLightingQuality=False,bOverride_LumenSceneDetail=False,bOverride_LumenSceneViewDistance=False,bOverride_LumenSceneLightingUpdateSpeed=False,bOverride_LumenFinalGatherQuality=False,bOverride_LumenFinalGatherLightingUpdateSpeed=False,bOverride_LumenFinalGatherScreenTraces=False,bOverride_LumenMaxTraceDistance=False,bOverride_LumenDiffuseColorBoost=False,bOverride_LumenAmbientOcclusionIntensity=False,bOverride_LumenSkylightLeaking=False,bOverride_LumenSkylightLeakingTint=False,bOverride_LumenFullSkylightLeakingDistance=False,bOverride_LumenRayLightingMode=False,bOverride_LumenReflectionsScreenTraces=False,bOverride_LumenFrontLayerTranslucencyReflections=False,bOverride_LumenMaxRoughnessToTraceReflections=False,bOverride_LumenMaxReflectionBounces=False,bOverride_LumenMaxRefractionBounces=False,bOverride_LumenSurfaceCacheResolution=False,bOverride_RayTracingGI=False,bOverride_RayTracingGIMaxBounces=False,bOverride_RayTracingGISamplesPerPixel=False,bOverride_PathTracingMaxBounces=False,bOverride_PathTracingSamplesPerPixel=False,bOverride_PathTracingMaxPathIntensity=False,bOverride_PathTracingEnableEmissiveMaterials=False,bOverride_PathTracingEnableReferenceDOF=False,bOverride_PathTracingEnableReferenceAtmosphere=False,bOverride_PathTracingEnableDenoiser=False,bOverride_PathTracingIncludeEmissive=False,bOverride_PathTracingIncludeDiffuse=False,bOverride_PathTracingIncludeIndirectDiffuse=False,bOverride_PathTracingIncludeSpecular=False,bOverride_PathTracingIncludeIndirectSpecular=False,bOverride_PathTracingIncludeVolume=False,bOverride_PathTracingIncludeIndirectVolume=False,bMobileHQGaussian=False,BloomMethod=BM_SOG,AutoExposureMethod=AEM_Histogram,TemperatureType=TEMP_WhiteBalance,WhiteTemp=6500.000000,WhiteTint=0.000000,ColorSaturation=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrast=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGamma=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGain=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffset=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetShadows=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetMidtones=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetHighlights=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorCorrectionHighlightsMin=0.500000,ColorCorrectionHighlightsMax=1.000000,ColorCorrectionShadowsMax=0.090000,BlueCorrection=0.600000,ExpandGamut=1.000000,ToneCurveAmount=1.000000,TonemappingMethod=Filmic,FilmSlope=0.880000,FilmToe=0.550000,FilmShoulder=0.260000,FilmBlackClip=0.000000,FilmWhiteClip=0.040000,SceneColorTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),SceneFringeIntensity=0.000000,ChromaticAberrationStartOffset=0.000000,BloomIntensity=0.675000,BloomGaussianIntensity=1.000000,BloomThreshold=-1.000000,BloomSizeScale=4.000000,Bloom1Size=0.300000,Bloom2Size=1.000000,Bloom3Size=2.000000,Bloom4Size=10.000000,Bloom5Size=30.000000,Bloom6Size=64.000000,Bloom1Tint=(R=0.346500,G=0.346500,B=0.346500,A=1.000000),Bloom2Tint=(R=0.138000,G=0.138000,B=0.138000,A=1.000000),Bloom3Tint=(R=0.117600,G=0.117600,B=0.117600,A=1.000000),Bloom4Tint=(R=0.066000,G=0.066000,B=0.066000,A=1.000000),Bloom5Tint=(R=0.066000,G=0.066000,B=0.066000,A=1.000000),Bloom6Tint=(R=0.061000,G=0.061000,B=0.061000,A=1.000000),BloomConvolutionIntensity=1.000000,BloomConvolutionScatterDispersion=1.000000,BloomConvolutionSize=1.000000,BloomConvolutionTexture=None,BloomConvolutionCenterUV=(X=0.500000,Y=0.500000),BloomConvolutionPreFilterMin=7.000000,BloomConvolutionPreFilterMax=15000.000000,BloomConvolutionPreFilterMult=15.000000,BloomConvolutionBufferScale=0.133000,BloomDirtMask=None,BloomDirtMaskIntensity=0.000000,BloomDirtMaskTint=(R=0.500000,G=0.500000,B=0.500000,A=1.000000),DynamicGlobalIlluminationMethod=Lumen,IndirectLightingColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),IndirectLightingIntensity=1.000000,LumenRayLightingMode=Default,LumenSceneLightingQuality=1.000000,LumenSceneDetail=1.000000,LumenSceneViewDistance=20000.000000,LumenSceneLightingUpdateSpeed=1.000000,LumenFinalGatherQuality=1.000000,LumenFinalGatherLightingUpdateSpeed=1.000000,LumenFinalGatherScreenTraces=True,LumenMaxTraceDistance=20000.000000,LumenDiffuseColorBoost=1.000000,LumenAmbientOcclusionIntensity=1.000000,LumenSkylightLeaking=0.000000,LumenSkylightLeakingTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),LumenFullSkylightLeakingDistance=1000.000000,LumenSurfaceCacheResolution=1.000000,ReflectionMethod=Lumen,LumenReflectionQuality=1.000000,LumenReflectionsScreenTraces=True,LumenFrontLayerTranslucencyReflections=False,LumenMaxRoughnessToTraceReflections=0.400000,LumenMaxReflectionBounces=1,LumenMaxRefractionBounces=0,ScreenSpaceReflectionIntensity=100.000000,ScreenSpaceReflectionQuality=50.000000,ScreenSpaceReflectionMaxRoughness=0.600000,bMegaLights=True,MegaLightsFrontLayerTranslucency=False,AmbientCubemapTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),AmbientCubemapIntensity=1.000000,AmbientCubemap=None,CameraShutterSpeed=60.000000,CameraISO=100.000000,DepthOfFieldFstop=4.000000,DepthOfFieldMinFstop=1.200000,DepthOfFieldBladeCount=5,AutoExposureBias=1.000000,AutoExposureBiasBackup=0.000000,bOverride_AutoExposureBiasBackup=False,AutoExposureApplyPhysicalCameraExposure=True,AutoExposureBiasCurve=None,AutoExposureMeterMask=None,AutoExposureLowPercent=10.000000,AutoExposureHighPercent=90.000000,AutoExposureMinBrightness=-10.000000,AutoExposureMaxBrightness=20.000000,AutoExposureSpeedUp=3.000000,AutoExposureSpeedDown=1.000000,HistogramLogMin=-10.000000,HistogramLogMax=20.000000,LocalExposureMethod=Bilateral,LocalExposureHighlightContrastScale=1.000000,LocalExposureShadowContrastScale=1.000000,LocalExposureHighlightContrastCurve=None,LocalExposureShadowContrastCurve=None,LocalExposureHighlightThreshold=0.000000,LocalExposureShadowThreshold=0.000000,LocalExposureDetailStrength=1.000000,LocalExposureBlurredLuminanceBlend=0.600000,LocalExposureBlurredLuminanceKernelSizePercent=50.000000,LocalExposureHighlightThresholdStrength=1.000000,LocalExposureShadowThresholdStrength=1.000000,LocalExposureMiddleGreyBias=0.000000,LensFlareIntensity=1.000000,LensFlareTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),LensFlareBokehSize=3.000000,LensFlareThreshold=8.000000,LensFlareBokehShape=None,LensFlareTints[0]=(R=1.000000,G=0.800000,B=0.400000,A=0.600000),LensFlareTints[1]=(R=1.000000,G=1.000000,B=0.600000,A=0.530000),LensFlareTints[2]=(R=0.800000,G=0.800000,B=1.000000,A=0.460000),LensFlareTints[3]=(R=0.500000,G=1.000000,B=0.400000,A=0.390000),LensFlareTints[4]=(R=0.500000,G=0.800000,B=1.000000,A=0.310000),LensFlareTints[5]=(R=0.900000,G=1.000000,B=0.800000,A=0.270000),LensFlareTints[6]=(R=1.000000,G=0.800000,B=0.400000,A=0.220000),LensFlareTints[7]=(R=0.900000,G=0.700000,B=0.700000,A=0.150000),VignetteIntensity=0.400000,VignetteType=CosineFourthLaw,VignetteCenter=(X=0.500000,Y=0.500000),VignetteColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000),VignetteSize=(X=1.000000,Y=1.000000),VignetteSoftness=5.000000,VignetteTexture=None,Sharpen=0.000000,FilmGrainIntensity=0.000000,FilmGrainIntensityShadows=1.000000,FilmGrainIntensityMidtones=1.000000,FilmGrainIntensityHighlights=1.000000,FilmGrainShadowsMax=0.090000,FilmGrainHighlightsMin=0.500000,FilmGrainHighlightsMax=1.000000,FilmGrainScale=(X=1.000000,Y=1.000000),FilmGrainTexture=None,AmbientOcclusionIntensity=0.500000,AmbientOcclusionStaticFraction=1.000000,AmbientOcclusionRadius=200.000000,AmbientOcclusionRadiusInWS=False,AmbientOcclusionFadeDistance=8000.000000,AmbientOcclusionFadeRadius=5000.000000,AmbientOcclusionPower=2.000000,AmbientOcclusionBias=3.000000,AmbientOcclusionQuality=50.000000,AmbientOcclusionMipBlend=0.600000,AmbientOcclusionMipScale=1.700000,AmbientOcclusionMipThreshold=0.010000,AmbientOcclusionTemporalBlendWeight=0.100000,RayTracingAO=False,RayTracingAOSamplesPerPixel=1,RayTracingAOIntensity=1.000000,RayTracingAORadius=200.000000,ColorGradingIntensity=1.000000,ColorGradingLUT=None,DepthOfFieldEnabled=True,DepthOfFieldSensorWidth=24.576000,DepthOfFieldSqueezeFactor=1.000000,DepthOfFieldFocalDistance=0.000000,DepthOfFieldDepthBlurAmount=1.000000,DepthOfFieldDepthBlurRadius=0.000000,DepthOfFieldUseHairDepth=False,DepthOfFieldPetzvalBokeh=0.000000,DepthOfFieldPetzvalBokehFalloff=1.000000,DepthOfFieldPetzvalExclusionBoxExtents=(X=0.000000,Y=0.000000),DepthOfFieldPetzvalExclusionBoxRadius=0.000000,DepthOfFieldAspectRatioScalar=1.000000,DepthOfFieldBarrelRadius=5.000000,DepthOfFieldBarrelLength=0.000000,DepthOfFieldMatteBoxFlags[0]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldMatteBoxFlags[1]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldMatteBoxFlags[2]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldFocalRegion=0.000000,DepthOfFieldNearTransitionRegion=300.000000,DepthOfFieldFarTransitionRegion=500.000000,DepthOfFieldScale=0.000000,DepthOfFieldNearBlurSize=15.000000,DepthOfFieldFarBlurSize=15.000000,DepthOfFieldOcclusion=0.400000,DepthOfFieldSkyFocusDistance=0.000000,DepthOfFieldVignetteSize=200.000000,MotionBlurAmount=0.500000,MotionBlurMax=5.000000,MotionBlurTargetFPS=30,MotionBlurPerObjectSize=0.000000,TranslucencyType=Raster,RayTracingTranslucencyMaxRoughness=0.600000,RayTracingTranslucencyRefractionRays=3,RayTracingTranslucencySamplesPerPixel=1,RayTracingTranslucencyMaxPrimaryHitEvents=4,RayTracingTranslucencyMaxSecondaryHitEvents=2,RayTracingTranslucencyShadows=Hard_shadows,RayTracingTranslucencyRefraction=True,RayTracingTranslucencyUseRayTracedRefraction=False,PathTracingMaxBounces=32,PathTracingSamplesPerPixel=2048,PathTracingMaxPathIntensity=24.000000,PathTracingEnableEmissiveMaterials=True,PathTracingEnableReferenceDOF=False,PathTracingEnableReferenceAtmosphere=False,PathTracingEnableDenoiser=True,PathTracingIncludeEmissive=True,PathTracingIncludeDiffuse=True,PathTracingIncludeIndirectDiffuse=True,PathTracingIncludeSpecular=True,PathTracingIncludeIndirectSpecular=True,PathTracingIncludeVolume=True,PathTracingIncludeIndirectVolume=True,UserFlags=0,WeightedBlendables=(Array=))"
+          }
+        }
+      },
+      "fdm": {
+        "aircraft_model": "f16",
+        "structural_frame_origin": {
+          "struct": "Vector",
+          "text": "(X=-550.521082,Y=0.000000,Z=182.883548)"
+        },
+        "start_on_ground": true,
+        "start_with_gear_down": true,
+        "initial_calibrated_air_speed_kts": 0.0
+      },
+      "assets": {
+        "animation_bindings": {
+          "object": "/Game/Data/Animation/DA_F16_AnimationBindings.DA_F16_AnimationBindings"
+        },
+        "skeletal_mesh_asset": {
+          "object": "/Game/VigilanteMovement/Vehicles/West_Fighter_F16C/SK_West_Fighter_F16C.SK_West_Fighter_F16C"
+        },
+        "anim_class": {
+          "object": "/Game/Blueprints/Pawns/Jets/F16A/ABP_F16C.ABP_F16C_C"
+        }
+      },
+      "start": {
+        "start_mode": {
+          "enum": "<FighterStartMode.GROUND: 0>"
+        },
+        "air_start_speed_kts": 250.0
+      },
+      "materials": [
+        {
+          "object": "/Game/VigilanteMovement/Vehicles/West_Fighter_F16C/Materials/MI_West_Fighter_F16C_Tank.MI_West_Fighter_F16C_Tank"
+        },
+        {
+          "object": "/Game/VigilanteMovement/Vehicles/West_Fighter_F16C/Materials/MI_West_Fighter_F16C_Main.MI_West_Fighter_F16C_Main"
+        },
+        {
+          "object": "/Game/VigilanteMovement/Vehicles/West_Fighter_F16C/Materials/MI_West_Fighter_F16C_Glass.MI_West_Fighter_F16C_Glass"
+        },
+        {
+          "object": "/Game/VigilanteMovement/Vehicles/West_Fighter_F16C/Materials/MI_West_Fighter_F16C_Main_Cockpit.MI_West_Fighter_F16C_Main_Cockpit"
+        }
+      ]
+    },
+    "/Game/Blueprints/Pawns/Jets/J16CE/BP_J16CE": {
+      "class": "/Game/Blueprints/Pawns/Jets/J16CE/BP_J16CE.BP_J16CE_C",
+      "transform": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+      "components": {
+        "aircraft_root": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=-0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": null
+        },
+        "presentation_root": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "AircraftRoot"
+        },
+        "aircraft_cg": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "AircraftRoot"
+        },
+        "airframe": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "PresentationRoot"
+        },
+        "cockpit_anchor": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=10.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=10.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "PresentationRoot"
+        },
+        "chase_focus": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=10.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=10.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "PresentationRoot"
+        },
+        "chase_arm": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=10.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "ChaseFocus"
+        },
+        "cockpit_camera": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=10.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "CockpitAnchor"
+        },
+        "chase_camera": {
+          "relative": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "actor": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=10.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+          "parent": "ChaseArm"
+        }
+      },
+      "arm": {
+        "target_arm_length": 2500.0,
+        "socket_offset": {
+          "struct": "Vector",
+          "text": "(X=0.000000,Y=0.000000,Z=250.000000)"
+        },
+        "target_offset": {
+          "struct": "Vector",
+          "text": "(X=0.000000,Y=0.000000,Z=0.000000)"
+        },
+        "enable_camera_lag": false,
+        "camera_lag_speed": 8.0,
+        "enable_camera_rotation_lag": false,
+        "camera_rotation_lag_speed": 10.0,
+        "do_collision_test": true,
+        "probe_size": 12.0,
+        "probe_channel": {
+          "enum": "<CollisionChannel.ECC_CAMERA: 4>"
+        },
+        "use_camera_lag_substepping": true,
+        "camera_lag_max_time_step": 0.01666666753590107,
+        "camera_lag_max_distance": 0.0,
+        "inherit_pitch": true,
+        "inherit_yaw": true,
+        "inherit_roll": true,
+        "use_pawn_control_rotation": false,
+        "absolute_rotation": true,
+        "relative_rotation": {
+          "struct": "Rotator",
+          "text": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+        },
+        "relative_scale3d": {
+          "struct": "Vector",
+          "text": "(X=1.000000,Y=1.000000,Z=1.000000)"
+        }
+      },
+      "look": {
+        "camera_mode": {
+          "enum": "<FighterCameraMode.CHASE: 0>"
+        },
+        "camera_yaw_sensitivity": 0.25,
+        "camera_pitch_sensitivity": 0.25,
+        "invert_camera_yaw": false,
+        "invert_camera_pitch": false,
+        "chase_pitch_min": -55.0,
+        "chase_pitch_max": 45.0,
+        "cockpit_pitch_limit": 85.0,
+        "cockpit_yaw_limit": 170.0,
+        "chase_auto_recenter": true,
+        "chase_recenter_speed": 60.0,
+        "chase_recenter_delay": 0.5
+      },
+      "cameras": {
+        "chase_camera": {
+          "field_of_view": 90.0,
+          "aspect_ratio": 1.7777780294418335,
+          "constrain_aspect_ratio": false,
+          "post_process_blend_weight": 1.0,
+          "projection_mode": {
+            "enum": "<CameraProjectionMode.PERSPECTIVE: 0>"
+          },
+          "ortho_width": 1536.0,
+          "use_pawn_control_rotation": false,
+          "lock_to_hmd": false,
+          "post_process_settings": {
+            "struct": "PostProcessSettings",
+            "text": "(bOverride_TemperatureType=False,bOverride_WhiteTemp=False,bOverride_WhiteTint=False,bOverride_ColorSaturation=False,bOverride_ColorContrast=False,bOverride_ColorGamma=False,bOverride_ColorGain=False,bOverride_ColorOffset=False,bOverride_ColorSaturationShadows=False,bOverride_ColorContrastShadows=False,bOverride_ColorGammaShadows=False,bOverride_ColorGainShadows=False,bOverride_ColorOffsetShadows=False,bOverride_ColorSaturationMidtones=False,bOverride_ColorContrastMidtones=False,bOverride_ColorGammaMidtones=False,bOverride_ColorGainMidtones=False,bOverride_ColorOffsetMidtones=False,bOverride_ColorSaturationHighlights=False,bOverride_ColorContrastHighlights=False,bOverride_ColorGammaHighlights=False,bOverride_ColorGainHighlights=False,bOverride_ColorOffsetHighlights=False,bOverride_ColorCorrectionShadowsMax=False,bOverride_ColorCorrectionHighlightsMin=False,bOverride_ColorCorrectionHighlightsMax=False,bOverride_BlueCorrection=False,bOverride_ExpandGamut=False,bOverride_ToneCurveAmount=False,bOverride_TonemappingMethod=False,bOverride_FilmSlope=False,bOverride_FilmToe=False,bOverride_FilmShoulder=False,bOverride_FilmBlackClip=False,bOverride_FilmWhiteClip=False,bOverride_SceneColorTint=False,bOverride_SceneFringeIntensity=False,bOverride_ChromaticAberrationStartOffset=False,bOverride_bMegaLights=False,bOverride_MegaLightsFrontLayerTranslucency=False,bOverride_AmbientCubemapTint=False,bOverride_AmbientCubemapIntensity=False,bOverride_BloomMethod=False,bOverride_BloomIntensity=False,bOverride_BloomGaussianIntensity=False,bOverride_BloomThreshold=False,bOverride_Bloom1Tint=False,bOverride_Bloom1Size=False,bOverride_Bloom2Size=False,bOverride_Bloom2Tint=False,bOverride_Bloom3Tint=False,bOverride_Bloom3Size=False,bOverride_Bloom4Tint=False,bOverride_Bloom4Size=False,bOverride_Bloom5Tint=False,bOverride_Bloom5Size=False,bOverride_Bloom6Tint=False,bOverride_Bloom6Size=False,bOverride_BloomSizeScale=False,bOverride_BloomConvolutionIntensity=False,bOverride_BloomConvolutionTexture=False,bOverride_BloomConvolutionScatterDispersion=False,bOverride_BloomConvolutionSize=False,bOverride_BloomConvolutionCenterUV=False,bOverride_BloomConvolutionPreFilterMin=False,bOverride_BloomConvolutionPreFilterMax=False,bOverride_BloomConvolutionPreFilterMult=False,bOverride_BloomConvolutionBufferScale=False,bOverride_BloomDirtMaskIntensity=False,bOverride_BloomDirtMaskTint=False,bOverride_BloomDirtMask=False,bOverride_CameraShutterSpeed=False,bOverride_CameraISO=False,bOverride_AutoExposureMethod=False,bOverride_AutoExposureLowPercent=False,bOverride_AutoExposureHighPercent=False,bOverride_AutoExposureMinBrightness=False,bOverride_AutoExposureMaxBrightness=False,bOverride_AutoExposureSpeedUp=False,bOverride_AutoExposureSpeedDown=False,bOverride_AutoExposureBias=False,bOverride_AutoExposureBiasCurve=False,bOverride_AutoExposureMeterMask=False,bOverride_AutoExposureApplyPhysicalCameraExposure=False,bOverride_HistogramLogMin=False,bOverride_HistogramLogMax=False,bOverride_LocalExposureMethod=False,bOverride_LocalExposureHighlightContrastScale=False,bOverride_LocalExposureShadowContrastScale=False,bOverride_LocalExposureHighlightContrastCurve=False,bOverride_LocalExposureShadowContrastCurve=False,bOverride_LocalExposureHighlightThreshold=False,bOverride_LocalExposureShadowThreshold=False,bOverride_LocalExposureDetailStrength=False,bOverride_LocalExposureBlurredLuminanceBlend=False,bOverride_LocalExposureBlurredLuminanceKernelSizePercent=False,bOverride_LocalExposureHighlightThresholdStrength=False,bOverride_LocalExposureShadowThresholdStrength=False,bOverride_LocalExposureMiddleGreyBias=False,bOverride_LensFlareIntensity=False,bOverride_LensFlareTint=False,bOverride_LensFlareTints=False,bOverride_LensFlareBokehSize=False,bOverride_LensFlareBokehShape=False,bOverride_LensFlareThreshold=False,bOverride_VignetteIntensity=False,bOverride_VignetteType=False,bOverride_VignetteCenter=False,bOverride_VignetteColor=False,bOverride_VignetteSize=False,bOverride_VignetteSoftness=False,bOverride_VignetteTexture=False,bOverride_Sharpen=False,bOverride_FilmGrainIntensity=False,bOverride_FilmGrainIntensityShadows=False,bOverride_FilmGrainIntensityMidtones=False,bOverride_FilmGrainIntensityHighlights=False,bOverride_FilmGrainShadowsMax=False,bOverride_FilmGrainHighlightsMin=False,bOverride_FilmGrainHighlightsMax=False,bOverride_FilmGrainScale=False,bOverride_FilmGrainTexture=False,bOverride_AmbientOcclusionIntensity=False,bOverride_AmbientOcclusionStaticFraction=False,bOverride_AmbientOcclusionRadius=False,bOverride_AmbientOcclusionFadeDistance=False,bOverride_AmbientOcclusionFadeRadius=False,bOverride_AmbientOcclusionRadiusInWS=False,bOverride_AmbientOcclusionPower=False,bOverride_AmbientOcclusionBias=False,bOverride_AmbientOcclusionQuality=False,bOverride_AmbientOcclusionMipBlend=False,bOverride_AmbientOcclusionMipScale=False,bOverride_AmbientOcclusionMipThreshold=False,bOverride_AmbientOcclusionTemporalBlendWeight=False,bOverride_RayTracingAO=False,bOverride_RayTracingAOSamplesPerPixel=False,bOverride_RayTracingAOIntensity=False,bOverride_RayTracingAORadius=False,bOverride_IndirectLightingColor=False,bOverride_IndirectLightingIntensity=False,bOverride_ColorGradingIntensity=False,bOverride_ColorGradingLUT=False,bOverride_DepthOfFieldEnabled=False,bOverride_DepthOfFieldFocalDistance=False,bOverride_DepthOfFieldFstop=False,bOverride_DepthOfFieldMinFstop=False,bOverride_DepthOfFieldBladeCount=False,bOverride_DepthOfFieldSensorWidth=False,bOverride_DepthOfFieldSqueezeFactor=False,bOverride_DepthOfFieldDepthBlurRadius=False,bOverride_DepthOfFieldUseHairDepth=False,bOverride_DepthOfFieldPetzvalBokeh=False,bOverride_DepthOfFieldPetzvalBokehFalloff=False,bOverride_DepthOfFieldPetzvalExclusionBoxExtents=False,bOverride_DepthOfFieldPetzvalExclusionBoxRadius=False,bOverride_DepthOfFieldAspectRatioScalar=False,bOverride_DepthOfFieldMatteBoxFlags=False,bOverride_DepthOfFieldBarrelRadius=False,bOverride_DepthOfFieldBarrelLength=False,bOverride_DepthOfFieldDepthBlurAmount=False,bOverride_DepthOfFieldFocalRegion=False,bOverride_DepthOfFieldNearTransitionRegion=False,bOverride_DepthOfFieldFarTransitionRegion=False,bOverride_DepthOfFieldScale=False,bOverride_DepthOfFieldNearBlurSize=False,bOverride_DepthOfFieldFarBlurSize=False,bOverride_MobileHQGaussian=False,bOverride_DepthOfFieldOcclusion=False,bOverride_DepthOfFieldSkyFocusDistance=False,bOverride_DepthOfFieldVignetteSize=False,bOverride_MotionBlurAmount=False,bOverride_MotionBlurMax=False,bOverride_MotionBlurTargetFPS=False,bOverride_MotionBlurPerObjectSize=False,bOverride_ReflectionMethod=False,bOverride_LumenReflectionQuality=False,bOverride_ScreenSpaceReflectionIntensity=False,bOverride_ScreenSpaceReflectionQuality=False,bOverride_ScreenSpaceReflectionMaxRoughness=False,bOverride_ScreenSpaceReflectionRoughnessScale=False,bOverride_UserFlags=False,bOverride_RayTracingReflectionsMaxRoughness=False,bOverride_RayTracingReflectionsMaxBounces=False,bOverride_RayTracingReflectionsSamplesPerPixel=False,bOverride_RayTracingReflectionsShadows=False,bOverride_RayTracingReflectionsTranslucency=False,bOverride_TranslucencyType=False,bOverride_RayTracingTranslucencyMaxRoughness=False,bOverride_RayTracingTranslucencyRefractionRays=False,bOverride_RayTracingTranslucencySamplesPerPixel=False,bOverride_RayTracingTranslucencyShadows=False,bOverride_RayTracingTranslucencyRefraction=False,bOverride_RayTracingTranslucencyMaxPrimaryHitEvents=False,bOverride_RayTracingTranslucencyMaxSecondaryHitEvents=False,bOverride_RayTracingTranslucencyUseRayTracedRefraction=False,bOverride_DynamicGlobalIlluminationMethod=False,bOverride_LumenSceneLightingQuality=False,bOverride_LumenSceneDetail=False,bOverride_LumenSceneViewDistance=False,bOverride_LumenSceneLightingUpdateSpeed=False,bOverride_LumenFinalGatherQuality=False,bOverride_LumenFinalGatherLightingUpdateSpeed=False,bOverride_LumenFinalGatherScreenTraces=False,bOverride_LumenMaxTraceDistance=False,bOverride_LumenDiffuseColorBoost=False,bOverride_LumenAmbientOcclusionIntensity=False,bOverride_LumenSkylightLeaking=False,bOverride_LumenSkylightLeakingTint=False,bOverride_LumenFullSkylightLeakingDistance=False,bOverride_LumenRayLightingMode=False,bOverride_LumenReflectionsScreenTraces=False,bOverride_LumenFrontLayerTranslucencyReflections=False,bOverride_LumenMaxRoughnessToTraceReflections=False,bOverride_LumenMaxReflectionBounces=False,bOverride_LumenMaxRefractionBounces=False,bOverride_LumenSurfaceCacheResolution=False,bOverride_RayTracingGI=False,bOverride_RayTracingGIMaxBounces=False,bOverride_RayTracingGISamplesPerPixel=False,bOverride_PathTracingMaxBounces=False,bOverride_PathTracingSamplesPerPixel=False,bOverride_PathTracingMaxPathIntensity=False,bOverride_PathTracingEnableEmissiveMaterials=False,bOverride_PathTracingEnableReferenceDOF=False,bOverride_PathTracingEnableReferenceAtmosphere=False,bOverride_PathTracingEnableDenoiser=False,bOverride_PathTracingIncludeEmissive=False,bOverride_PathTracingIncludeDiffuse=False,bOverride_PathTracingIncludeIndirectDiffuse=False,bOverride_PathTracingIncludeSpecular=False,bOverride_PathTracingIncludeIndirectSpecular=False,bOverride_PathTracingIncludeVolume=False,bOverride_PathTracingIncludeIndirectVolume=False,bMobileHQGaussian=False,BloomMethod=BM_SOG,AutoExposureMethod=AEM_Histogram,TemperatureType=TEMP_WhiteBalance,WhiteTemp=6500.000000,WhiteTint=0.000000,ColorSaturation=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrast=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGamma=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGain=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffset=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetShadows=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetMidtones=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetHighlights=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorCorrectionHighlightsMin=0.500000,ColorCorrectionHighlightsMax=1.000000,ColorCorrectionShadowsMax=0.090000,BlueCorrection=0.600000,ExpandGamut=1.000000,ToneCurveAmount=1.000000,TonemappingMethod=Filmic,FilmSlope=0.880000,FilmToe=0.550000,FilmShoulder=0.260000,FilmBlackClip=0.000000,FilmWhiteClip=0.040000,SceneColorTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),SceneFringeIntensity=0.000000,ChromaticAberrationStartOffset=0.000000,BloomIntensity=0.675000,BloomGaussianIntensity=1.000000,BloomThreshold=-1.000000,BloomSizeScale=4.000000,Bloom1Size=0.300000,Bloom2Size=1.000000,Bloom3Size=2.000000,Bloom4Size=10.000000,Bloom5Size=30.000000,Bloom6Size=64.000000,Bloom1Tint=(R=0.346500,G=0.346500,B=0.346500,A=1.000000),Bloom2Tint=(R=0.138000,G=0.138000,B=0.138000,A=1.000000),Bloom3Tint=(R=0.117600,G=0.117600,B=0.117600,A=1.000000),Bloom4Tint=(R=0.066000,G=0.066000,B=0.066000,A=1.000000),Bloom5Tint=(R=0.066000,G=0.066000,B=0.066000,A=1.000000),Bloom6Tint=(R=0.061000,G=0.061000,B=0.061000,A=1.000000),BloomConvolutionIntensity=1.000000,BloomConvolutionScatterDispersion=1.000000,BloomConvolutionSize=1.000000,BloomConvolutionTexture=None,BloomConvolutionCenterUV=(X=0.500000,Y=0.500000),BloomConvolutionPreFilterMin=7.000000,BloomConvolutionPreFilterMax=15000.000000,BloomConvolutionPreFilterMult=15.000000,BloomConvolutionBufferScale=0.133000,BloomDirtMask=None,BloomDirtMaskIntensity=0.000000,BloomDirtMaskTint=(R=0.500000,G=0.500000,B=0.500000,A=1.000000),DynamicGlobalIlluminationMethod=Lumen,IndirectLightingColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),IndirectLightingIntensity=1.000000,LumenRayLightingMode=Default,LumenSceneLightingQuality=1.000000,LumenSceneDetail=1.000000,LumenSceneViewDistance=20000.000000,LumenSceneLightingUpdateSpeed=1.000000,LumenFinalGatherQuality=1.000000,LumenFinalGatherLightingUpdateSpeed=1.000000,LumenFinalGatherScreenTraces=True,LumenMaxTraceDistance=20000.000000,LumenDiffuseColorBoost=1.000000,LumenAmbientOcclusionIntensity=1.000000,LumenSkylightLeaking=0.000000,LumenSkylightLeakingTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),LumenFullSkylightLeakingDistance=1000.000000,LumenSurfaceCacheResolution=1.000000,ReflectionMethod=Lumen,LumenReflectionQuality=1.000000,LumenReflectionsScreenTraces=True,LumenFrontLayerTranslucencyReflections=False,LumenMaxRoughnessToTraceReflections=0.400000,LumenMaxReflectionBounces=1,LumenMaxRefractionBounces=0,ScreenSpaceReflectionIntensity=100.000000,ScreenSpaceReflectionQuality=50.000000,ScreenSpaceReflectionMaxRoughness=0.600000,bMegaLights=True,MegaLightsFrontLayerTranslucency=False,AmbientCubemapTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),AmbientCubemapIntensity=1.000000,AmbientCubemap=None,CameraShutterSpeed=60.000000,CameraISO=100.000000,DepthOfFieldFstop=4.000000,DepthOfFieldMinFstop=1.200000,DepthOfFieldBladeCount=5,AutoExposureBias=1.000000,AutoExposureBiasBackup=0.000000,bOverride_AutoExposureBiasBackup=False,AutoExposureApplyPhysicalCameraExposure=True,AutoExposureBiasCurve=None,AutoExposureMeterMask=None,AutoExposureLowPercent=10.000000,AutoExposureHighPercent=90.000000,AutoExposureMinBrightness=-10.000000,AutoExposureMaxBrightness=20.000000,AutoExposureSpeedUp=3.000000,AutoExposureSpeedDown=1.000000,HistogramLogMin=-10.000000,HistogramLogMax=20.000000,LocalExposureMethod=Bilateral,LocalExposureHighlightContrastScale=1.000000,LocalExposureShadowContrastScale=1.000000,LocalExposureHighlightContrastCurve=None,LocalExposureShadowContrastCurve=None,LocalExposureHighlightThreshold=0.000000,LocalExposureShadowThreshold=0.000000,LocalExposureDetailStrength=1.000000,LocalExposureBlurredLuminanceBlend=0.600000,LocalExposureBlurredLuminanceKernelSizePercent=50.000000,LocalExposureHighlightThresholdStrength=1.000000,LocalExposureShadowThresholdStrength=1.000000,LocalExposureMiddleGreyBias=0.000000,LensFlareIntensity=1.000000,LensFlareTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),LensFlareBokehSize=3.000000,LensFlareThreshold=8.000000,LensFlareBokehShape=None,LensFlareTints[0]=(R=1.000000,G=0.800000,B=0.400000,A=0.600000),LensFlareTints[1]=(R=1.000000,G=1.000000,B=0.600000,A=0.530000),LensFlareTints[2]=(R=0.800000,G=0.800000,B=1.000000,A=0.460000),LensFlareTints[3]=(R=0.500000,G=1.000000,B=0.400000,A=0.390000),LensFlareTints[4]=(R=0.500000,G=0.800000,B=1.000000,A=0.310000),LensFlareTints[5]=(R=0.900000,G=1.000000,B=0.800000,A=0.270000),LensFlareTints[6]=(R=1.000000,G=0.800000,B=0.400000,A=0.220000),LensFlareTints[7]=(R=0.900000,G=0.700000,B=0.700000,A=0.150000),VignetteIntensity=0.400000,VignetteType=CosineFourthLaw,VignetteCenter=(X=0.500000,Y=0.500000),VignetteColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000),VignetteSize=(X=1.000000,Y=1.000000),VignetteSoftness=5.000000,VignetteTexture=None,Sharpen=0.000000,FilmGrainIntensity=0.000000,FilmGrainIntensityShadows=1.000000,FilmGrainIntensityMidtones=1.000000,FilmGrainIntensityHighlights=1.000000,FilmGrainShadowsMax=0.090000,FilmGrainHighlightsMin=0.500000,FilmGrainHighlightsMax=1.000000,FilmGrainScale=(X=1.000000,Y=1.000000),FilmGrainTexture=None,AmbientOcclusionIntensity=0.500000,AmbientOcclusionStaticFraction=1.000000,AmbientOcclusionRadius=200.000000,AmbientOcclusionRadiusInWS=False,AmbientOcclusionFadeDistance=8000.000000,AmbientOcclusionFadeRadius=5000.000000,AmbientOcclusionPower=2.000000,AmbientOcclusionBias=3.000000,AmbientOcclusionQuality=50.000000,AmbientOcclusionMipBlend=0.600000,AmbientOcclusionMipScale=1.700000,AmbientOcclusionMipThreshold=0.010000,AmbientOcclusionTemporalBlendWeight=0.100000,RayTracingAO=False,RayTracingAOSamplesPerPixel=1,RayTracingAOIntensity=1.000000,RayTracingAORadius=200.000000,ColorGradingIntensity=1.000000,ColorGradingLUT=None,DepthOfFieldEnabled=True,DepthOfFieldSensorWidth=24.576000,DepthOfFieldSqueezeFactor=1.000000,DepthOfFieldFocalDistance=0.000000,DepthOfFieldDepthBlurAmount=1.000000,DepthOfFieldDepthBlurRadius=0.000000,DepthOfFieldUseHairDepth=False,DepthOfFieldPetzvalBokeh=0.000000,DepthOfFieldPetzvalBokehFalloff=1.000000,DepthOfFieldPetzvalExclusionBoxExtents=(X=0.000000,Y=0.000000),DepthOfFieldPetzvalExclusionBoxRadius=0.000000,DepthOfFieldAspectRatioScalar=1.000000,DepthOfFieldBarrelRadius=5.000000,DepthOfFieldBarrelLength=0.000000,DepthOfFieldMatteBoxFlags[0]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldMatteBoxFlags[1]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldMatteBoxFlags[2]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldFocalRegion=0.000000,DepthOfFieldNearTransitionRegion=300.000000,DepthOfFieldFarTransitionRegion=500.000000,DepthOfFieldScale=0.000000,DepthOfFieldNearBlurSize=15.000000,DepthOfFieldFarBlurSize=15.000000,DepthOfFieldOcclusion=0.400000,DepthOfFieldSkyFocusDistance=0.000000,DepthOfFieldVignetteSize=200.000000,MotionBlurAmount=0.500000,MotionBlurMax=5.000000,MotionBlurTargetFPS=30,MotionBlurPerObjectSize=0.000000,TranslucencyType=Raster,RayTracingTranslucencyMaxRoughness=0.600000,RayTracingTranslucencyRefractionRays=3,RayTracingTranslucencySamplesPerPixel=1,RayTracingTranslucencyMaxPrimaryHitEvents=4,RayTracingTranslucencyMaxSecondaryHitEvents=2,RayTracingTranslucencyShadows=Hard_shadows,RayTracingTranslucencyRefraction=True,RayTracingTranslucencyUseRayTracedRefraction=False,PathTracingMaxBounces=32,PathTracingSamplesPerPixel=2048,PathTracingMaxPathIntensity=24.000000,PathTracingEnableEmissiveMaterials=True,PathTracingEnableReferenceDOF=False,PathTracingEnableReferenceAtmosphere=False,PathTracingEnableDenoiser=True,PathTracingIncludeEmissive=True,PathTracingIncludeDiffuse=True,PathTracingIncludeIndirectDiffuse=True,PathTracingIncludeSpecular=True,PathTracingIncludeIndirectSpecular=True,PathTracingIncludeVolume=True,PathTracingIncludeIndirectVolume=True,UserFlags=0,WeightedBlendables=(Array=))"
+          }
+        },
+        "cockpit_camera": {
+          "field_of_view": 90.0,
+          "aspect_ratio": 1.7777780294418335,
+          "constrain_aspect_ratio": false,
+          "post_process_blend_weight": 1.0,
+          "projection_mode": {
+            "enum": "<CameraProjectionMode.PERSPECTIVE: 0>"
+          },
+          "ortho_width": 1536.0,
+          "use_pawn_control_rotation": false,
+          "lock_to_hmd": false,
+          "post_process_settings": {
+            "struct": "PostProcessSettings",
+            "text": "(bOverride_TemperatureType=False,bOverride_WhiteTemp=False,bOverride_WhiteTint=False,bOverride_ColorSaturation=False,bOverride_ColorContrast=False,bOverride_ColorGamma=False,bOverride_ColorGain=False,bOverride_ColorOffset=False,bOverride_ColorSaturationShadows=False,bOverride_ColorContrastShadows=False,bOverride_ColorGammaShadows=False,bOverride_ColorGainShadows=False,bOverride_ColorOffsetShadows=False,bOverride_ColorSaturationMidtones=False,bOverride_ColorContrastMidtones=False,bOverride_ColorGammaMidtones=False,bOverride_ColorGainMidtones=False,bOverride_ColorOffsetMidtones=False,bOverride_ColorSaturationHighlights=False,bOverride_ColorContrastHighlights=False,bOverride_ColorGammaHighlights=False,bOverride_ColorGainHighlights=False,bOverride_ColorOffsetHighlights=False,bOverride_ColorCorrectionShadowsMax=False,bOverride_ColorCorrectionHighlightsMin=False,bOverride_ColorCorrectionHighlightsMax=False,bOverride_BlueCorrection=False,bOverride_ExpandGamut=False,bOverride_ToneCurveAmount=False,bOverride_TonemappingMethod=False,bOverride_FilmSlope=False,bOverride_FilmToe=False,bOverride_FilmShoulder=False,bOverride_FilmBlackClip=False,bOverride_FilmWhiteClip=False,bOverride_SceneColorTint=False,bOverride_SceneFringeIntensity=False,bOverride_ChromaticAberrationStartOffset=False,bOverride_bMegaLights=False,bOverride_MegaLightsFrontLayerTranslucency=False,bOverride_AmbientCubemapTint=False,bOverride_AmbientCubemapIntensity=False,bOverride_BloomMethod=False,bOverride_BloomIntensity=False,bOverride_BloomGaussianIntensity=False,bOverride_BloomThreshold=False,bOverride_Bloom1Tint=False,bOverride_Bloom1Size=False,bOverride_Bloom2Size=False,bOverride_Bloom2Tint=False,bOverride_Bloom3Tint=False,bOverride_Bloom3Size=False,bOverride_Bloom4Tint=False,bOverride_Bloom4Size=False,bOverride_Bloom5Tint=False,bOverride_Bloom5Size=False,bOverride_Bloom6Tint=False,bOverride_Bloom6Size=False,bOverride_BloomSizeScale=False,bOverride_BloomConvolutionIntensity=False,bOverride_BloomConvolutionTexture=False,bOverride_BloomConvolutionScatterDispersion=False,bOverride_BloomConvolutionSize=False,bOverride_BloomConvolutionCenterUV=False,bOverride_BloomConvolutionPreFilterMin=False,bOverride_BloomConvolutionPreFilterMax=False,bOverride_BloomConvolutionPreFilterMult=False,bOverride_BloomConvolutionBufferScale=False,bOverride_BloomDirtMaskIntensity=False,bOverride_BloomDirtMaskTint=False,bOverride_BloomDirtMask=False,bOverride_CameraShutterSpeed=False,bOverride_CameraISO=False,bOverride_AutoExposureMethod=False,bOverride_AutoExposureLowPercent=False,bOverride_AutoExposureHighPercent=False,bOverride_AutoExposureMinBrightness=False,bOverride_AutoExposureMaxBrightness=False,bOverride_AutoExposureSpeedUp=False,bOverride_AutoExposureSpeedDown=False,bOverride_AutoExposureBias=False,bOverride_AutoExposureBiasCurve=False,bOverride_AutoExposureMeterMask=False,bOverride_AutoExposureApplyPhysicalCameraExposure=False,bOverride_HistogramLogMin=False,bOverride_HistogramLogMax=False,bOverride_LocalExposureMethod=False,bOverride_LocalExposureHighlightContrastScale=False,bOverride_LocalExposureShadowContrastScale=False,bOverride_LocalExposureHighlightContrastCurve=False,bOverride_LocalExposureShadowContrastCurve=False,bOverride_LocalExposureHighlightThreshold=False,bOverride_LocalExposureShadowThreshold=False,bOverride_LocalExposureDetailStrength=False,bOverride_LocalExposureBlurredLuminanceBlend=False,bOverride_LocalExposureBlurredLuminanceKernelSizePercent=False,bOverride_LocalExposureHighlightThresholdStrength=False,bOverride_LocalExposureShadowThresholdStrength=False,bOverride_LocalExposureMiddleGreyBias=False,bOverride_LensFlareIntensity=False,bOverride_LensFlareTint=False,bOverride_LensFlareTints=False,bOverride_LensFlareBokehSize=False,bOverride_LensFlareBokehShape=False,bOverride_LensFlareThreshold=False,bOverride_VignetteIntensity=False,bOverride_VignetteType=False,bOverride_VignetteCenter=False,bOverride_VignetteColor=False,bOverride_VignetteSize=False,bOverride_VignetteSoftness=False,bOverride_VignetteTexture=False,bOverride_Sharpen=False,bOverride_FilmGrainIntensity=False,bOverride_FilmGrainIntensityShadows=False,bOverride_FilmGrainIntensityMidtones=False,bOverride_FilmGrainIntensityHighlights=False,bOverride_FilmGrainShadowsMax=False,bOverride_FilmGrainHighlightsMin=False,bOverride_FilmGrainHighlightsMax=False,bOverride_FilmGrainScale=False,bOverride_FilmGrainTexture=False,bOverride_AmbientOcclusionIntensity=False,bOverride_AmbientOcclusionStaticFraction=False,bOverride_AmbientOcclusionRadius=False,bOverride_AmbientOcclusionFadeDistance=False,bOverride_AmbientOcclusionFadeRadius=False,bOverride_AmbientOcclusionRadiusInWS=False,bOverride_AmbientOcclusionPower=False,bOverride_AmbientOcclusionBias=False,bOverride_AmbientOcclusionQuality=False,bOverride_AmbientOcclusionMipBlend=False,bOverride_AmbientOcclusionMipScale=False,bOverride_AmbientOcclusionMipThreshold=False,bOverride_AmbientOcclusionTemporalBlendWeight=False,bOverride_RayTracingAO=False,bOverride_RayTracingAOSamplesPerPixel=False,bOverride_RayTracingAOIntensity=False,bOverride_RayTracingAORadius=False,bOverride_IndirectLightingColor=False,bOverride_IndirectLightingIntensity=False,bOverride_ColorGradingIntensity=False,bOverride_ColorGradingLUT=False,bOverride_DepthOfFieldEnabled=False,bOverride_DepthOfFieldFocalDistance=False,bOverride_DepthOfFieldFstop=False,bOverride_DepthOfFieldMinFstop=False,bOverride_DepthOfFieldBladeCount=False,bOverride_DepthOfFieldSensorWidth=False,bOverride_DepthOfFieldSqueezeFactor=False,bOverride_DepthOfFieldDepthBlurRadius=False,bOverride_DepthOfFieldUseHairDepth=False,bOverride_DepthOfFieldPetzvalBokeh=False,bOverride_DepthOfFieldPetzvalBokehFalloff=False,bOverride_DepthOfFieldPetzvalExclusionBoxExtents=False,bOverride_DepthOfFieldPetzvalExclusionBoxRadius=False,bOverride_DepthOfFieldAspectRatioScalar=False,bOverride_DepthOfFieldMatteBoxFlags=False,bOverride_DepthOfFieldBarrelRadius=False,bOverride_DepthOfFieldBarrelLength=False,bOverride_DepthOfFieldDepthBlurAmount=False,bOverride_DepthOfFieldFocalRegion=False,bOverride_DepthOfFieldNearTransitionRegion=False,bOverride_DepthOfFieldFarTransitionRegion=False,bOverride_DepthOfFieldScale=False,bOverride_DepthOfFieldNearBlurSize=False,bOverride_DepthOfFieldFarBlurSize=False,bOverride_MobileHQGaussian=False,bOverride_DepthOfFieldOcclusion=False,bOverride_DepthOfFieldSkyFocusDistance=False,bOverride_DepthOfFieldVignetteSize=False,bOverride_MotionBlurAmount=False,bOverride_MotionBlurMax=False,bOverride_MotionBlurTargetFPS=False,bOverride_MotionBlurPerObjectSize=False,bOverride_ReflectionMethod=False,bOverride_LumenReflectionQuality=False,bOverride_ScreenSpaceReflectionIntensity=False,bOverride_ScreenSpaceReflectionQuality=False,bOverride_ScreenSpaceReflectionMaxRoughness=False,bOverride_ScreenSpaceReflectionRoughnessScale=False,bOverride_UserFlags=False,bOverride_RayTracingReflectionsMaxRoughness=False,bOverride_RayTracingReflectionsMaxBounces=False,bOverride_RayTracingReflectionsSamplesPerPixel=False,bOverride_RayTracingReflectionsShadows=False,bOverride_RayTracingReflectionsTranslucency=False,bOverride_TranslucencyType=False,bOverride_RayTracingTranslucencyMaxRoughness=False,bOverride_RayTracingTranslucencyRefractionRays=False,bOverride_RayTracingTranslucencySamplesPerPixel=False,bOverride_RayTracingTranslucencyShadows=False,bOverride_RayTracingTranslucencyRefraction=False,bOverride_RayTracingTranslucencyMaxPrimaryHitEvents=False,bOverride_RayTracingTranslucencyMaxSecondaryHitEvents=False,bOverride_RayTracingTranslucencyUseRayTracedRefraction=False,bOverride_DynamicGlobalIlluminationMethod=False,bOverride_LumenSceneLightingQuality=False,bOverride_LumenSceneDetail=False,bOverride_LumenSceneViewDistance=False,bOverride_LumenSceneLightingUpdateSpeed=False,bOverride_LumenFinalGatherQuality=False,bOverride_LumenFinalGatherLightingUpdateSpeed=False,bOverride_LumenFinalGatherScreenTraces=False,bOverride_LumenMaxTraceDistance=False,bOverride_LumenDiffuseColorBoost=False,bOverride_LumenAmbientOcclusionIntensity=False,bOverride_LumenSkylightLeaking=False,bOverride_LumenSkylightLeakingTint=False,bOverride_LumenFullSkylightLeakingDistance=False,bOverride_LumenRayLightingMode=False,bOverride_LumenReflectionsScreenTraces=False,bOverride_LumenFrontLayerTranslucencyReflections=False,bOverride_LumenMaxRoughnessToTraceReflections=False,bOverride_LumenMaxReflectionBounces=False,bOverride_LumenMaxRefractionBounces=False,bOverride_LumenSurfaceCacheResolution=False,bOverride_RayTracingGI=False,bOverride_RayTracingGIMaxBounces=False,bOverride_RayTracingGISamplesPerPixel=False,bOverride_PathTracingMaxBounces=False,bOverride_PathTracingSamplesPerPixel=False,bOverride_PathTracingMaxPathIntensity=False,bOverride_PathTracingEnableEmissiveMaterials=False,bOverride_PathTracingEnableReferenceDOF=False,bOverride_PathTracingEnableReferenceAtmosphere=False,bOverride_PathTracingEnableDenoiser=False,bOverride_PathTracingIncludeEmissive=False,bOverride_PathTracingIncludeDiffuse=False,bOverride_PathTracingIncludeIndirectDiffuse=False,bOverride_PathTracingIncludeSpecular=False,bOverride_PathTracingIncludeIndirectSpecular=False,bOverride_PathTracingIncludeVolume=False,bOverride_PathTracingIncludeIndirectVolume=False,bMobileHQGaussian=False,BloomMethod=BM_SOG,AutoExposureMethod=AEM_Histogram,TemperatureType=TEMP_WhiteBalance,WhiteTemp=6500.000000,WhiteTint=0.000000,ColorSaturation=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrast=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGamma=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGain=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffset=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainShadows=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetShadows=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainMidtones=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetMidtones=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorSaturationHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorContrastHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGammaHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorGainHighlights=(X=1.000000,Y=1.000000,Z=1.000000,W=1.000000),ColorOffsetHighlights=(X=0.000000,Y=0.000000,Z=0.000000,W=0.000000),ColorCorrectionHighlightsMin=0.500000,ColorCorrectionHighlightsMax=1.000000,ColorCorrectionShadowsMax=0.090000,BlueCorrection=0.600000,ExpandGamut=1.000000,ToneCurveAmount=1.000000,TonemappingMethod=Filmic,FilmSlope=0.880000,FilmToe=0.550000,FilmShoulder=0.260000,FilmBlackClip=0.000000,FilmWhiteClip=0.040000,SceneColorTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),SceneFringeIntensity=0.000000,ChromaticAberrationStartOffset=0.000000,BloomIntensity=0.675000,BloomGaussianIntensity=1.000000,BloomThreshold=-1.000000,BloomSizeScale=4.000000,Bloom1Size=0.300000,Bloom2Size=1.000000,Bloom3Size=2.000000,Bloom4Size=10.000000,Bloom5Size=30.000000,Bloom6Size=64.000000,Bloom1Tint=(R=0.346500,G=0.346500,B=0.346500,A=1.000000),Bloom2Tint=(R=0.138000,G=0.138000,B=0.138000,A=1.000000),Bloom3Tint=(R=0.117600,G=0.117600,B=0.117600,A=1.000000),Bloom4Tint=(R=0.066000,G=0.066000,B=0.066000,A=1.000000),Bloom5Tint=(R=0.066000,G=0.066000,B=0.066000,A=1.000000),Bloom6Tint=(R=0.061000,G=0.061000,B=0.061000,A=1.000000),BloomConvolutionIntensity=1.000000,BloomConvolutionScatterDispersion=1.000000,BloomConvolutionSize=1.000000,BloomConvolutionTexture=None,BloomConvolutionCenterUV=(X=0.500000,Y=0.500000),BloomConvolutionPreFilterMin=7.000000,BloomConvolutionPreFilterMax=15000.000000,BloomConvolutionPreFilterMult=15.000000,BloomConvolutionBufferScale=0.133000,BloomDirtMask=None,BloomDirtMaskIntensity=0.000000,BloomDirtMaskTint=(R=0.500000,G=0.500000,B=0.500000,A=1.000000),DynamicGlobalIlluminationMethod=Lumen,IndirectLightingColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),IndirectLightingIntensity=1.000000,LumenRayLightingMode=Default,LumenSceneLightingQuality=1.000000,LumenSceneDetail=1.000000,LumenSceneViewDistance=20000.000000,LumenSceneLightingUpdateSpeed=1.000000,LumenFinalGatherQuality=1.000000,LumenFinalGatherLightingUpdateSpeed=1.000000,LumenFinalGatherScreenTraces=True,LumenMaxTraceDistance=20000.000000,LumenDiffuseColorBoost=1.000000,LumenAmbientOcclusionIntensity=1.000000,LumenSkylightLeaking=0.000000,LumenSkylightLeakingTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),LumenFullSkylightLeakingDistance=1000.000000,LumenSurfaceCacheResolution=1.000000,ReflectionMethod=Lumen,LumenReflectionQuality=1.000000,LumenReflectionsScreenTraces=True,LumenFrontLayerTranslucencyReflections=False,LumenMaxRoughnessToTraceReflections=0.400000,LumenMaxReflectionBounces=1,LumenMaxRefractionBounces=0,ScreenSpaceReflectionIntensity=100.000000,ScreenSpaceReflectionQuality=50.000000,ScreenSpaceReflectionMaxRoughness=0.600000,bMegaLights=True,MegaLightsFrontLayerTranslucency=False,AmbientCubemapTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),AmbientCubemapIntensity=1.000000,AmbientCubemap=None,CameraShutterSpeed=60.000000,CameraISO=100.000000,DepthOfFieldFstop=4.000000,DepthOfFieldMinFstop=1.200000,DepthOfFieldBladeCount=5,AutoExposureBias=1.000000,AutoExposureBiasBackup=0.000000,bOverride_AutoExposureBiasBackup=False,AutoExposureApplyPhysicalCameraExposure=True,AutoExposureBiasCurve=None,AutoExposureMeterMask=None,AutoExposureLowPercent=10.000000,AutoExposureHighPercent=90.000000,AutoExposureMinBrightness=-10.000000,AutoExposureMaxBrightness=20.000000,AutoExposureSpeedUp=3.000000,AutoExposureSpeedDown=1.000000,HistogramLogMin=-10.000000,HistogramLogMax=20.000000,LocalExposureMethod=Bilateral,LocalExposureHighlightContrastScale=1.000000,LocalExposureShadowContrastScale=1.000000,LocalExposureHighlightContrastCurve=None,LocalExposureShadowContrastCurve=None,LocalExposureHighlightThreshold=0.000000,LocalExposureShadowThreshold=0.000000,LocalExposureDetailStrength=1.000000,LocalExposureBlurredLuminanceBlend=0.600000,LocalExposureBlurredLuminanceKernelSizePercent=50.000000,LocalExposureHighlightThresholdStrength=1.000000,LocalExposureShadowThresholdStrength=1.000000,LocalExposureMiddleGreyBias=0.000000,LensFlareIntensity=1.000000,LensFlareTint=(R=1.000000,G=1.000000,B=1.000000,A=1.000000),LensFlareBokehSize=3.000000,LensFlareThreshold=8.000000,LensFlareBokehShape=None,LensFlareTints[0]=(R=1.000000,G=0.800000,B=0.400000,A=0.600000),LensFlareTints[1]=(R=1.000000,G=1.000000,B=0.600000,A=0.530000),LensFlareTints[2]=(R=0.800000,G=0.800000,B=1.000000,A=0.460000),LensFlareTints[3]=(R=0.500000,G=1.000000,B=0.400000,A=0.390000),LensFlareTints[4]=(R=0.500000,G=0.800000,B=1.000000,A=0.310000),LensFlareTints[5]=(R=0.900000,G=1.000000,B=0.800000,A=0.270000),LensFlareTints[6]=(R=1.000000,G=0.800000,B=0.400000,A=0.220000),LensFlareTints[7]=(R=0.900000,G=0.700000,B=0.700000,A=0.150000),VignetteIntensity=0.400000,VignetteType=CosineFourthLaw,VignetteCenter=(X=0.500000,Y=0.500000),VignetteColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000),VignetteSize=(X=1.000000,Y=1.000000),VignetteSoftness=5.000000,VignetteTexture=None,Sharpen=0.000000,FilmGrainIntensity=0.000000,FilmGrainIntensityShadows=1.000000,FilmGrainIntensityMidtones=1.000000,FilmGrainIntensityHighlights=1.000000,FilmGrainShadowsMax=0.090000,FilmGrainHighlightsMin=0.500000,FilmGrainHighlightsMax=1.000000,FilmGrainScale=(X=1.000000,Y=1.000000),FilmGrainTexture=None,AmbientOcclusionIntensity=0.500000,AmbientOcclusionStaticFraction=1.000000,AmbientOcclusionRadius=200.000000,AmbientOcclusionRadiusInWS=False,AmbientOcclusionFadeDistance=8000.000000,AmbientOcclusionFadeRadius=5000.000000,AmbientOcclusionPower=2.000000,AmbientOcclusionBias=3.000000,AmbientOcclusionQuality=50.000000,AmbientOcclusionMipBlend=0.600000,AmbientOcclusionMipScale=1.700000,AmbientOcclusionMipThreshold=0.010000,AmbientOcclusionTemporalBlendWeight=0.100000,RayTracingAO=False,RayTracingAOSamplesPerPixel=1,RayTracingAOIntensity=1.000000,RayTracingAORadius=200.000000,ColorGradingIntensity=1.000000,ColorGradingLUT=None,DepthOfFieldEnabled=True,DepthOfFieldSensorWidth=24.576000,DepthOfFieldSqueezeFactor=1.000000,DepthOfFieldFocalDistance=0.000000,DepthOfFieldDepthBlurAmount=1.000000,DepthOfFieldDepthBlurRadius=0.000000,DepthOfFieldUseHairDepth=False,DepthOfFieldPetzvalBokeh=0.000000,DepthOfFieldPetzvalBokehFalloff=1.000000,DepthOfFieldPetzvalExclusionBoxExtents=(X=0.000000,Y=0.000000),DepthOfFieldPetzvalExclusionBoxRadius=0.000000,DepthOfFieldAspectRatioScalar=1.000000,DepthOfFieldBarrelRadius=5.000000,DepthOfFieldBarrelLength=0.000000,DepthOfFieldMatteBoxFlags[0]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldMatteBoxFlags[1]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldMatteBoxFlags[2]=(Pitch=0.000000,Roll=0.000000,Length=0.000000),DepthOfFieldFocalRegion=0.000000,DepthOfFieldNearTransitionRegion=300.000000,DepthOfFieldFarTransitionRegion=500.000000,DepthOfFieldScale=0.000000,DepthOfFieldNearBlurSize=15.000000,DepthOfFieldFarBlurSize=15.000000,DepthOfFieldOcclusion=0.400000,DepthOfFieldSkyFocusDistance=0.000000,DepthOfFieldVignetteSize=200.000000,MotionBlurAmount=0.500000,MotionBlurMax=5.000000,MotionBlurTargetFPS=30,MotionBlurPerObjectSize=0.000000,TranslucencyType=Raster,RayTracingTranslucencyMaxRoughness=0.600000,RayTracingTranslucencyRefractionRays=3,RayTracingTranslucencySamplesPerPixel=1,RayTracingTranslucencyMaxPrimaryHitEvents=4,RayTracingTranslucencyMaxSecondaryHitEvents=2,RayTracingTranslucencyShadows=Hard_shadows,RayTracingTranslucencyRefraction=True,RayTracingTranslucencyUseRayTracedRefraction=False,PathTracingMaxBounces=32,PathTracingSamplesPerPixel=2048,PathTracingMaxPathIntensity=24.000000,PathTracingEnableEmissiveMaterials=True,PathTracingEnableReferenceDOF=False,PathTracingEnableReferenceAtmosphere=False,PathTracingEnableDenoiser=True,PathTracingIncludeEmissive=True,PathTracingIncludeDiffuse=True,PathTracingIncludeIndirectDiffuse=True,PathTracingIncludeSpecular=True,PathTracingIncludeIndirectSpecular=True,PathTracingIncludeVolume=True,PathTracingIncludeIndirectVolume=True,UserFlags=0,WeightedBlendables=(Array=))"
+          }
+        }
+      },
+      "fdm": {
+        "aircraft_model": "j10ce",
+        "structural_frame_origin": {
+          "struct": "Vector",
+          "text": "(X=-20.000000,Y=0.000000,Z=-40.000000)"
+        },
+        "start_on_ground": true,
+        "start_with_gear_down": true,
+        "initial_calibrated_air_speed_kts": 0.0
+      },
+      "assets": {
+        "animation_bindings": {
+          "object": "/Game/Data/Animation/DA_J10CE_AnimationBindings.DA_J10CE_AnimationBindings"
+        },
+        "skeletal_mesh_asset": {
+          "object": "/Game/Assets/Models/Jets/J10CE/SK_Mesh_J10CE.SK_Mesh_J10CE"
+        },
+        "anim_class": {
+          "object": "/Game/Blueprints/Pawns/Jets/J16CE/ABP_J10CE.ABP_J10CE_C"
+        }
+      },
+      "start": {
+        "start_mode": {
+          "enum": "<FighterStartMode.GROUND: 0>"
+        },
+        "air_start_speed_kts": 250.0
+      },
+      "materials": [
+        {
+          "object": "/Game/Assets/Models/Jets/J10CE/Materials/MI_J10CE_AirFrame.MI_J10CE_AirFrame"
+        },
+        {
+          "object": "/Game/VigilanteMovement/Vehicles/West_Fighter_F16C/Materials/MI_West_Fighter_F16C_Glass.MI_West_Fighter_F16C_Glass"
+        },
+        {
+          "object": "/Game/VigilanteMovement/Vehicles/West_Fighter_F16C/Materials/MI_West_Fighter_F16C_Glass.MI_West_Fighter_F16C_Glass"
+        },
+        {
+          "object": "/Game/Assets/Models/Jets/J10CE/Materials/MA/MA_J10CE_LandGears.MA_J10CE_LandGears"
+        },
+        {
+          "object": "/Game/Assets/Models/Jets/J10CE/Materials/MA/MA_J10CE_Cockpit.MA_J10CE_Cockpit"
+        },
+        {
+          "object": "/Game/Assets/Models/Jets/J10CE/Materials/MA/MA_J10CE_Cockpit.MA_J10CE_Cockpit"
+        },
+        {
+          "object": "/Game/Assets/Models/Jets/J10CE/Materials/MA/MA_J10CE_Cockpit.MA_J10CE_Cockpit"
+        },
+        {
+          "object": "/Game/Assets/Models/Jets/J10CE/Materials/MA/MA_J10CE_Cockpit.MA_J10CE_Cockpit"
+        },
+        {
+          "object": "/Game/VigilanteMovement/Vehicles/West_Fighter_F16C/Materials/MI_West_Fighter_F16C_Glass.MI_West_Fighter_F16C_Glass"
+        },
+        {
+          "object": "/Game/Assets/Models/Jets/J10CE/Materials/MA/MA_J10CE_Seat.MA_J10CE_Seat"
+        }
+      ]
+    }
+  },
+  "starts": {
+    "/Game/Levels/Tests/L_InputTest": {
+      "/Game/Levels/Tests/L_InputTest.L_InputTest:PersistentLevel.PlayerStart_0": {
+        "class": "/Script/Engine.PlayerStart",
+        "label": "PlayerStart",
+        "transform": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=550.521082,Y=0.000000,Z=-32.883548),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+        "tag": "None"
+      }
+    },
+    "/Game/Levels/Tests/L_JSBSimFlightTest": {
+      "/Game/Levels/Tests/L_JSBSimFlightTest.L_JSBSimFlightTest:PersistentLevel.FighterFlightTestPlayerStart_0": {
+        "class": "/Script/AirCombat.FighterFlightTestPlayerStart",
+        "label": "F16_Ground_Start",
+        "transform": "(Rotation=(X=-0.000000,Y=0.000000,Z=-0.401548,W=0.915838),Translation=(X=10535.764152,Y=-11437.498848,Z=217.116452),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+        "tag": "Ground"
+      },
+      "/Game/Levels/Tests/L_JSBSimFlightTest.L_JSBSimFlightTest:PersistentLevel.FighterFlightTestPlayerStart_1": {
+        "class": "/Script/AirCombat.FighterFlightTestPlayerStart",
+        "label": "F16_Air_Start",
+        "transform": "(Rotation=(X=-0.000000,Y=0.000000,Z=-0.401548,W=0.915838),Translation=(X=-338386.211318,Y=367348.001184,Z=299817.116452),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+        "tag": "Air"
+      }
+    }
+  },
+  "native_hierarchy": "AircraftRoot -> PresentationRoot -> Airframe / CockpitAnchor / ChaseFocus; no VisualRoot",
+  "mesh_relative_transform": "Identity; axes and dimensions normalized on import",
+  "runtime": {
+    "rhi": "RenderOffscreen",
+    "cases": [
+      {
+        "mode": "Ground",
+        "fps": 60,
+        "camera_modes": [
+          "<FighterCameraMode.CHASE: 0>",
+          "<FighterCameraMode.COCKPIT: 1>"
+        ],
+        "max_camera_cache_error_cm": 0.0,
+        "max_eye_mesh_error_cm": 1.0235762093412351e-12,
+        "max_focus_mesh_error_cm": 1.0455365342588954e-12,
+        "zero_step_display_frames": 0,
+        "max_zero_step_display_motion_cm": 0.0,
+        "passed": true,
+        "solver_steps_per_frame": [
+          2
+        ]
+      },
+      {
+        "mode": "Air",
+        "fps": 60,
+        "camera_modes": [
+          "<FighterCameraMode.CHASE: 0>",
+          "<FighterCameraMode.COCKPIT: 1>"
+        ],
+        "max_camera_cache_error_cm": 0.0,
+        "max_eye_mesh_error_cm": 3.986138414786175e-11,
+        "max_focus_mesh_error_cm": 3.8537800232381304e-11,
+        "zero_step_display_frames": 0,
+        "max_zero_step_display_motion_cm": 0.0,
+        "passed": true,
+        "solver_steps_per_frame": [
+          2
+        ]
+      },
+      {
+        "mode": "Air",
+        "fps": 30,
+        "camera_modes": [
+          "<FighterCameraMode.CHASE: 0>",
+          "<FighterCameraMode.COCKPIT: 1>"
+        ],
+        "max_camera_cache_error_cm": 0.0,
+        "max_eye_mesh_error_cm": 3.854809794778138e-11,
+        "max_focus_mesh_error_cm": 3.751120855827477e-11,
+        "zero_step_display_frames": 0,
+        "max_zero_step_display_motion_cm": 0.0,
+        "passed": true,
+        "solver_steps_per_frame": [
+          4
+        ]
+      },
+      {
+        "mode": "Air",
+        "fps": 144,
+        "camera_modes": [
+          "<FighterCameraMode.CHASE: 0>",
+          "<FighterCameraMode.COCKPIT: 1>"
+        ],
+        "max_camera_cache_error_cm": 0.0,
+        "max_eye_mesh_error_cm": 3.525504554072901e-11,
+        "max_focus_mesh_error_cm": 4.175118158958973e-11,
+        "zero_step_display_frames": 48,
+        "max_zero_step_display_motion_cm": 163.11906003943324,
+        "passed": true,
+        "solver_steps_per_frame": [
+          0,
+          1
+        ]
+      },
+      {
+        "mode": "Air",
+        "fps": 240,
+        "camera_modes": [
+          "<FighterCameraMode.CHASE: 0>",
+          "<FighterCameraMode.COCKPIT: 1>"
+        ],
+        "max_camera_cache_error_cm": 0.0,
+        "max_eye_mesh_error_cm": 3.525504554072901e-11,
+        "max_focus_mesh_error_cm": 4.175118158958973e-11,
+        "zero_step_display_frames": 240,
+        "max_zero_step_display_motion_cm": 97.87144046503958,
+        "passed": true,
+        "solver_steps_per_frame": [
+          0,
+          1
+        ]
+      }
+    ],
+    "ground_before_after_common_times": 119,
+    "ground_before_after_max_errors": {
+      "cg_world_cm": 0.0010038868717926431,
+      "mesh_world_cm": 0.0009998081580961892,
+      "rotation": 3.324133939102714e-08
+    },
+    "scope": "F16 ground and air; J10CE asset and instance mapping verified without applying new contact or eye candidates."
+  },
+  "j10_coordinate_roundtrip_max_error_cm": 6.355287432313019e-14,
+  "xml_and_all_jsbsim_resources_unchanged": true,
+  "jsbsim_resource_files_verified": 419,
+  "animation_assets_bindings_mesh_and_config_unchanged": true,
+  "protected_files_unchanged": 715,
+  "changed_files": [
+    "Content\\Blueprints\\Pawns\\Jets\\F16A\\BP_F16A.uasset",
+    "Content\\Blueprints\\Pawns\\Jets\\J16CE\\BP_J16CE.uasset",
+    "Content\\Levels\\Tests\\L_InputTest.umap",
+    "Content\\Levels\\Tests\\L_JSBSimFlightTest.umap",
+    "Source\\AirCombat\\Pawns\\Fighter\\Fighter.cpp",
+    "Source\\AirCombat\\Pawns\\Fighter\\Fighter.h",
+    "Source\\AirCombat\\Pawns\\Fighter\\Tests\\FighterVisualAlignmentTests.cpp",
+    "Source\\AirCombat\\Presentation\\Tests\\FighterPresentationTests.cpp",
+    "Docs\\Animation\\README.md",
+    "Docs\\Camera\\README.md",
+    "Docs\\FlightDynamics\\README.md",
+    "Docs\\FlightTest\\README.md",
+    "Docs\\Gameplay\\06_技术架构.md",
+    "Docs\\Input\\README.md",
+    "Docs\\Presentation\\README.md",
+    "Docs\\VisualAlignment\\calibration.json",
+    "Docs\\VisualAlignment\\README.md",
+    "Docs\\VisualAlignment\\J10CE_Geometry\\coordinates.csv",
+    "Docs\\VisualAlignment\\J10CE_Geometry\\eye.json",
+    "Docs\\VisualAlignment\\J10CE_Geometry\\measurements.json",
+    "Docs\\VisualAlignment\\J10CE_Geometry\\metadata.json",
+    "Docs\\VisualAlignment\\J10CE_Geometry\\README.md",
+    "Docs\\VisualAlignment\\J10CE_Geometry\\xml_comparison.json"
+  ],
+  "backups": "Workspace structural_origin_refactor/backup",
+  "tests": [
+    {
+      "name": "AirCombat.Animation.ActualGearAndSuspension",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.F16BindingsAsset",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.PreviewAndInvalidation",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.SurfaceAvailabilityAndUnits",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.AircraftAttitude",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.LookConsumptionAndModes",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.PresentationHeading",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.RecenterAndLimits",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.SpringArmCollision",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.ModelOwnsYawFeedback",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.SpeedBrakeHoldRelease",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.TrimHandoffAndReset",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightDynamics.GroundMissReturnsEarthContact",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.DA_FighterInputConfig",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.ImcOppositeKeyMapping",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.PlayerMappableMappingNames",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.PushRate",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.Reset",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.ReturnToCenter",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Presentation.FixedClockCadence",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Presentation.HitchInvalidTimeAndReset",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Presentation.LastSubstepAndQuaternionInterpolation",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Presentation.RenderMotionAcrossCadences",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Presentation.UnavailableSourcePreservesStructuralMapping",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Visual.F16ReferenceGeometry",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Visual.FixedFrameAndCameraAnchors",
+      "state": "Success",
+      "warnings": 0,
+      "errors": 0
+    }
+  ],
+  "plugin_header_documentation_and_units_metadata_updated": "Plugins/JSBSimFlightDynamicsModel/Source/JSBSimFlightDynamicsModel/Public/JSBSimMovementComponent.h: document structural datum in mesh space and add cm unit metadata"
+}

@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-28",
+  "map": "/Game/Levels/Tests/L_JSBSimFlightTest",
+  "build": "AirCombatEditor Win64 Development: Succeeded",
+  "automation": {
+    "succeeded": 27,
+    "succeededWithWarnings": 0,
+    "failed": 0,
+    "notRun": 0
+  },
+  "protected_existing_files_checked": 352,
+  "changed_existing_content_config_or_f16_model_files": [],
+  "ground_queries": {
+    "runway_start": {
+      "blocking": true,
+      "location": "(X=10000.000000,Y=-10000.000000,Z=0.000000)",
+      "actor": "/Game/Levels/Tests/L_JSBSimFlightTest.L_JSBSimFlightTest:PersistentLevel.StaticMeshActor_1",
+      "component": "/Game/Levels/Tests/L_JSBSimFlightTest.L_JSBSimFlightTest:PersistentLevel.StaticMeshActor_1.StaticMeshComponent0"
+    },
+    "runway_mid": {
+      "blocking": true,
+      "location": "(X=113484.000000,Y=-123197.000000,Z=0.000000)",
+      "actor": "/Game/Levels/Tests/L_JSBSimFlightTest.L_JSBSimFlightTest:PersistentLevel.StaticMeshActor_1",
+      "component": "/Game/Levels/Tests/L_JSBSimFlightTest.L_JSBSimFlightTest:PersistentLevel.StaticMeshActor_1.StaticMeshComponent0"
+    },
+    "off_runway": {
+      "blocking": true,
+      "location": "(X=-200000.000000,Y=200000.000000,Z=-5.006790)",
+      "actor": "/Game/Levels/Tests/L_JSBSimFlightTest.L_JSBSimFlightTest:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Levels/Tests/L_JSBSimFlightTest.L_JSBSimFlightTest:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0"
+    },
+    "distant_terrain": {
+      "blocking": true,
+      "location": "(X=2000000.000000,Y=-2000000.000000,Z=-5.006790)",
+      "actor": "/Game/Levels/Tests/L_JSBSimFlightTest.L_JSBSimFlightTest:PersistentLevel.StaticMeshActor_0",
+      "component": "/Game/Levels/Tests/L_JSBSimFlightTest.L_JSBSimFlightTest:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0"
+    }
+  },
+  "starts": {
+    "Ground": {
+      "transform": "(Rotation=(X=-0.000000,Y=0.000000,Z=-0.401548,W=0.915838),Translation=(X=10162.775985,Y=-11032.587380,Z=400.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+      "mode": "<FighterStartMode.GROUND: 0>",
+      "air_start_speed_kts": 400.0
+    },
+    "Air": {
+      "transform": "(Rotation=(X=-0.000000,Y=0.000000,Z=-0.401548,W=0.915838),Translation=(X=-338759.199485,Y=367752.912652,Z=300000.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+      "mode": "<FighterStartMode.AIR: 1>",
+      "air_start_speed_kts": 400.0
+    }
+  },
+  "spawns": [
+    {
+      "mode": "Ground",
+      "options": "",
+      "trimmed": true,
+      "location": "(X=9832.584994,Y=-10674.130091,Z=177.533274)",
+      "controller": "/Game/Blueprints/BP_AirCombatPlayerController.BP_AirCombatPlayerController_C",
+      "gear_down": true,
+      "initial_speed_kts": 0.0
+    },
+    {
+      "mode": "Air",
+      "options": "?FlightTestStart=Air",
+      "trimmed": true,
+      "location": "(X=-338956.855545,Y=367967.465062,Z=300003.656317)",
+      "controller": "/Game/Blueprints/BP_AirCombatPlayerController.BP_AirCombatPlayerController_C",
+      "gear_down": false,
+      "initial_speed_kts": 400.0
+    },
+    {
+      "mode": "Ground",
+      "options": "?FlightTestStart=Ground",
+      "trimmed": true,
+      "location": "(X=9832.582445,Y=-10674.127323,Z=177.533290)",
+      "controller": "/Game/Blueprints/BP_AirCombatPlayerController.BP_AirCombatPlayerController_C",
+      "gear_down": true,
+      "initial_speed_kts": 0.0
+    }
+  ],
+  "environment_dependencies": {
+    "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/M_Marking": [],
+    "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/T_Cracked_Asphalt_tjmgfelew_2K_D": [],
+    "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/T_Cracked_Asphalt_tjmgfelew_2K_N": [],
+    "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/T_CrackedAsphalt_tjmgfelew_2K_ORDp": [],
+    "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/M_Runway_Surface": [
+      "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/T_CrackedAsphalt_tjmgfelew_2K_ORDp",
+      "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/T_Cracked_Asphalt_tjmgfelew_2K_D",
+      "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/T_Cracked_Asphalt_tjmgfelew_2K_N"
+    ],
+    "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/MI_Runway_Asphalt": [
+      "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/M_Runway_Surface",
+      "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/T_CrackedAsphalt_tjmgfelew_2K_ORDp",
+      "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/T_Cracked_Asphalt_tjmgfelew_2K_D",
+      "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/T_Cracked_Asphalt_tjmgfelew_2K_N"
+    ],
+    "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/SM_Runway": [
+      "/Script/NavigationSystem",
+      "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/MI_Runway_Asphalt",
+      "/Game/Assets/Environment/JSBSimReference/Terrain/Runway/M_Marking"
+    ],
+    "/Game/Assets/Environment/JSBSimReference/Terrain/MF_ProceduralGrid": [
+      "/Engine/OpenWorldTemplate/LandscapeMaterial/MF_ProcGrid",
+      "/Engine/Functions/Engine_MaterialFunctions03/Particles/Distance_Blend"
+    ],
+    "/Game/Assets/Environment/JSBSimReference/Terrain/M_ProceduralGrid": [
+      "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components",
+      "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3",
+      "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient",
+      "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+      "/Engine/OpenWorldTemplate/LandscapeMaterial/MF_ProcGrid",
+      "/Engine/OpenWorldTemplate/LandscapeMaterial/T_GridChecker_A",
+      "/Engine/Functions/Engine_MaterialFunctions03/Particles/Distance_Blend",
+      "/Game/Assets/Environment/JSBSimReference/Terrain/MF_ProceduralGrid"
+    ],
+    "/Game/Assets/Environment/JSBSimReference/Terrain/MI_Terrain": [
+      "/Game/Assets/Environment/JSBSimReference/Terrain/M_ProceduralGrid"
+    ],
+    "/Game/Assets/Environment/JSBSimReference/Terrain/SM_Terrain": [
+      "/Script/NavigationSystem",
+      "/Game/Assets/Environment/JSBSimReference/Terrain/MI_Terrain"
+    ]
+  },
+  "sky_actors": [
+    "VolumetricCloud",
+    "ExponentialHeightFog",
+    "SkyAtmosphere",
+    "SkyLight",
+    "DirectionalLight"
+  ],
+  "frame_rates": [
+    {
+      "mode": "Ground",
+      "fps": 30,
+      "passed": true,
+      "samples": 61,
+      "solver_steps_min": 4,
+      "solver_steps_max": 4,
+      "camera_cache_error_cm_max": 0.0,
+      "agl_ft_min": 5.448402577,
+      "agl_ft_max": 5.448423581,
+      "dropped_before_controlled_case_seconds": 0.0,
+      "additional_dropped_during_case_seconds": 0
+    },
+    {
+      "mode": "Ground",
+      "fps": 60,
+      "passed": true,
+      "samples": 121,
+      "solver_steps_min": 2,
+      "solver_steps_max": 2,
+      "camera_cache_error_cm_max": 0.0,
+      "agl_ft_min": 5.448383217,
+      "agl_ft_max": 5.448398318,
+      "dropped_before_controlled_case_seconds": 0.0,
+      "additional_dropped_during_case_seconds": 0
+    },
+    {
+      "mode": "Ground",
+      "fps": 144,
+      "passed": true,
+      "samples": 289,
+      "solver_steps_min": 0,
+      "solver_steps_max": 1,
+      "camera_cache_error_cm_max": 0.0,
+      "agl_ft_min": 5.448366094,
+      "agl_ft_max": 5.448379526,
+      "dropped_before_controlled_case_seconds": 0.0,
+      "additional_dropped_during_case_seconds": 0
+    },
+    {
+      "mode": "Ground",
+      "fps": 240,
+      "passed": true,
+      "samples": 481,
+      "solver_steps_min": 0,
+      "solver_steps_max": 1,
+      "camera_cache_error_cm_max": 0.0,
+      "agl_ft_min": 5.448351095,
+      "agl_ft_max": 5.448362889,
+      "dropped_before_controlled_case_seconds": 0.0,
+      "additional_dropped_during_case_seconds": 0
+    },
+    {
+      "mode": "Air",
+      "fps": 30,
+      "passed": true,
+      "samples": 61,
+      "solver_steps_min": 4,
+      "solver_steps_max": 4,
+      "camera_cache_error_cm_max": 0.0,
+      "agl_ft_min": 9842.631134,
+      "agl_ft_max": 9842.633567,
+      "dropped_before_controlled_case_seconds": 0.0,
+      "additional_dropped_during_case_seconds": 0
+    },
+    {
+      "mode": "Air",
+      "fps": 60,
+      "passed": true,
+      "samples": 121,
+      "solver_steps_min": 2,
+      "solver_steps_max": 2,
+      "camera_cache_error_cm_max": 0.0,
+      "agl_ft_min": 9842.634502,
+      "agl_ft_max": 9842.637852,
+      "dropped_before_controlled_case_seconds": 0.0,
+      "additional_dropped_during_case_seconds": 0
+    },
+    {
+      "mode": "Air",
+      "fps": 144,
+      "passed": true,
+      "samples": 289,
+      "solver_steps_min": 0,
+      "solver_steps_max": 1,
+      "camera_cache_error_cm_max": 0.0,
+      "agl_ft_min": 9842.637633,
+      "agl_ft_max": 9842.63876,
+      "dropped_before_controlled_case_seconds": 0.0,
+      "additional_dropped_during_case_seconds": 0
+    },
+    {
+      "mode": "Air",
+      "fps": 240,
+      "passed": true,
+      "samples": 481,
+      "solver_steps_min": 0,
+      "solver_steps_max": 1,
+      "camera_cache_error_cm_max": 0.0,
+      "agl_ft_min": 9842.625179,
+      "agl_ft_max": 9842.636372,
+      "dropped_before_controlled_case_seconds": 0.0,
+      "additional_dropped_during_case_seconds": 0
+    }
+  ],
+  "render": {
+    "success": true,
+    "screenshot": "C:\\Users\\xtr28\\Documents\\ChatGPT\\Tianran\\flight_test_scene\\airfield.png"
+  }
+}

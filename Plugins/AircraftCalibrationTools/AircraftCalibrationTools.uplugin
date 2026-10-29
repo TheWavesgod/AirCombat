@@ -1,0 +1,1 @@
+{"FileVersion":3,"Version":1,"VersionName":"1.0","FriendlyName":"Aircraft Calibration Tools","Description":"Editor-only precise animation authoring for the J10CE calibration folder.","EnabledByDefault":true,"CanContainContent":false,"Modules":[{"Name":"AircraftCalibrationTools","Type":"Editor","LoadingPhase":"PreDefault"}]}

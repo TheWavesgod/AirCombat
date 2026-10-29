@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "coordinate_convention": "Actor = Mesh; structural datum (-20,0,-40) cm",
+  "xml_unchanged": false,
+  "mesh_and_calibration_pose_unchanged": true,
+  "roundtrip_error_cm": 6.355287432313019e-14,
+  "measurement_validation": "measurement_validation.json",
+  "structural_origin_migration": "../StructuralOrigin/validation.json",
+  "eye_candidate_applied": false,
+  "contact_candidates_applied": true,
+  "cg_inferred_or_modified": false,
+  "contact_calibration": "ContactCalibration/validation.json"
+}

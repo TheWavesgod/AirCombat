@@ -1,0 +1,81 @@
+{
+  "verified_on": "2026-10-26",
+  "engine": "UE 5.8.3",
+  "build": {
+    "target": "AirCombatEditor Win64 Development",
+    "result": "Succeeded",
+    "source_list_refreshed": true
+  },
+  "automation": {
+    "passed": 15,
+    "failed": 0,
+    "warnings": 0,
+    "not_run": 0,
+    "tests": [
+      {
+        "name": "AirCombat.Camera.AircraftAttitude",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Camera.LookConsumptionAndModes",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Camera.RecenterAndLimits",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Camera.SpringArmCollision",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.FlightControls.ModelOwnsYawFeedback",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.FlightControls.SpeedBrakeHoldRelease",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.FlightControls.TrimHandoffAndReset",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.FlightDynamics.GroundMissReturnsEarthContact",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.Config.DA_FighterInputConfig",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.Config.ImcOppositeKeyMapping",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.Config.PlayerMappableMappingNames",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.KeyboardVirtualStick.PushRate",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.KeyboardVirtualStick.Reset",
+        "result": "Success"
+      },
+      {
+        "name": "AirCombat.Input.KeyboardVirtualStick.ReturnToCenter",
+        "result": "Success"
+      }
+    ]
+  },
+  "pie_evidence": "pie_regression.json",
+  "deferred": [
+    "机体/相机抽搐：按用户要求后续排查"
+  ]
+}

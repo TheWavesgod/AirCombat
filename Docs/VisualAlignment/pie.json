@@ -1,0 +1,59 @@
+{
+  "runs": [
+    {
+      "start": "ground",
+      "frames": 89,
+      "maximum_visual_origin_error_cm": 2.168404344971009e-19,
+      "maximum_cockpit_mesh_error_cm": 1.7975467359136326e-13,
+      "maximum_focus_mesh_error_cm": 5.684341886081165e-14,
+      "maximum_extended_nose_x_error_cm": 4.398543751449324e-10,
+      "gear_min": 1.0,
+      "gear_max": 1.0,
+      "camera_modes": [
+        "<FighterCameraMode.COCKPIT: 1>",
+        "<FighterCameraMode.CHASE: 0>"
+      ],
+      "wheel_rotation_min": 8.869803428649902,
+      "wheel_rotation_max": 117.70401763916016,
+      "final_cg_actor_cm": [
+        487.41043783021433,
+        0.0,
+        -9.081683749623437
+      ],
+      "final_visual_origin_actor_cm": [
+        550.521082429,
+        -2.168404344971009e-19,
+        -182.883547668
+      ],
+      "passed": true
+    },
+    {
+      "start": "air",
+      "frames": 412,
+      "maximum_visual_origin_error_cm": 3.1572492879474045e-11,
+      "maximum_cockpit_mesh_error_cm": 3.0803593469515147e-11,
+      "maximum_focus_mesh_error_cm": 3.163743482523102e-11,
+      "maximum_extended_nose_x_error_cm": 4.6406967157963663e-10,
+      "gear_min": 0.0,
+      "gear_max": 1.0,
+      "camera_modes": [
+        "<FighterCameraMode.CHASE: 0>",
+        "<FighterCameraMode.COCKPIT: 1>"
+      ],
+      "wheel_rotation_min": 0.0,
+      "wheel_rotation_max": 0.0,
+      "final_cg_actor_cm": [
+        487.41872415114346,
+        0.0,
+        -9.085745689657777
+      ],
+      "final_visual_origin_actor_cm": [
+        550.5210824289957,
+        -3.126839065448195e-14,
+        -182.88354766801268
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

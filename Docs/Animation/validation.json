@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-27",
+  "engine": "Unreal Engine 5.8.3",
+  "build": {
+    "target": "AirCombatEditor Win64 Development",
+    "result": "Succeeded",
+    "live_coding": false,
+    "ubt_makefiles": false
+  },
+  "automation": {
+    "succeeded": 19,
+    "succeededWithWarnings": 0,
+    "failed": 0,
+    "notRun": 0
+  },
+  "tests": [
+    {
+      "name": "AirCombat.Animation.ActualGearAndSuspension",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.F16BindingsAsset",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.PreviewAndInvalidation",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Animation.SurfaceAvailabilityAndUnits",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.AircraftAttitude",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.LookConsumptionAndModes",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.RecenterAndLimits",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Camera.SpringArmCollision",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.ModelOwnsYawFeedback",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.SpeedBrakeHoldRelease",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightControls.TrimHandoffAndReset",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.FlightDynamics.GroundMissReturnsEarthContact",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.DA_FighterInputConfig",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.ImcOppositeKeyMapping",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.Config.PlayerMappableMappingNames",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.PushRate",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.Reset",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "name": "AirCombat.Input.KeyboardVirtualStick.ReturnToCenter",
+      "result": "Success",
+      "warnings": 0,
+      "errors": 0
+    }
+  ],
+  "fresh_process_saved_asset_verification": {
+    "profiles": {
+      "/Game/Data/Animation/DA_F16_AnimationBindings": {
+        "model": "f16",
+        "surface_count": 15,
+        "gear_count": 3,
+        "calibration_pending": true
+      },
+      "/Game/Data/Animation/DA_J10CE_F16_AnimationBindings": {
+        "model": "f16",
+        "surface_count": 15,
+        "gear_count": 3,
+        "calibration_pending": true
+      }
+    },
+    "blueprints": {
+      "/Game/Blueprints/Animation/F16C/ABP_F16C": {
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+        "skeleton": "/Game/VigilanteMovement/Vehicles/West_Fighter_F16C/SKEL_West_Fighter_F16C.SKEL_West_Fighter_F16C"
+      },
+      "/Game/Blueprints/Animation/J10CE/ABP_J10CE": {
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+        "skeleton": "/Game/Assets/Models/Jets/J10CE/SK_J10CE.SK_J10CE"
+      },
+      "/Game/Blueprints/Pawns/Jets/BP_F16A": {
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+        "anim_class": "/Game/Blueprints/Animation/F16C/ABP_F16C.ABP_F16C_C",
+        "bindings": "/Game/Data/Animation/DA_F16_AnimationBindings.DA_F16_AnimationBindings"
+      },
+      "/Game/Blueprints/Pawns/Jets/BP_J16CE": {
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+        "anim_class": "/Game/Blueprints/Animation/J10CE/ABP_J10CE.ABP_J10CE_C",
+        "bindings": "/Game/Data/Animation/DA_J10CE_F16_AnimationBindings.DA_J10CE_F16_AnimationBindings"
+      }
+    }
+  },
+  "pie": {
+    "rigs": [
+      "F16C",
+      "J10CE"
+    ],
+    "passed": true,
+    "summary": "pie_results.json"
+  },
+  "cleanup": {
+    "fighter_push_animation_removed": true,
+    "old_parameter_container_removed": true,
+    "public_afterburner_query_retained_for_blueprint_compatibility": true
+  },
+  "pending_art_calibration": [
+    "Per-leg suspension animation clips and measured maximum travel",
+    "Measured wheel radius for visual rolling"
+  ],
+  "limitations": [
+    "J10CE appearance still uses f16 dynamics; canards explicitly unavailable",
+    "Suspension data and sampling helpers are ready; final strut deformation awaits art assets",
+    "F16C has nozzle state but no dedicated nozzle clip in its current animation graph",
+    "Previously deferred aircraft/camera judder was outside this refactor"
+  ]
+}

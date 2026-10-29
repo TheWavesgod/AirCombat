@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "protected_files": 688,
+  "changed": [],
+  "missing": [],
+  "new": [],
+  "mesh_vertices": 55510,
+  "mesh_triangles": 63470,
+  "bones_compared": 123,
+  "pose_max_position_error_cm": 1.5258789545669074e-05,
+  "pose_max_rotation_error_deg": 8.87267600082659e-06,
+  "coordinate_roundtrip_error_cm": 5.684341886080802e-14,
+  "axle_deviation_from_mesh_y_deg": {
+    "b_J10C_Wheel_F": 3.433189337798887e-05,
+    "b_J10C_Wheel_L": 2.0240018397643986e-05,
+    "b_J10C_Wheel_R": 1.926201143360106e-05
+  },
+  "hashes": {
+    "Content\\Assets\\Models\\Jets\\J10CE\\SK_Mesh_J10CE.uasset": "6df7e0d40d571757a4a254cdb1af2d69504276a693fa8c289ffa0b18504fa42d",
+    "Content\\Assets\\Models\\Jets\\J10CE\\Calibration\\AN_J10CE_Calibration_GearDown_Unloaded.uasset": "16304fbb2f9c288d301ddbccfc27727cebcf94c3d3469131e89d60afbe6f50c2",
+    "Content\\Blueprints\\Pawns\\Jets\\J16CE\\BP_J16CE.uasset": "02f9c2cf4a98daba5aa7166a5a5c7723455e4daf9603e43298f2970143b0b812",
+    "Plugins\\JSBSimFlightDynamicsModel\\Resources\\JSBSim\\aircraft\\j10ce\\j10ce.xml": "db8f536cc24285a18ae211f14f14a4acb3a04634b7c2c774fd4166b82aeb3b80"
+  },
+  "render": {
+    "success": true,
+    "images": [
+      "eye_candidate_view.png",
+      "cockpit_seat_view.png"
+    ]
+  },
+  "scope": "Editor-only measurement exporter and documentation. No Content/Config/Source/JSBSim resource modification."
+}
