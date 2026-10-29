@@ -1,0 +1,270 @@
+{
+  "date": "2026-10-29",
+  "success": true,
+  "engine": "Unreal Engine 5.8.3",
+  "build": "AirCombatEditor Win64 Development: Succeeded (full build, no Live Coding)",
+  "automation": {
+    "succeeded": 32,
+    "succeededWithWarnings": 0,
+    "failed": 0,
+    "notRun": 0
+  },
+  "tests": [
+    {
+      "fullTestPath": "AirCombat.Animation.ActualGearAndSuspension",
+      "state": "Success",
+      "duration": 0.008096300065517426,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Animation.F16BindingsAsset",
+      "state": "Success",
+      "duration": 0.008068997412919998,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Animation.PreviewAndInvalidation",
+      "state": "Success",
+      "duration": 0.008600499480962753,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Animation.SurfaceAvailabilityAndUnits",
+      "state": "Success",
+      "duration": 0.008328299969434738,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Camera.AircraftAttitude",
+      "state": "Success",
+      "duration": 0.011756401509046555,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Camera.LookConsumptionAndModes",
+      "state": "Success",
+      "duration": 0.011283699423074722,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Camera.PresentationHeading",
+      "state": "Success",
+      "duration": 0.007156800478696823,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Camera.RecenterAndLimits",
+      "state": "Success",
+      "duration": 0.01111609861254692,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Camera.SpringArmCollision",
+      "state": "Success",
+      "duration": 0.007390599697828293,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightControls.ModelOwnsYawFeedback",
+      "state": "Success",
+      "duration": 0.00833050161600113,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightControls.SpeedBrakeHoldRelease",
+      "state": "Success",
+      "duration": 0.008848201483488083,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightControls.TrimHandoffAndReset",
+      "state": "Success",
+      "duration": 0.008284501731395721,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightDebug.AvailabilityAndFormatting",
+      "state": "Success",
+      "duration": 0.008681099861860275,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightDebug.PhysicsWindowAndReset",
+      "state": "Success",
+      "duration": 0.008396700024604797,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightDebug.UnitsActualStateAndModelBindings",
+      "state": "Success",
+      "duration": 0.016223199665546417,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightDynamics.Telemetry.ColdAirStartAndModelReset",
+      "state": "Success",
+      "duration": 0.01474209874868393,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightDynamics.Telemetry.ContactLifecycleAndReadPurity",
+      "state": "Success",
+      "duration": 0.008364800363779068,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightDynamics.Telemetry.EngineTypeAndQueryReset",
+      "state": "Success",
+      "duration": 0.008836399763822556,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightDynamics.Telemetry.FullAircraftStateReset",
+      "state": "Success",
+      "duration": 0.008331798017024994,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.FlightDynamics.GroundMissReturnsEarthContact",
+      "state": "Success",
+      "duration": 0.00835539773106575,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.Config.DA_FighterInputConfig",
+      "state": "Success",
+      "duration": 0.007863402366638184,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.Config.ImcOppositeKeyMapping",
+      "state": "Success",
+      "duration": 0.0084322988986969,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.Config.PlayerMappableMappingNames",
+      "state": "Success",
+      "duration": 0.00831729918718338,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.KeyboardVirtualStick.PushRate",
+      "state": "Success",
+      "duration": 0.008631501346826553,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.KeyboardVirtualStick.Reset",
+      "state": "Success",
+      "duration": 0.008001301437616348,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Input.KeyboardVirtualStick.ReturnToCenter",
+      "state": "Success",
+      "duration": 0.008239798247814178,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Presentation.FixedClockCadence",
+      "state": "Success",
+      "duration": 0.008113201707601547,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Presentation.HitchInvalidTimeAndReset",
+      "state": "Success",
+      "duration": 0.008490800857543945,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Presentation.LastSubstepAndQuaternionInterpolation",
+      "state": "Success",
+      "duration": 0.008317500352859497,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Presentation.RenderMotionAcrossCadences",
+      "state": "Success",
+      "duration": 0.007824700325727463,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Presentation.UnavailableSourcePreservesStructuralMapping",
+      "state": "Success",
+      "duration": 0.009865600615739822,
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "fullTestPath": "AirCombat.Visual.FixedFrameAndCameraAnchors",
+      "state": "Success",
+      "duration": 0.008874300867319107,
+      "warnings": 0,
+      "errors": 0
+    }
+  ],
+  "removed_tests": {
+    "AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel": "Manually supplies a zero target and duplicates ReturnToCenter; actual mapping contracts remain covered.",
+    "AirCombat.Visual.F16ReferenceGeometry": "One-time CSV measurement export, no baseline comparison. Historical measurement retained in Docs/VisualAlignment."
+  },
+  "removed_dead_code": [
+    "LStream / Stream stdout redirector (never installed)",
+    "LogInitialization (no caller)",
+    "TickTime (written but never read) and unused per-frame clock reads",
+    "DetailTitle snapshot field (no native or current asset consumer)",
+    "redundant IsBogey conditions after the non-bogey early continue",
+    "obsolete commented-out debug draw statements and geometry-export-only includes"
+  ],
+  "test_compilation_guard": "WITH_DEV_AUTOMATION_TESTS && WITH_EDITOR",
+  "non_editor_build": "Not executed in this cleanup; exclusion checked through matching test and test-friend preprocessor guards.",
+  "asset_reference_scan": {
+    "assets": 221,
+    "DetailTitle_mentions": 0
+  },
+  "preserved": {
+    "protected_files_hash_matched": 644,
+    "protected_categories": [
+      "Content",
+      "Config",
+      "JSBSim model XML and resources"
+    ],
+    "legacy_green_output_and_visualizer_suffix_byte_equivalent": true,
+    "input_debug_implementation_unchanged": true,
+    "Fighter_camera_animation_implementations_unchanged": true,
+    "AircraftCalibrationTools_plugin_unchanged": true,
+    "historical_docs_reports_retained": true
+  },
+  "scope": "Targeted code cleanup; no flight model, player input, camera calibration, animation asset or aircraft configuration changes."
+}

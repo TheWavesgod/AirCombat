@@ -36,7 +36,6 @@ struct AIRCOMBAT_API FFighterFlightDebugSnapshot
     UPROPERTY(BlueprintReadOnly) int32 ModelGeneration = 0;
     UPROPERTY(BlueprintReadOnly) double SimulationSeconds = 0.;
     UPROPERTY(BlueprintReadOnly) bool bHasSimulationTime = false;
-    UPROPERTY(BlueprintReadOnly) FString DetailTitle;
     UPROPERTY(BlueprintReadOnly) TArray<FFighterFlightDebugMetric> Overview;
     UPROPERTY(BlueprintReadOnly) TArray<FFighterFlightDebugMetric> Details;
 };

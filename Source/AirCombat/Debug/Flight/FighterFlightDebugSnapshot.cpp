@@ -55,7 +55,6 @@ FFighterFlightDebugSnapshot FFighterFlightDebugSnapshotBuilder::Build(AFighter* 
 {
     check(IsInGameThread());
     FFighterFlightDebugSnapshot S;
-    S.DetailTitle = PageName(Page);
     UJSBSimMovementComponent* FDM = IsValid(Fighter) ? Fighter->GetFlightDynamics() : nullptr;
     S.bHasAircraft = IsValid(FDM);
     S.bReady = S.bHasAircraft && FDM->IsSimulationReady();
@@ -147,12 +146,12 @@ FFighterFlightDebugSnapshot FFighterFlightDebugSnapshotBuilder::Build(AFighter* 
                 continue;
             }
             Add(D, N + TEXT("Extension"), TEXT("  Extension"), TEXT("%"), G.NormalizedPosition * 100., S.bReady);
-            Add(D, N + TEXT("Compression"), TEXT("  Compression"), TEXT("cm"), G.CompressionMeters * 100., S.bReady && G.IsBogey);
-            Add(D, N + TEXT("CompressionRate"), TEXT("  Compression rate"), TEXT("cm/s"), G.CompressionVelocityMetersPerSec * 100., S.bReady && G.IsBogey);
-            Add(D, N + TEXT("Strut"), TEXT("  Signed strut force"), TEXT("kN"), G.StrutForceNewtons / 1000., S.bReady && G.IsBogey);
+            Add(D, N + TEXT("Compression"), TEXT("  Compression"), TEXT("cm"), G.CompressionMeters * 100., S.bReady);
+            Add(D, N + TEXT("CompressionRate"), TEXT("  Compression rate"), TEXT("cm/s"), G.CompressionVelocityMetersPerSec * 100., S.bReady);
+            Add(D, N + TEXT("Strut"), TEXT("  Signed strut force"), TEXT("kN"), G.StrutForceNewtons / 1000., S.bReady);
             Add(D, N + TEXT("Contact"), TEXT("  Contact force magnitude"), TEXT("kN"), G.Force.Length() / 1000., S.bReady);
-            Add(D, N + TEXT("Spin"), TEXT("  Wheel speed"), TEXT("m/s"), G.WheelRollLinearVelocityMetersPerSec, S.bReady && G.IsBogey);
-            Add(D, N + TEXT("Steer"), TEXT("  Steering"), TEXT("deg"), G.SteeringAngleDeg, S.bReady && G.IsBogey);
+            Add(D, N + TEXT("Spin"), TEXT("  Wheel speed"), TEXT("m/s"), G.WheelRollLinearVelocityMetersPerSec, S.bReady);
+            Add(D, N + TEXT("Steer"), TEXT("  Steering"), TEXT("deg"), G.SteeringAngleDeg, S.bReady);
         }
         break;
     case EFighterFlightDebugPage::Aero:

@@ -922,13 +922,12 @@ Command.Reset();    // 命令清零
 ### 9.1 自动化测试
 
 `Source/AirCombat/Input/Tests/FighterInputTests.cpp`，全部 `EditorContext | ProductFilter`。
-最近一次执行结果：**7 / 7 通过**。
+当前保留 **6 项**；最近一次清理与完整回归结果见 [测试维护说明](../Testing/README.md)。测试实现仅在编辑器开发测试条件下编译。
 
 | 测试名 | 验证内容 |
 |---|---|
 | `AirCombat.Input.KeyboardVirtualStick.PushRate` | 恒速推杆：0.1 s → ±0.3；推到满杆后停在 ±1；目标 0.5 也按 3.0/秒 推（0.1 s 到 0.3） |
 | `AirCombat.Input.KeyboardVirtualStick.ReturnToCenter` | 松键按 6.0/秒 回中：0.1 s → 0.4；1 s → 0 |
-| `AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel` | 正负键抵消后杆位回中并保持 0 |
 | `AirCombat.Input.KeyboardVirtualStick.Reset` | `Reset()` 后三根杆全 0 |
 | `AirCombat.Input.Config.DA_FighterInputConfig` | 配置资产无校验问题（引用齐全 + 值类型正确 + IMC 里有键位） |
 | `AirCombat.Input.Config.ImcOppositeKeyMapping` | 7 个双键轴动作：合并方式 = `Cumulative`；IMC 里正好 2 条映射、其中正好 1 条挂 `UInputModifierNegate` |

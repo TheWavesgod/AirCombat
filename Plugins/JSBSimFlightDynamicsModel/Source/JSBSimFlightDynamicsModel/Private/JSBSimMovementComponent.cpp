@@ -116,27 +116,12 @@ void ReadGearTelemetry(FGear& Out, JSBSim::FGLGear& Gear, const FTransform& Body
 }
 }
 
-// Utility class and static member to redirect cout to UE_LOG - see in UJSBSimMovementComponent::UJSBSimMovementComponent()
-class LStream : public std::stringbuf {
-protected:
-  int sync() {
-    UE_LOG(LogJSBSim, Log, TEXT("%s"), *FString(str().c_str()));
-    str("");
-    return std::stringbuf::sync();
-  }
-};
-LStream Stream;
-
-
 ////// Constructor
 UJSBSimMovementComponent::UJSBSimMovementComponent()
 {
   // Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features off to improve performance if you don't need them.
   PrimaryComponentTick.bCanEverTick = true;
   PrimaryComponentTick.TickGroup = TG_PrePhysics;
-
-  // Uncomment to Add a stream redirector in order to output JSBSim debug info to Log
-  // std::cout.rdbuf(&Stream);
 }
 
 
@@ -322,13 +307,11 @@ double UJSBSimMovementComponent::GetAGLevel(const FVector& StartECEFLocation, FV
   ObjectParams.AddObjectTypesToQuery(ECC_WorldDynamic);
   ObjectParams.AddObjectTypesToQuery(ECC_Pawn);
 
-  //DrawDebugLine(GetWorld(), LineCheckStart, LineCheckEnd , FColor::Blue, false, -1, 0, 3);
 
   // Do Query
   double HAT = 0.0;
   if (GetWorld()->LineTraceSingleByObjectType(HitResult, LineCheckStart, LineCheckEnd, ObjectParams, CollisionParams))
   {
-    //DrawDebugLine(GetWorld(), HitResult.ImpactPoint, HitResult.ImpactPoint + HitResult.ImpactNormal*100.0, FColor::Orange, false, -1, 0, 3);
 
     if (GroundHit) *GroundHit = true;
     FVector DirectionToImpact = HitResult.ImpactPoint - StartEngineLocation;
@@ -353,7 +336,6 @@ double UJSBSimMovementComponent::GetAGLevel(const FVector& StartECEFLocation, FV
 void UJSBSimMovementComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
   Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-  const double Start = FPlatformTime::Seconds();
   SimulationStepsLastFrame = 0;
   if (IsSimulationReady() && !AircraftState.Crashed)
   {
@@ -391,7 +373,6 @@ void UJSBSimMovementComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
       DrawDebugObjects();
     }
   }
-  TickTime = (FPlatformTime::Seconds() - Start) * 1000.0;
 }
 
 void UJSBSimMovementComponent::ResetSimulationPresentation()
@@ -1116,39 +1097,6 @@ void UJSBSimMovementComponent::CrashedEvent()
     Exec->SuspendIntegration();
     AircraftState.Crashed = true;
     AircraftCrashed.Broadcast();
-}
-
-void UJSBSimMovementComponent::LogInitialization()
-{
-  UE_LOG(LogJSBSim, Display, TEXT("Initialized JSB Sim with : "));
-
-  // Speed
-  switch (IC->GetSpeedSet())
-  {
-    //typedef enum { setvt, setve, setvg } speedset; ???
-  case JSBSim::setned: // North East Down
-    UE_LOG(LogJSBSim, Display, TEXT("  Vn,Ve,Vd= %f, %f, %f  ft/s"), Propagate->GetVel(JSBSim::FGJSBBase::eNorth), Propagate->GetVel(JSBSim::FGJSBBase::eEast), Propagate->GetVel(JSBSim::FGJSBBase::eDown));
-    break;
-  case JSBSim::setuvw:
-    UE_LOG(LogJSBSim, Display, TEXT("  U,V,W= %f, %f, %f  ft/s"), Propagate->GetUVW(1), Propagate->GetUVW(2), Propagate->GetUVW(3));
-    break;
-  case JSBSim::setmach:
-    UE_LOG(LogJSBSim, Display, TEXT("  Mach: %f"), Auxiliary->GetMach());
-    break;
-  case JSBSim::setvc:
-  default:
-    UE_LOG(LogJSBSim, Display, TEXT("  Indicated Airspeed: %f knots"), Auxiliary->GetVcalibratedKTS());
-    break;
-  }
-
-  // Angles
-  UE_LOG(LogJSBSim, Display, TEXT("  Bank: %f, Pitch: %f, True Heading: %f"),
-    FMath::RadiansToDegrees(Propagate->GetEuler(JSBSim::FGJSBBase::ePhi)),
-    FMath::RadiansToDegrees(Propagate->GetEuler(JSBSim::FGJSBBase::eTht)),
-    FMath::RadiansToDegrees(Propagate->GetEuler(JSBSim::FGJSBBase::ePsi)));
-
-  // Lat/Long
-  UE_LOG(LogJSBSim, Display, TEXT("  Latitude: %f, Longitude: %f deg, Altitude: %f feet"), Propagate->GetLocation().GetGeodLatitudeDeg(), Propagate->GetLocation().GetLongitudeDeg(), Propagate->GetAltitudeASL());
 }
 
 void UJSBSimMovementComponent::DrawDebugMessage()

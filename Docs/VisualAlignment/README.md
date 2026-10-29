@@ -83,6 +83,8 @@ F16 的模型内眼点 / 追尾焦点保持不变；J10CE 消除了旧 Airframe 
 
 ## 验证
 
+F16 的一次性几何导出测试已于 2026-10-29 清理；[原始轮胎测量 CSV](F16VisualGeometry.csv) 保留。固定视觉层级、CG 与相机锚点的回归仍保留，当前清单见 [测试维护说明](../Testing/README.md)。
+
 完整编译、保存后复开、自动化、PIE 和物理资源哈希结果见 [StructuralOrigin/validation.json](StructuralOrigin/validation.json)。
 相机结构见 [Camera](../Camera/README.md)，120 Hz 固定步进和统一显示插值见 [Presentation](../Presentation/README.md)。
 历史验证文件保留各自执行时的坐标约定；当前配置以本文和本次迁移验证为准。

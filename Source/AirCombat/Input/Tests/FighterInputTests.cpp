@@ -2,6 +2,8 @@
 
 #include "Misc/AutomationTest.h"
 
+#if WITH_DEV_AUTOMATION_TESTS && WITH_EDITOR
+
 #include "Input/FighterInputConfig.h"
 #include "Input/KeyboardVirtualStick.h"
 
@@ -107,33 +109,6 @@ bool FFighterVirtualStickReturnTest::RunTest(const FString& Parameters)
 	// 回到底
 	Stick.Update(Released, 1.f);
 	TestEqual(TEXT("松键后回中到 0"), Stick.GetPosition().Roll, 0.f);
-
-	return true;
-}
-
-/** 正负键互相抵消（IMC 用 Cumulative + Negate）时目标就是 0 → 杆位回中，不会自己转。 */
-IMPLEMENT_SIMPLE_AUTOMATION_TEST(FFighterVirtualStickCancelTest,
-	"AirCombat.Input.KeyboardVirtualStick.OppositeKeysCancel",
-	EAutomationTestFlags::EditorContext | EAutomationTestFlags::ProductFilter)
-
-bool FFighterVirtualStickCancelTest::RunTest(const FString& Parameters)
-{
-	FKeyboardVirtualStick Stick(3.f, 6.f);
-
-	// 先推到右满杆
-	FFighterStickPosition Target;
-	Target.Roll = 1.f;
-	Stick.Update(Target, 1.f);
-	TestEqual(TEXT("先推到右满杆"), Stick.GetPosition().Roll, 1.f);
-
-	// 现在左右键同时按 → IMC 里 Cumulative 合并后 = 0
-	FFighterStickPosition Cancelled;   // Roll = 0
-	Stick.Update(Cancelled, 1.f);
-	TestEqual(TEXT("正负键抵消后杆位回中"), Stick.GetPosition().Roll, 0.f);
-
-	// 一直按住抵消状态 → 保持 0
-	Stick.Update(Cancelled, 1.f);
-	TestEqual(TEXT("持续抵消保持 0"), Stick.GetPosition().Roll, 0.f);
 
 	return true;
 }
@@ -355,3 +330,5 @@ bool FFighterPlayerMappableNamesTest::RunTest(const FString& Parameters)
 
 	return true;
 }
+
+#endif // WITH_DEV_AUTOMATION_TESTS && WITH_EDITOR

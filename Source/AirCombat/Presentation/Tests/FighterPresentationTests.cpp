@@ -1,5 +1,5 @@
 #include "Misc/AutomationTest.h"
-#if WITH_DEV_AUTOMATION_TESTS
+#if WITH_DEV_AUTOMATION_TESTS && WITH_EDITOR
 #include "JSBSimSimulationState.h"
 #include "JSBSimMovementComponent.h"
 #include "Pawns/Fighter/Fighter.h"

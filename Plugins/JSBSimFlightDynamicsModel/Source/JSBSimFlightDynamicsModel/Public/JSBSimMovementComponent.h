@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include <sstream>
+#include <memory>
 #include "JSBSimModule.h"
 #include "FDMTypes.h"
 #include "JSBSimSimulationState.h"
@@ -304,7 +304,7 @@ protected:
 	std::shared_ptr<JSBSim::FGGroundReactions> GroundReactions = nullptr;
 	std::shared_ptr<JSBSim::FGAccelerations> Accelerations = nullptr;
 	
-	std::shared_ptr<JSBSim::FGPropertyManager> PropertyManager = nullptr; // TODO ?? virer ?
+	std::shared_ptr<JSBSim::FGPropertyManager> PropertyManager = nullptr;
 	std::shared_ptr<JSBSim::FGInitialCondition> IC = nullptr;
 
 	FTransform StructuralToActor;
@@ -316,8 +316,6 @@ protected:
 	FJSBSimFixedStepClock SimulationClock;
 	FJSBSimPoseHistory PoseHistory;
 	
-	double TickTime = 0;
-
 	/////////// JSBSim Protected methods
 
 	/**
@@ -364,7 +362,7 @@ private:
 	// Gears
 	void CopyGearPropertiesFromJSBSim();
 	void ResetTelemetry();
-#if WITH_DEV_AUTOMATION_TESTS
+#if WITH_DEV_AUTOMATION_TESTS && WITH_EDITOR
     friend struct FJSBSimTelemetryTestAccess;
 #endif
 	
@@ -381,10 +379,6 @@ private:
 
 	//aircrafts
 	void CrashedEvent();
-
-	/////////// Logging and Debugging Methods
-	void LogInitialization();
-
 
 	/**
 	 * @brief  Draw Onscreen debug text during play
